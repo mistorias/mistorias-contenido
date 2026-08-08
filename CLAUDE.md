@@ -69,46 +69,28 @@ Por eso hay etiquetas que no se usan nunca, porque ya son parte de la identidad 
 sitio, y otras que solo se permiten como excepción cuando son el eje central de la
 historia: ver `TAGS.md`.
 
-## 4. Estructura editorial
+La estructura editorial de una historia (secciones, pilares, cómo tratar las
+fuentes) vive en `CONTRIBUTING.md`, no aquí.
 
-La secuencia de marca es **SIENTE → ENTIENDE → ACTÚA**, y la regla de oro de
-`guia-editorial.md` dice que el contenido falla si informa sin conectar, conecta sin
-explicar, o explica sin movilizar. La estructura que viene funcionando:
-
-- `## La historia` — narrativa humana, anclada en una persona concreta (SIENTE).
-- `## Noticias principales` — cada ítem dice qué pasó, **qué significa el dato** y de
-  dónde sale, con la fuente enlazada e identificada por lo que es (ENTIENDE).
-- `## Conectando los puntos` — contexto y reflexión, más un párrafo explícito sobre
-  **los límites de los datos**: qué no responden todavía.
-- `## Acción final` — acciones concretas, en imperativo, diferenciadas por tipo de
-  lector (ACTÚA).
-
-Toda historia combina al menos 2 de los 3 pilares (historias humanas, datos
-explicados, contexto y reflexión); idealmente los 3.
-
-Sobre las fuentes: enlázalas y **di qué son**. Un comunicado gremial es parte del
-conflicto que reporta; una nota de divulgación no es el informe original. Esa
-honestidad es el principio de transparencia aplicado, no un adorno.
-
-## 5. Validación antes de publicar
+## 4. Validación antes de publicar
 
 Dos validaciones distintas, ambas obligatorias.
 
-### 5.1 Contra los agentes de marca
+### 4.1 Contra los agentes de marca
 
-Simula el pipeline de `agents/orquestador-lineamientos-marca.md` en orden fijo, sin
-saltarte fases ni invertirlas:
+Simula el pipeline de `agents/orquestador-lineamientos-marca.md`, en el orden fijo
+que define ese archivo: Jaime → Martha → Javier → Mario. No saltes fases ni las
+inviertas.
 
-| Fase | Rol | Umbral |
-|------|-----|--------|
-| 1 | **Jaime** — redacción estratégica | — |
-| 2 | **Martha** — ortografía y gramática (castellano de Perú) | **cero** errores |
-| 3 | **Javier** — alineación con `guia-editorial.md` | **≥ 3** de 5 |
-| 4 | **Mario** — buenas prácticas de marca (*The Brand Gap*) | **≥ 3** de 5 |
+Los umbrales de cada fase (cuántos errores tolera Martha, qué puntaje mínimo piden
+Javier y Mario) están en `agents/martha-ortografia-castellano-peru.md`,
+`agents/javier-alineacion-marca.md` y `agents/mario-buenas-practicas-marca.md` —
+léelos ahí, no los copies aquí: son criterio editorial del equipo y pueden cambiar
+sin que este archivo se entere.
 
 Si una fase no pasa su umbral, no sigas: vuelve a Jaime con el feedback acumulado.
 
-### 5.2 Contra el esquema y el build
+### 4.2 Contra el esquema y el build
 
 Desde un checkout de mistorias-web con el submódulo apuntando al contenido:
 
@@ -121,7 +103,7 @@ pnpm build   # confirma que la historia genera su página
 Verifica en la salida del build que aparece `/stories/<slug>/index.html`. Un
 frontmatter inválido o HTML crudo hacen fallar el build, no lo degradan en silencio.
 
-## 6. Castellano peruano: puntos donde se cae
+## 5. Castellano peruano: puntos donde se cae
 
 Las noticias fuente suelen ser de otros países y arrastran léxico que en Perú no se
 usa. Revisa siempre:
@@ -137,7 +119,7 @@ Cuando un término técnico o extranjero sea necesario, explícalo en 3-4 palabr
 paréntesis la primera vez. Lo mismo con palabras que nombran objetos poco familiares
 (*"aulas tipo 'domo'"*): entrecomíllalas la primera vez que aparecen.
 
-## 7. Nombre de archivo y dirección pública
+## 6. Nombre de archivo y dirección pública
 
 El nombre del archivo **es** la dirección de la historia:
 `stories/2026-08-07-como-se-mueve-la-educacion.md` → `/stories/2026-08-07-como-se-mueve-la-educacion/`.
@@ -148,7 +130,7 @@ El nombre del archivo **es** la dirección de la historia:
   (la API de GitHub no mueve archivos) y deja los comentarios de revisión
   apuntando a una ruta que ya no existe.
 
-## 8. Flujo de git y PR
+## 7. Flujo de git y PR
 
 Reglas completas en `agents/desarrollo-commits-prs.md` de la esencia de marca. Lo
 esencial:
@@ -172,7 +154,7 @@ git show FETCH_HEAD:stories/<archivo>.md | md5sum
 md5sum stories/<archivo>.md
 ```
 
-## 9. Trampas del entorno
+## 8. Trampas del entorno
 
 - **El submódulo llega vacío.** En una sesión fresca de mistorias-web,
   `content/mistorias-contenido/` existe pero está sin inicializar. Escribir ahí no
@@ -183,14 +165,17 @@ md5sum stories/<archivo>.md
   pudiste abrir la fuente, dilo explícitamente en el PR y deja la verificación al
   equipo. Nunca presentes como comprobado un dato que solo copiaste.
 
-## 10. Antes de dar por terminada una historia
+## 9. Antes de dar por terminada una historia
 
-- [ ] Leí `guia-editorial.md` antes de redactar.
+Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, etiquetas
+elegidas) está en `CONTRIBUTING.md`.
+
 - [ ] Título de 10 a 15 palabras; resumen de máximo 30; fecha `yyyy-mm-dd`.
-- [ ] Entre 3 y 7 etiquetas, ninguna de la lista excluida, todas propias de esta historia.
 - [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
-- [ ] Pipeline Jaime → Martha → Javier → Mario, en orden y con sus umbrales.
+- [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
+      `agents/martha-*.md`, `agents/javier-*.md` y `agents/mario-*.md`.
 - [ ] `pnpm test` y `pnpm build` pasan; la ruta de la historia aparece en el build.
-- [ ] Fuentes enlazadas, identificadas por lo que son, y con sus límites explicitados.
+- [ ] Fuentes enlazadas, identificadas por lo que son, con sus límites y posibles
+      sesgos explicitados.
 - [ ] Si quedaron comentarios de revisión abiertos, están resueltos o dichos uno por uno.
 - [ ] El contenido del blob remoto coincide con el que validé.
