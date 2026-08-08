@@ -139,7 +139,9 @@ esencial:
   queda el proyecto** tras el cambio, no lo que hizo la persona. Atómicos. Máximo
   cinco por PR; si hay más, sugiere squash.
 - **PR**: título y descripción en castellano; resumen de dos líneas que cubra todo lo
-  relevante; sin inventario de archivos por defecto.
+  relevante; sin inventario de archivos por defecto. Si la revisión hace que el
+  alcance cambie —se agregan, quitan o renombran archivos—, actualiza título y
+  descripción en el mismo momento: no quedan sincronizados solos.
 - **Firma GPG**: no se desactiva. Si el entorno tiene `commit.gpgsign=true` sin llave
   disponible, `git commit` falla — y empujar por la API de GitHub **no** resuelve la
   firma: esos commits quedan **sin firmar** y atribuidos a la identidad dueña del
