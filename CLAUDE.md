@@ -25,9 +25,10 @@ Lee al menos `guia-editorial.md`. Para el pipeline de validación, además
 ## 2. Contrato del frontmatter
 
 El sitio valida cada historia contra `storySchema`
-(`src/lib/content/schema.ts` en mistorias-web) y la parsea con un lector propio
-(`src/lib/content/content-loader.ts`), no con gray-matter. Eso impone límites que
-YAML normal no tiene:
+(`src/lib/content/schema.ts` en mistorias-web) y la parsea con el cargador de
+contenido que tenga configurado. Cuál es ese cargador es asunto del sitio y puede
+cambiar, así que el frontmatter se escribe en la forma más conservadora que
+cualquiera de ellos acepta:
 
 ```yaml
 ---
@@ -47,12 +48,18 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | `author` | Obligatorio, texto no vacío. |
 | `tags` | **Mínimo 3, máximo 7.** Ver §3. |
 
-Restricciones del parser, que rompen el build si se ignoran:
+Convención de escritura. El cargador de hoy tolera más que esto, pero escribir así
+mantiene las historias legibles para cualquier cargador que venga después:
 
-- **Una línea por campo.** No hay valores multilínea, ni listas en bloque (`- item`), ni anidamiento.
-- El valor empieza después del **primer** `:`; si el texto contiene `:`, va entre comillas.
+- **Una línea por campo.** Sin valores multilínea, sin listas en bloque (`- item`),
+  sin anidamiento.
 - Los arreglos se escriben en línea: `["a", "b"]`, separados por comas.
-- **Nada de HTML crudo**, ni en el frontmatter ni en el cuerpo: `assertNoRawHtml` rechaza
+
+Estas dos sí rompen el build, hoy y con cualquier cargador:
+
+- Si el valor contiene `:`, va **entre comillas**. Sin comillas, el frontmatter no
+  parsea y el build falla al sincronizar el contenido.
+- **Nada de HTML crudo**, ni en el frontmatter ni en el cuerpo: el sitio rechaza
   cualquier `<...>` y falla el build. Los enlaces markdown `[texto](url)` están bien;
   los autoenlaces `<https://…>` **no**.
 
