@@ -79,11 +79,35 @@ historia: ver `TAGS.md`.
 La estructura editorial de una historia (secciones, pilares, cómo tratar las
 fuentes) vive en `CONTRIBUTING.md`, no aquí.
 
-## 4. Validación antes de publicar
+## 4. Nombres de los personajes
+
+**Un nombre propio se usa una sola vez en todo el sitio.** Cada historia estrena a
+sus personajes: la niña, la madre, el docente, el vecino. Repetir un nombre entre
+ediciones hace que dos personas distintas parezcan la misma —y el lector que llega
+por la portada las lee seguidas—, además de volver genérico lo que debería ser
+concreto.
+
+Aplica a todo personaje inventado, tenga apellido o no: protagonistas, familia,
+docentes, vecinos. **No aplica** a personas reales que aparecen por su cargo o su
+declaración en una noticia (autoridades, dirigentes), ni a lugares e instituciones.
+
+Antes de fijar un nombre, revisa cuáles ya están tomados:
+
+```bash
+LC_ALL=C.UTF-8 grep -rhoP '\p{Lu}\p{Ll}+' stories/ | sort -u
+```
+
+El `LC_ALL` es necesario: sin él, grep parte los nombres con tilde y *Lucía* aparece
+como *Luc*. La lista trae también topónimos, instituciones y cualquier palabra que
+abra oración; lo que importa es cruzar los nombres de persona. Si el nombre repetido
+está en el título, cambia también el nombre del archivo (ver §6): el título y la
+dirección pública van juntos.
+
+## 5. Validación antes de publicar
 
 Dos validaciones distintas, ambas obligatorias.
 
-### 4.1 Contra los agentes de marca
+### 5.1 Contra los agentes de marca
 
 Simula el pipeline de `agents/orquestador-lineamientos-marca.md`, en el orden fijo
 que define ese archivo: Jaime → Martha → Javier → Mario. No saltes fases ni las
@@ -97,7 +121,7 @@ sin que este archivo se entere.
 
 Si una fase no pasa su umbral, no sigas: vuelve a Jaime con el feedback acumulado.
 
-### 4.2 Contra el esquema y el build
+### 5.2 Contra el esquema y el build
 
 Desde un checkout de mistorias-web con el submódulo apuntando al contenido:
 
@@ -110,7 +134,7 @@ pnpm build   # confirma que la historia genera su página
 Verifica en la salida del build que aparece `/historias/<slug>/index.html`. Un
 frontmatter inválido o HTML crudo hacen fallar el build, no lo degradan en silencio.
 
-## 5. Castellano peruano: puntos donde se cae
+## 6. Castellano peruano: puntos donde se cae
 
 Las noticias fuente suelen ser de otros países y arrastran léxico que en Perú no se
 usa. Revisa siempre:
@@ -126,7 +150,7 @@ Cuando un término técnico o extranjero sea necesario, explícalo en 3-4 palabr
 paréntesis la primera vez. Lo mismo con palabras que nombran objetos poco familiares
 (*"aulas tipo 'domo'"*): entrecomíllalas la primera vez que aparecen.
 
-## 6. Nombre de archivo y dirección pública
+## 7. Nombre de archivo y dirección pública
 
 El nombre del archivo **es** la dirección de la historia:
 `stories/2026-08-07-como-se-mueve-la-educacion.md` → `/historias/2026-08-07-como-se-mueve-la-educacion/`.
@@ -140,7 +164,7 @@ El nombre del archivo **es** la dirección de la historia:
   (la API de GitHub no mueve archivos) y deja los comentarios de revisión
   apuntando a una ruta que ya no existe.
 
-## 7. Flujo de git y PR
+## 8. Flujo de git y PR
 
 Reglas completas en `agents/desarrollo-commits-prs.md` de la esencia de marca. Lo
 esencial:
@@ -166,7 +190,7 @@ git show FETCH_HEAD:stories/<archivo>.md | md5sum
 md5sum stories/<archivo>.md
 ```
 
-## 8. Trampas del entorno
+## 9. Trampas del entorno
 
 - **El submódulo llega vacío.** En una sesión fresca de mistorias-web,
   `content/mistorias-contenido/` existe pero está sin inicializar. Escribir ahí no
@@ -177,13 +201,14 @@ md5sum stories/<archivo>.md
   pudiste abrir la fuente, dilo explícitamente en el PR y deja la verificación al
   equipo. Nunca presentes como comprobado un dato que solo copiaste.
 
-## 9. Antes de dar por terminada una historia
+## 10. Antes de dar por terminada una historia
 
 Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, etiquetas
 elegidas) está en `CONTRIBUTING.md`.
 
 - [ ] Título de 10 a 15 palabras; resumen de máximo 30; fecha `yyyy-mm-dd`.
 - [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
+- [ ] Ningún nombre de personaje se repite con historias ya publicadas (§4).
 - [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
       `agents/martha-*.md`, `agents/javier-*.md` y `agents/mario-*.md`.
 - [ ] `pnpm test` y `pnpm build` pasan; la ruta de la historia aparece en el build.
