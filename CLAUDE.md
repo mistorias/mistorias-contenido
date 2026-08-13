@@ -100,7 +100,7 @@ pnpm test    # el cargador y el esquema
 pnpm build   # confirma que la historia genera su página
 ```
 
-Verifica en la salida del build que aparece `/stories/<slug>/index.html`. Un
+Verifica en la salida del build que aparece `/historias/<slug>/index.html`. Un
 frontmatter inválido o HTML crudo hacen fallar el build, no lo degradan en silencio.
 
 ## 5. Castellano peruano: puntos donde se cae
@@ -122,8 +122,11 @@ paréntesis la primera vez. Lo mismo con palabras que nombran objetos poco famil
 ## 6. Nombre de archivo y dirección pública
 
 El nombre del archivo **es** la dirección de la historia:
-`stories/2026-08-07-como-se-mueve-la-educacion.md` → `/stories/2026-08-07-como-se-mueve-la-educacion/`.
+`stories/2026-08-07-como-se-mueve-la-educacion.md` → `/historias/2026-08-07-como-se-mueve-la-educacion/`.
 
+- La carpeta del repositorio se llama `stories/`, pero la sección pública es
+  `historias/`: el sitio arma la ruta con `rutaHistoria` (`src/lib/rutas.ts` en
+  mistorias-web) y el nombre de la sección no sale del nombre de la carpeta.
 - Prefijo de fecha `yyyy-mm-dd` para evitar colisiones entre ediciones.
 - El resto del nombre debe acompañar al título; si el título cambia, el archivo cambia.
 - **Fija el nombre antes del primer push.** Renombrar después cuesta dos commits
