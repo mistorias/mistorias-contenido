@@ -3,7 +3,7 @@ title: "La semana en que Lucía vio cómo se mueve la educación"
 summary: "Lucía, de 12 años, escucha en una combi de Arequipa cuatro noticias que terminan hablando de su propia escuela: domos, paro docente, menos estudiantes y reglas para la IA."
 date: "2026-08-07"
 author: "Equipo Mistorias"
-tags: ["educacion", "arequipa", "junin", "docentes", "inteligencia-artificial", "america-latina"]
+tags: ["junin", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
 ---
 ## La historia
 
