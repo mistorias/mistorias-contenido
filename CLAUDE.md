@@ -98,11 +98,8 @@ listo y acota la revisión a las últimas historias publicadas —no a todo
 cuántas exactamente es un detalle que vive en el skill y puede cambiar ahí sin que
 esta guía se desactualice.
 
-El `LC_ALL` es necesario: sin él, grep parte los nombres con tilde y *Lucía* aparece
-como *Luc*. La lista trae también topónimos, instituciones y cualquier palabra que
-abra oración; lo que importa es cruzar los nombres de persona. Si el nombre repetido
-está en el título, cambia también el nombre del archivo (ver §6): el título y la
-dirección pública van juntos.
+Si el nombre repetido está en el título, cambia también el nombre del archivo
+(ver §6): el título y la dirección pública van juntos.
 
 ## 5. Validación antes de publicar
 
