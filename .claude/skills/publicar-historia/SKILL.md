@@ -38,7 +38,7 @@ GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 \
 
 Lee `guia-editorial.md` completo antes de escribir una sola línea de la historia:
 es la fuente canónica de voz, tono y estructura, y redactar sin haberla leído
-produce texto que hay que rehacer. Para el pipeline del paso 5, lee también
+produce texto que hay que rehacer. Para el pipeline del paso 6, lee también
 `AGENTS.md` y los archivos dentro de `agents/`.
 
 ## Paso 2 — Revisar lo ya publicado
@@ -100,7 +100,26 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 
 - `title`: 10 a 15 palabras, nombra lo que el lector descubre (no un inventario de
   temas, no un conteo de noticias).
-- `summary`: máximo 30 palabras, una sola línea.
+- `summary`: máximo 30 palabras, una sola línea. **Se genera aquí, a partir del
+  cuerpo ya terminado del paso 3** — no se arrastra del borrador, del título ni de
+  la idea con la que arrancaste. Ese arrastre es de dónde vienen los resúmenes
+  falsos: describen una versión de la historia que ya no es la que se publica.
+  Para generarlo:
+  1. Relee `## La historia` completa, ya escrita.
+  2. Anota los temas que la historia realmente cubre y qué aterriza en la vida del
+     personaje. Eso es el resumen: **de qué trata la historia**, no cómo está
+     contada.
+  3. **Deja fuera el canal**: por qué medio el personaje se entera de cada noticia
+     (la radio de la combi, el profesor en el aula, la conversación en casa) es
+     recurso narrativo del cuerpo, no información que el lector necesite en la
+     portada. Casi nunca cabe en 30 palabras sin deformarse, y al comprimirlo se
+     vuelve falso: varias escenas terminan colapsadas en un solo canal que en el
+     texto no existe. Si el canal no es el tema de la historia —y rara vez lo es—,
+     no va.
+  4. Redacta las 30 palabras con los temas y el aterrizaje. Si aun así el canal te
+     parece imprescindible, entonces tiene que ser literalmente cierto para todo lo
+     que abarca; ante la duda, quítalo.
+  5. Pásalo por el paso 5 antes de darlo por bueno.
 - `date`: la que dio el usuario en el paso 0, formato `yyyy-mm-dd`.
 - `tags`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
   lee `TAGS.md` completo — tiene una lista de etiquetas **siempre excluidas**
@@ -116,7 +135,40 @@ con la fecha del paso 0 y un slug que acompañe al título. Renombrar después c
 dos commits y deja comentarios de revisión apuntando a una ruta que ya no existe
 (CLAUDE.md §7).
 
-## Paso 5 — Simular el pipeline de agentes de marca
+## Paso 5 — Verificar el resumen contra el cuerpo (lazo hasta 0.95)
+
+El resumen es el único campo del frontmatter que **afirma cosas sobre el texto**, y
+por eso es el único que puede ser válido y falso a la vez: el esquema lo acepta y el
+build genera la página aunque el resumen cuente otra historia. Ninguna de las cuatro
+fases del paso 6 lo revisa — Martha ve ortografía, Javier alineación de marca, Mario
+buenas prácticas. Este paso llena ese hueco.
+
+Lanza el subagente **`verificador-resumen`** (`.claude/agents/verificador-resumen.md`)
+sobre el archivo:
+
+> Audita el resumen de `stories/<archivo>.md` contra el cuerpo.
+
+Devuelve las afirmaciones del resumen una por una, una **precisión** entre 0 y 1, y
+un veredicto. El umbral es **≥ 0.95**; en un resumen de 4 a 7 afirmaciones eso
+significa, en la práctica, que todas deben estar soportadas por el cuerpo.
+
+**Itera hasta aprobar**: si el veredicto es `RECHAZADO`, aplica su `RESUMEN
+PROPUESTO` —o uno mejor, respetando las 30 palabras— y vuelve a lanzarlo sobre el
+archivo corregido. **Máximo 3 vueltas.** Si a la tercera no aprueba, para y dile al
+usuario qué afirmación no se pudo sostener: a esa altura el problema ya no suele
+estar en el resumen sino en el cuerpo, y esa decisión es editorial, no tuya.
+
+Al aprobar, el subagente registra la verificación con
+`.claude/scripts/registrar-resumen-verificado.sh`. Ese registro guarda el hash del
+archivo: **si después tocas el resumen o el cuerpo, la verificación vence** y hay
+que repetir este paso. No lo esquives editando "solo una palabra".
+
+El hook `Stop` (`.claude/scripts/verificar-resumen.sh`) revisa lo mismo al cerrar la
+sesión y bloquea si falta. Es una red, no el mecanismo: llegar al final del trabajo
+y que el hook te devuelva es señal de que te saltaste este paso, no de que el hook
+esté haciendo su trabajo por ti.
+
+## Paso 6 — Simular el pipeline de agentes de marca
 
 En `/workspace/mistorias-esencia-de-marca/agents/orquestador-lineamientos-marca.md`
 está el orden fijo: **Jaime → Martha → Javier → Mario**. Pasa por las cuatro fases,
@@ -138,11 +190,13 @@ entere.
 Simula cada fase sobre el borrador real. Si una fase de control no pasa su umbral,
 no avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seguir.
 
-## Paso 6 — Antes de dar la historia por lista
+## Paso 7 — Antes de dar la historia por lista
 
 Repasa el checklist de CLAUDE.md §10 contra lo que acabas de producir:
 
 - [ ] Título 10-15 palabras; resumen ≤30 palabras; fecha `yyyy-mm-dd`.
+- [ ] Resumen generado desde el cuerpo terminado (paso 4) y aprobado por
+      `verificador-resumen` con precisión ≥ 0.95, ya registrado (paso 5).
 - [ ] Nombre de archivo coherente con el título, ya fijado.
 - [ ] Ningún nombre de personaje inventado se repite con las 10 historias más
       recientes (paso 2).
@@ -151,9 +205,9 @@ Repasa el checklist de CLAUDE.md §10 contra lo que acabas de producir:
 - [ ] Etiquetas (3-7) revisadas contra `TAGS.md`.
 
 Todavía no valides contra el build de mistorias-web ni prepares el commit — eso es
-el paso 7, y solo si el usuario lo pide.
+el paso 8, y solo si el usuario lo pide.
 
-## Paso 7 — Build, git y PR (solo si el usuario lo pide)
+## Paso 8 — Build, git y PR (solo si el usuario lo pide)
 
 Esto **no** es automático al terminar de escribir: pregunta o espera a que el
 usuario confirme que quiere seguir hasta acá.
