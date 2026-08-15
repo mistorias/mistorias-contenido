@@ -1,6 +1,6 @@
 ---
 title: "La semana en que Lucía vio cómo se mueve la educación"
-summary: "Domos en Junín, paro docente argentino, menos estudiantes en la región y reglas para la IA: cuatro noticias de educación que aterrizan en la escuela de Lucía, en Arequipa."
+summary: "Domos en Junín, paro docente argentino, menos estudiantes en la región y reglas para la IA: noticias de educación que aterrizan en la escuela de Lucía, en Arequipa."
 date: "2026-08-07"
 author: "Equipo Mistorias"
 tags: ["junin", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
