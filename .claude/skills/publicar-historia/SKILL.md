@@ -43,21 +43,27 @@ produce texto que hay que rehacer. Para el pipeline del paso 5, lee también
 
 ## Paso 2 — Revisar lo ya publicado
 
-Antes de fijar nombres de personajes o etiquetas, mira qué ya existe en `stories/`:
+Antes de fijar nombres de personajes o etiquetas, mira qué ya existe en `stories/`.
+Limita la búsqueda a las **10 historias más recientes** (ordenadas por fecha
+descendente, que es lo mismo que ordenar por nombre de archivo porque todos
+empiezan con `yyyy-mm-dd`): más atrás que eso, el fondo de nombres peruanos
+disponibles se agota rápido y termina forzando nombres poco naturales.
 
 ```bash
-LC_ALL=C.UTF-8 grep -rhoP '\p{Lu}\p{Ll}+' /home/user/mistorias-contenido/stories/ | sort -u
+LC_ALL=C.UTF-8 grep -rhoP '\p{Lu}\p{Ll}+' \
+  $(ls /home/user/mistorias-contenido/stories/*.md | sort -r | head -10) | sort -u
 ```
 
 El `LC_ALL=C.UTF-8` es obligatorio — sin él, grep parte los nombres con tilde
 (*Lucía* sale como *Luc*). La lista trae también topónimos e instituciones; lo que
 importa es cruzar los **nombres de persona inventados** (protagonistas, familia,
-docentes, vecinos). Un nombre propio se usa una sola vez en todo el sitio
-(CLAUDE.md §4) — repetirlo hace que dos personas distintas parezcan la misma. Esto
-no aplica a personas reales citadas por su cargo, ni a lugares o instituciones.
+docentes, vecinos). Un nombre propio se usa una sola vez entre esas 10 historias
+más recientes (CLAUDE.md §4) — repetirlo hace que dos personas distintas parezcan
+la misma. Esto no aplica a personas reales citadas por su cargo, ni a lugares o
+instituciones.
 
-De paso, hojea 2-3 historias recientes en `stories/` para calibrar tono y extensión
-reales, no solo lo que dice la guía en abstracto.
+De paso, hojea esas mismas 2-3 historias más recientes para calibrar tono y
+extensión reales, no solo lo que dice la guía en abstracto.
 
 ## Paso 3 — Redactar la historia
 
@@ -113,16 +119,24 @@ dos commits y deja comentarios de revisión apuntando a una ruta que ya no exist
 ## Paso 5 — Simular el pipeline de agentes de marca
 
 En `/workspace/mistorias-esencia-de-marca/agents/orquestador-lineamientos-marca.md`
-está el orden fijo: **Jaime → Martha → Javier → Mario**. No lo saltees ni lo
-inviertas. Los umbrales de cada fase (errores que tolera Martha, puntaje mínimo de
-Javier y Mario) están en sus respectivos archivos
+está el orden fijo: **Jaime → Martha → Javier → Mario**. Pasa por las cuatro fases,
+en ese orden, **sin saltarte ninguna** — tampoco Jaime: aunque es quien redacta y no
+tiene un umbral numérico que superar (ver abajo), su paso es igual de obligatorio
+que los de control de calidad, porque es la fase donde se produce el borrador que
+las otras tres van a auditar.
+
+Jaime no aparece en la lista de umbrales porque su rol no es evaluar contra un
+criterio de aprobado/reprobado: es quien escribe o reescribe la historia, con la
+guía editorial como referencia. El umbral llega después, con quien sí audita ese
+trabajo: los umbrales de cada fase de control (errores que tolera Martha, puntaje
+mínimo de Javier y Mario) están en sus respectivos archivos
 (`martha-ortografia-castellano-peru.md`, `javier-alineacion-marca.md`,
 `mario-buenas-practicas-marca.md`) — léelos ahí en el momento, no los repitas de
 memoria: son criterio editorial del equipo y pueden cambiar sin que este skill se
 entere.
 
-Simula cada fase sobre el borrador real. Si una fase no pasa su umbral, no
-avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seguir.
+Simula cada fase sobre el borrador real. Si una fase de control no pasa su umbral,
+no avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seguir.
 
 ## Paso 6 — Antes de dar la historia por lista
 
@@ -130,7 +144,8 @@ Repasa el checklist de CLAUDE.md §10 contra lo que acabas de producir:
 
 - [ ] Título 10-15 palabras; resumen ≤30 palabras; fecha `yyyy-mm-dd`.
 - [ ] Nombre de archivo coherente con el título, ya fijado.
-- [ ] Ningún nombre de personaje inventado se repite con historias publicadas.
+- [ ] Ningún nombre de personaje inventado se repite con las 10 historias más
+      recientes (paso 2).
 - [ ] Pipeline Jaime → Martha → Javier → Mario completo, en orden, con umbrales.
 - [ ] Fuentes enlazadas, identificadas por lo que son, con límites y sesgos.
 - [ ] Etiquetas (3-7) revisadas contra `TAGS.md`.
