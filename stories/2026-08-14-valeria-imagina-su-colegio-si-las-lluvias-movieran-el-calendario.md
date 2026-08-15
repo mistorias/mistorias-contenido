@@ -45,5 +45,3 @@ Elige una y hazla esta semana:
 - **Si enseñas:** elige un elemento del territorio —una canción, un oficio, una historia del río— y conviértelo en la actividad de una clase de esta semana. El patrimonio entra al currículo cuando alguien lo programa, no cuando se menciona.
 - **Si diriges un colegio o trabajas en la UGEL:** revisa hoy qué pasaría si el calendario se acortara sin aviso y deja por escrito quién comunica a las familias y cómo se recuperan las horas. Piura ya lo está haciendo; no esperes a que la lluvia decida por ti.
 - **Si integras la APAFA o el municipio escolar:** lleva a la próxima reunión una sola pregunta y pide que quede en acta: ¿qué compromiso concreto de CADE Educación se puede exigir en este colegio y quién responde por él?
-
-Cuéntanos cuál elegiste. Las respuestas de nuestros lectores alimentan la siguiente historia.
