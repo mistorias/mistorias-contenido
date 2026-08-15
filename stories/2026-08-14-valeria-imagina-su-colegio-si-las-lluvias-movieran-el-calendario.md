@@ -41,7 +41,7 @@ La educación peruana se juega entre la urgencia de adaptarse al clima y a la te
 
 Elige una y hazla esta semana:
 
-- **En casa o en el aula:** dedica una hora a conversar con niñas, niños o adolescentes sobre estas cuatro noticias y escriban juntos una sola propuesta concreta y realizable para su escuela: ajustar un protocolo de seguridad, armar un proyecto de arte ligado al barrio o redactar un compromiso por el derecho a estudiar de todas las niñas.
+- **En casa o en el aula:** dedica una hora a conversar con niñas, niños o adolescentes sobre estas cuatro noticias y escriban juntos una sola propuesta concreta y realizable para su escuela: ajustar un protocolo de seguridad, armar un proyecto de arte ligado al barrio o redactar un ensayo sobre el derecho a estudiar de todas las niñas.
 - **Si enseñas:** elige un elemento del territorio —una canción, un oficio, una historia del río— y conviértelo en la actividad de una clase de esta semana. El patrimonio entra al currículo cuando alguien lo programa, no cuando se menciona.
 - **Si diriges un colegio o trabajas en la UGEL:** revisa hoy qué pasaría si el calendario se acortara sin aviso y deja por escrito quién comunica a las familias y cómo se recuperan las horas. Piura ya lo está haciendo; no esperes a que la lluvia decida por ti.
 - **Si integras la APAFA o el municipio escolar:** lleva a la próxima reunión una sola pregunta y pide que quede en acta: ¿qué compromiso concreto de CADE Educación se puede exigir en este colegio y quién responde por él?
