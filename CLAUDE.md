@@ -91,11 +91,12 @@ Aplica a todo personaje inventado, tenga apellido o no: protagonistas, familia,
 docentes, vecinos. **No aplica** a personas reales que aparecen por su cargo o su
 declaración en una noticia (autoridades, dirigentes), ni a lugares e instituciones.
 
-Antes de fijar un nombre, revisa cuáles ya están tomados:
-
-```bash
-LC_ALL=C.UTF-8 grep -rhoP '\p{Lu}\p{Ll}+' stories/ | sort -u
-```
+Antes de fijar un nombre, revisa cuáles ya están tomados. El skill
+`publicar-historia` (`.claude/skills/publicar-historia/SKILL.md`) trae el comando
+listo y acota la revisión a las últimas historias publicadas —no a todo
+`stories/`— para no forzar nombres poco naturales cuando el fondo se agota;
+cuántas exactamente es un detalle que vive en el skill y puede cambiar ahí sin que
+esta guía se desactualice.
 
 El `LC_ALL` es necesario: sin él, grep parte los nombres con tilde y *Lucía* aparece
 como *Luc*. La lista trae también topónimos, instituciones y cualquier palabra que
