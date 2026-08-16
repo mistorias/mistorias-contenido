@@ -49,5 +49,3 @@ Elige una y hazla esta semana:
 - **Si enseñas o diriges un colegio:** revisa con tu equipo el plan de respuesta ante emergencias y acuerda quién avisa a las familias y adónde se traslada el aula si el local queda inutilizable.
 - **Si integras la APAFA o el municipio escolar:** pregunta en la próxima reunión, y déjalo por escrito, cuál es el estado de la infraestructura del colegio y quién responde por él en la UGEL.
 - **Si usas IA con tus estudiantes:** acuerden juntos una regla mínima de transparencia —decir siempre cuándo un texto fue hecho con ayuda de IA— antes de que la norma llegue de afuera.
-
-Cuéntanos cuál elegiste. Las respuestas de nuestros lectores alimentan la siguiente historia.

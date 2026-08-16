@@ -49,5 +49,3 @@ Elige una y hazla esta semana:
 - **Si eres promotora o docente de inicial:** anota qué necesita tu local para el próximo invierno o la próxima lluvia —techo, piso, material— y llévalo por escrito a tu UGEL. Un pedido registrado existe; uno conversado, no.
 - **Si diriges una institución educativa:** revisa con tu equipo qué pasaría si el calendario escolar se acortara sin aviso, y define ahora quién comunica a las familias y cómo se recuperan las horas.
 - **Si integras la APAFA o el municipio escolar:** pregunta en la próxima reunión, y pide que quede en acta, cuánto del presupuesto anunciado se refleja en obras concretas en tu colegio y quién responde por ellas en la UGEL.
-
-Cuéntanos cuál elegiste. Las respuestas de nuestros lectores alimentan la siguiente historia.

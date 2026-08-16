@@ -43,5 +43,3 @@ Que esta semana educativa no se quede en anuncios: se juega en cómo llegan los 
 - **Si enseñas:** entra a la Biblioteca Escolar Digital y elige tres recursos que funcionen en tus condiciones reales de conectividad. Descárgalos o imprímelos antes de planificar la clase que los usará.
 - **Si diriges un colegio o integras la APAFA:** pide por escrito, en la próxima reunión, el estado de la infraestructura del local y quién responde por él en la UGEL. Acuerden quién avisa a las familias y adónde se traslada el aula si el local queda inutilizable.
 - **Si vives cerca de Cotahuasi:** averigua el calendario de la Casita de la Literatura y lleva a una niña o niño que no tenga libros en casa. La primera visita es la que decide si habrá una segunda.
-
-Cuéntanos cuál elegiste. Las respuestas de nuestros lectores alimentan la siguiente historia.
