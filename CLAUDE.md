@@ -222,6 +222,12 @@ md5sum stories/<archivo>.md
   bloqueados por el proxy, así que **no asumas que puedes verificar una cifra**. Si no
   pudiste abrir la fuente, dilo explícitamente en el PR y deja la verificación al
   equipo. Nunca presentes como comprobado un dato que solo copiaste.
+- **No hay canal para que el lector responda.** El sitio todavía no tiene redes
+  sociales activas ni formularios, así que ninguna historia debe pedirle al lector
+  o lectora una interacción (comentar, contarnos qué eligió, escribirnos, etc.).
+  Los cierres invitan a actuar en su propia vida —la lista "Elige una y hazla esta
+  semana"—, no a responderle a Mistorias. Revisa esta regla cuando existan esos
+  canales.
 
 ## 10. Antes de dar por terminada una historia
 
