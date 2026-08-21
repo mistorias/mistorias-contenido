@@ -1,6 +1,6 @@
 ---
 title: "Valeria imagina su colegio de Arequipa si las lluvias movieran el calendario escolar"
-summary: "En un aula de Mariano Melgar, cuatro noticias sobre clima, tecnología y derecho a estudiar terminan hablando del calendario escolar y de las carpetas de Valeria."
+summary: "En Mariano Melgar, Valeria y sus compañeros imaginan su colegio si las lluvias movieran el calendario, como en Piura, mientras otras niñas ni siquiera pueden entrar a un aula."
 date: "2026-08-14"
 author: "Equipo Mistorias"
 tags: ["calendario-escolar", "fenomeno-el-nino", "piura", "cade-educacion", "afganistan", "patrimonio-cultural"]
