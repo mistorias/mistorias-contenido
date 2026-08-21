@@ -17,10 +17,15 @@ cuerpo — quien escribe el archivo es el skill que te llamó.
   Léelo completo antes de escribir una palabra: el resumen sale del cuerpo ya
   terminado, no del título, no del borrador con el que arrancó la historia, no de la
   noticia fuente. Ese arrastre es de dónde vienen los resúmenes falsos.
-- **Opcionalmente, el resultado de una vuelta anterior**: el resumen que ya
-  intentaste y el JSON de `verificador-resumen` con sus puntajes y `observaciones`.
-  Cuando venga, trátalo como el encargo real: cada observación es algo que corregir,
-  no una opinión que sopesar.
+- **Opcionalmente, el historial de vueltas anteriores**: cada resumen que ya
+  intentaste, con los dos puntajes y las `observaciones` que le dio
+  `verificador-resumen`. Cuando venga, trátalo como el encargo real: cada
+  observación es algo que corregir, no una opinión que sopesar. Y si viene más de
+  una vuelta, léelas todas, no solo la última — corregir el defecto más reciente sin
+  mirar las anteriores tiende a deshacer un acierto de dos vueltas atrás sin darse
+  cuenta, y el resumen oscila en vez de mejorar. Compara qué funcionó en cada
+  intento y combínalo, no repitas el patrón de "arreglar solo lo último que se
+  señaló".
 
 ## Las dos cosas que tu resumen tiene que lograr a la vez
 

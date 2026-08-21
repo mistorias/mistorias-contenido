@@ -164,9 +164,14 @@ umbrales la haces tú, acá.
 ### 5.3 — Iterar
 
 Si cualquiera de los dos puntajes queda por debajo de su umbral, vuelve a 5.1 y lanza
-`generador-resumen` **pasándole el resumen anterior y el JSON completo de la
-evaluación**, con sus `observaciones`. Sin ese contexto la siguiente vuelta arranca
-de cero y suele repetir el mismo error.
+`generador-resumen` pasándole **el historial completo de la vuelta actual y todas
+las anteriores** — no solo el intento y el JSON más recientes: cada resumen que ya
+se probó, sus dos puntajes, y las `observaciones` de esa evaluación. Pasar solo la
+última observación no alcanza: el lazo deja de recordar qué ya se probó y qué ya
+funcionaba, y una corrección aislada puede arreglar lo que señaló esa vuelta y
+deshacer sin darse cuenta un acierto de dos vueltas atrás — la corrección oscila en
+vez de converger. Con el historial completo, `generador-resumen` puede combinar lo
+que sí funcionó de cada intento anterior en vez de tantear a ciegas.
 
 **Máximo 5 vueltas.** Si a la quinta no llega, para y dile al usuario qué puntaje se
 quedó corto y qué observación no se pudo resolver: a esa altura el problema ya no
