@@ -100,26 +100,11 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 
 - `title`: 10 a 15 palabras, nombra lo que el lector descubre (no un inventario de
   temas, no un conteo de noticias).
-- `summary`: máximo 30 palabras, una sola línea. **Se genera aquí, a partir del
-  cuerpo ya terminado del paso 3** — no se arrastra del borrador, del título ni de
-  la idea con la que arrancaste. Ese arrastre es de dónde vienen los resúmenes
-  falsos: describen una versión de la historia que ya no es la que se publica.
-  Para generarlo:
-  1. Relee `## La historia` completa, ya escrita.
-  2. Anota los temas que la historia realmente cubre y qué aterriza en la vida del
-     personaje. Eso es el resumen: **de qué trata la historia**, no cómo está
-     contada.
-  3. **Deja fuera el canal**: por qué medio el personaje se entera de cada noticia
-     (la radio de la combi, el profesor en el aula, la conversación en casa) es
-     recurso narrativo del cuerpo, no información que el lector necesite en la
-     portada. Casi nunca cabe en 30 palabras sin deformarse, y al comprimirlo se
-     vuelve falso: varias escenas terminan colapsadas en un solo canal que en el
-     texto no existe. Si el canal no es el tema de la historia —y rara vez lo es—,
-     no va.
-  4. Redacta las 30 palabras con los temas y el aterrizaje. Si aun así el canal te
-     parece imprescindible, entonces tiene que ser literalmente cierto para todo lo
-     que abarca; ante la duda, quítalo.
-  5. Pásalo por el paso 5 antes de darlo por bueno.
+- `summary`: máximo 30 palabras, una sola línea. **No lo redactes tú aquí**: sale del
+  lazo del paso 5, a partir del cuerpo ya terminado del paso 3. Deja el campo para
+  el final y llénalo con el texto que salga de ese lazo. Escribirlo antes es de donde
+  vienen los resúmenes falsos: describen una versión de la historia que ya no es la
+  que se publica.
 - `date`: la que dio el usuario en el paso 0, formato `yyyy-mm-dd`.
 - `tags`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
   lee `TAGS.md` completo — tiene una lista de etiquetas **siempre excluidas**
@@ -135,33 +120,82 @@ con la fecha del paso 0 y un slug que acompañe al título. Renombrar después c
 dos commits y deja comentarios de revisión apuntando a una ruta que ya no existe
 (CLAUDE.md §7).
 
-## Paso 5 — Verificar el resumen contra el cuerpo (lazo hasta 0.95)
+## Paso 5 — Generar y evaluar el resumen (lazo hasta 80 / 90)
 
 El resumen es el único campo del frontmatter que **afirma cosas sobre el texto**, y
 por eso es el único que puede ser válido y falso a la vez: el esquema lo acepta y el
-build genera la página aunque el resumen cuente otra historia. Ninguna de las cuatro
-fases del paso 6 lo revisa — Martha ve ortografía, Javier alineación de marca, Mario
-buenas prácticas. Este paso llena ese hueco.
+build genera la página aunque el resumen cuente otra historia. Y es, además, la única
+línea que decide si alguien entra a leer. Ninguna de las cuatro fases del paso 6
+revisa nada de eso — Martha ve ortografía, Javier alineación de marca, Mario buenas
+prácticas. Este paso llena ese hueco, con dos subagentes y un lazo entre ellos.
 
-Lanza el subagente **`verificador-resumen`** (`.claude/agents/verificador-resumen.md`)
-sobre el archivo:
+Ninguno de los dos decide nada: **los umbrales viven acá**. `generador-resumen`
+escribe, `verificador-resumen` mide, y este paso compara contra los umbrales y decide
+si hay otra vuelta.
 
-> Audita el resumen de `stories/<archivo>.md` contra el cuerpo.
+### 5.1 — Generar
 
-Devuelve las afirmaciones del resumen una por una, una **precisión** entre 0 y 1, y
-un veredicto. El umbral es **≥ 0.95**; en un resumen de 4 a 7 afirmaciones eso
-significa, en la práctica, que todas deben estar soportadas por el cuerpo.
+Lanza **`generador-resumen`** (`.claude/agents/generador-resumen.md`) sobre el cuerpo
+ya terminado:
 
-**Itera hasta aprobar**: si el veredicto es `RECHAZADO`, aplica su `RESUMEN
-PROPUESTO` —o uno mejor, respetando las 30 palabras— y vuelve a lanzarlo sobre el
-archivo corregido. **Máximo 3 vueltas.** Si a la tercera no aprueba, para y dile al
-usuario qué afirmación no se pudo sostener: a esa altura el problema ya no suele
-estar en el resumen sino en el cuerpo, y esa decisión es editorial, no tuya.
+> Redacta el resumen de `stories/<archivo>.md` a partir del cuerpo.
 
-Al aprobar, el subagente registra la verificación con
-`.claude/scripts/registrar-resumen-verificado.sh`. Ese registro guarda el hash del
-archivo: **si después tocas el resumen o el cuerpo, la verificación vence** y hay
-que repetir este paso. No lo esquives editando "solo una palabra".
+Devuelve el texto del resumen en un bloque de código, con su conteo de palabras y el
+sustento. **No escribe el archivo**: eso lo haces tú, y recién cuando el lazo cierre.
+
+### 5.2 — Evaluar
+
+Lanza **`verificador-resumen`** (`.claude/agents/verificador-resumen.md`) con el
+texto que acaba de salir y el archivo:
+
+> Evalúa este resumen contra el cuerpo de `stories/<archivo>.md`:
+> "<el texto del resumen>"
+
+Devuelve un JSON con dos puntajes de 0 a 100 y la evidencia de cada uno:
+
+| Puntaje | Qué mide | Umbral |
+|---------|----------|--------|
+| `evaluacion_sintesis` | Qué tan fielmente el resumen sintetiza el contenido: cada afirmación ocurre así en el cuerpo, y apunta al eje de la historia. | **≥ 80** |
+| `evaluacion_enganche` | Qué tan bien invita a explorar la historia: curiosidad, concreción, promesa que el cuerpo cumple, voz de marca. | **≥ 90** |
+
+El verificador **no aprueba ni rechaza** — solo mide. La comparación contra los
+umbrales la haces tú, acá.
+
+### 5.3 — Iterar
+
+Si cualquiera de los dos puntajes queda por debajo de su umbral, vuelve a 5.1 y lanza
+`generador-resumen` **pasándole el resumen anterior y el JSON completo de la
+evaluación**, con sus `observaciones`. Sin ese contexto la siguiente vuelta arranca
+de cero y suele repetir el mismo error.
+
+**Máximo 5 vueltas.** Si a la quinta no llega, para y dile al usuario qué puntaje se
+quedó corto y qué observación no se pudo resolver: a esa altura el problema ya no
+suele estar en el resumen sino en el cuerpo —una historia sin eje claro no se deja
+resumir— y esa decisión es editorial, no tuya.
+
+Los dos puntajes son exigentes a propósito y en direcciones distintas. Síntesis en 80
+tolera un matiz a medias, pero el verificador topa en 60 cualquier resumen con una
+afirmación no soportada: algo falso no llega al umbral por más bien escrito que esté.
+Enganche en 90 deja apenas 10 puntos de margen sobre cuatro criterios, porque un
+resumen cierto que nadie lee cumple el esquema y no cumple su función.
+
+### 5.4 — Escribir y registrar
+
+Recién cuando los dos puntajes pasan:
+
+1. Verifica a mano que el texto es **una sola línea de máximo 30 palabras** y sin
+   HTML crudo. Los puntajes no miden eso; el hook sí lo bloquea.
+2. Escribe el texto en el `summary` del frontmatter, entre comillas.
+3. Registra la verificación:
+
+   ```bash
+   .claude/scripts/registrar-resumen-verificado.sh stories/<archivo>.md
+   ```
+
+El registro guarda el hash del archivo **después** de escribir el resumen: si más
+tarde tocas el resumen o el cuerpo, la verificación vence y hay que repetir el paso
+completo. No lo esquives editando "solo una palabra" — y no registres antes de
+escribir, porque el hash quedaría firmando un archivo que ya cambió.
 
 El hook `Stop` (`.claude/scripts/verificar-resumen.sh`) revisa lo mismo al cerrar la
 sesión y bloquea si falta. Es una red, no el mecanismo: llegar al final del trabajo
@@ -195,8 +229,9 @@ no avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seg
 Repasa el checklist de CLAUDE.md §10 contra lo que acabas de producir:
 
 - [ ] Título 10-15 palabras; resumen ≤30 palabras; fecha `yyyy-mm-dd`.
-- [ ] Resumen generado desde el cuerpo terminado (paso 4) y aprobado por
-      `verificador-resumen` con precisión ≥ 0.95, ya registrado (paso 5).
+- [ ] Resumen generado por `generador-resumen` desde el cuerpo terminado y medido por
+      `verificador-resumen` en `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90,
+      ya escrito en el frontmatter y registrado (paso 5).
 - [ ] Nombre de archivo coherente con el título, ya fijado.
 - [ ] Ningún nombre de personaje inventado se repite con las 10 historias más
       recientes (paso 2).
