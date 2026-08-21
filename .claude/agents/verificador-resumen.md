@@ -1,6 +1,6 @@
 ---
 name: verificador-resumen
-description: Evalúa un texto de resumen contra el cuerpo de una historia y devuelve un JSON con dos puntajes de 0 a 100 — `evaluacion_sintesis` (qué tan fielmente sintetiza el contenido) y `evaluacion_enganche` (qué tan bien invita a leer la historia sin engañar). Mide, no aprueba: no emite veredicto ni registra nada. Úsalo cada vez que se genere o modifique el resumen de una historia, y cuando el hook de verificación lo pida.
+description: Evalúa un texto de resumen contra el cuerpo de una historia y devuelve un JSON con dos puntajes de 0 a 100 — `evaluacion_sintesis` (qué tan fielmente sintetiza el contenido) y `evaluacion_enganche` (qué tan bien invita a leer la historia sin engañar). Mide, no aprueba, no emite veredicto ni registra nada. Úsalo cada vez que se genere o modifique el resumen de una historia, y cuando el hook de verificación lo pida.
 tools: Read, Grep, Glob
 model: sonnet
 ---
