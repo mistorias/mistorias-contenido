@@ -4,14 +4,14 @@
 # Hace dos cosas distintas:
 #   1. Chequeos mecánicos que un script sí puede juzgar: que el `summary` exista,
 #      esté en una sola línea y no pase de 30 palabras (CLAUDE.md §2).
-#   2. Chequeo de estado: que el subagente verificador-resumen haya auditado el
-#      archivo **en su contenido actual**. La fidelidad del resumen al cuerpo es un
-#      juicio semántico y este script no la evalúa — solo exige que la auditoría
-#      haya ocurrido y no esté vencida.
+#   2. Chequeo de estado: que el lazo de generación y evaluación del resumen haya
+#      corrido sobre el archivo **en su contenido actual**. Qué tan fiel al cuerpo y
+#      qué tan atractivo es el resumen son juicios semánticos que este script no
+#      evalúa — solo exige que la auditoría haya ocurrido y no esté vencida.
 #
 # Se invoca desde el hook Stop de .claude/settings.json. Si falta algo, devuelve
 # decision=block para que la sesión siga trabajando en vez de terminar.
-# Ver .claude/agents/verificador-resumen.md y CLAUDE.md §10.
+# Ver .claude/skills/publicar-historia/SKILL.md §5 y CLAUDE.md §10.
 set -uo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
@@ -107,7 +107,7 @@ if [ "$n" -ge "$MAX_INTENTOS" ]; then
   exit 0
 fi
 
-razon="La verificación del resumen no está cerrada (intento ${n} de ${MAX_INTENTOS}).\n\n${detalle}\nPara cada historia pendiente: corrige lo mecánico si aplica y lanza el subagente \`verificador-resumen\` sobre el archivo. Ese subagente descompone el resumen en afirmaciones, las verifica contra el cuerpo y exige una precisión >= 0.95; si rechaza, aplica su RESUMEN PROPUESTO (o uno mejor) y vuelve a lanzarlo. Al aprobar, él mismo registra la verificación. No termines el turno hasta que este hook pase o se agote el tope de intentos."
+razon="La verificación del resumen no está cerrada (intento ${n} de ${MAX_INTENTOS}).\n\n${detalle}\nPara cada historia pendiente: corrige lo mecánico si aplica y corre el lazo del paso 5 de .claude/skills/publicar-historia/SKILL.md. Lanza \`generador-resumen\` sobre el cuerpo para obtener el texto del resumen, pásaselo a \`verificador-resumen\` junto con el archivo, y compara su JSON contra los umbrales: evaluacion_sintesis >= 80 y evaluacion_enganche >= 90. Si alguno queda corto, vuelve a generar pasándole el resumen anterior y las observaciones de la evaluación (hasta 5 vueltas). Cuando ambos pasen, escribe el resumen en el frontmatter y recién ahí registra con .claude/scripts/registrar-resumen-verificado.sh. No termines el turno hasta que este hook pase o se agote el tope de intentos."
 
 printf '{"decision": "block", "reason": "%s"}\n' "$(printf '%b' "$razon" | sed 's/"/\\"/g' | awk '{printf "%s\\n", $0}')"
 exit 0
