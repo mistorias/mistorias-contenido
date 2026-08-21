@@ -103,7 +103,7 @@ Si el nombre repetido está en el título, cambia también el nombre del archivo
 
 ## 5. Validación antes de publicar
 
-Dos validaciones distintas, ambas obligatorias.
+Tres validaciones distintas, las tres obligatorias.
 
 ### 5.1 Contra los agentes de marca
 
@@ -132,7 +132,7 @@ pnpm build   # confirma que la historia genera su página
 Verifica en la salida del build que aparece `/historias/<slug>/index.html`. Un
 frontmatter inválido o HTML crudo hacen fallar el build, no lo degradan en silencio.
 
-### 5.3 Del resumen contra el cuerpo
+### 5.3 Del resumen: fiel al cuerpo y capaz de invitar a leerlo
 
 Ni el esquema ni el build miran si el `summary` es **cierto**: solo miran que exista,
 que sea texto y que no traiga HTML. Un resumen que cuenta una historia distinta a la
@@ -144,12 +144,26 @@ la combi, el profesor en el aula): es recurso narrativo del cuerpo, rara vez es 
 tema, y al comprimirlo a 30 palabras colapsa varias escenas en un canal único que el
 texto no sostiene — que es exactamente cómo se rompió la historia de Lucía.
 
-Por eso el resumen se audita aparte, con el subagente `verificador-resumen`
-(`.claude/agents/verificador-resumen.md`): descompone el resumen en afirmaciones
-atómicas, verifica cada una contra el cuerpo y calcula una precisión. El umbral es
-**≥ 0.95**, que en un resumen de 4 a 7 afirmaciones significa que todas deben estar
-soportadas. Si rechaza, se corrige y se vuelve a lanzar, hasta tres vueltas; si a la
-tercera no pasa, el problema suele estar en el cuerpo y la decisión es del equipo.
+Y tiene que dar ganas de leer la historia. Es la única línea que ve quien llega a la
+portada: un resumen que solo enumera los temas es cierto y no cumple su función. La
+curiosidad se genera con lo que la historia sí tiene —**nada de clickbait**: lo que
+el resumen insinúa, el cuerpo lo entrega.
+
+Por eso el resumen tiene su propio circuito, con dos subagentes:
+
+- **`generador-resumen`** (`.claude/agents/generador-resumen.md`) lo redacta a partir
+  del cuerpo ya terminado y devuelve el texto. No escribe el archivo.
+- **`verificador-resumen`** (`.claude/agents/verificador-resumen.md`) mide ese texto
+  contra el cuerpo y devuelve un JSON con dos puntajes de 0 a 100:
+  `evaluacion_sintesis` (qué tan fielmente sintetiza el contenido; una afirmación no
+  soportada lo topa en 60) y `evaluacion_enganche` (curiosidad, concreción, promesa
+  que el cuerpo cumple, voz de marca). **No aprueba ni rechaza: solo mide.**
+
+Los umbrales —`evaluacion_sintesis` ≥ **80** y `evaluacion_enganche` ≥ **90**— y el
+lazo entre ambos agentes viven en el skill `publicar-historia`: si un puntaje queda
+corto, el resumen se vuelve a generar con las observaciones de la evaluación, hasta
+cinco vueltas. Si a la quinta no pasa, el problema suele estar en el cuerpo y la
+decisión es del equipo.
 
 El hook `Stop` `.claude/scripts/verificar-resumen.sh` cierra el lazo: revisa las
 palabras y el formato del resumen, y exige que exista una auditoría vigente para el
@@ -236,8 +250,10 @@ elegidas) está en `CONTRIBUTING.md`.
 
 - [ ] Título de 10 a 15 palabras; resumen de máximo 30; fecha `yyyy-mm-dd`.
 - [ ] El resumen se generó desde el cuerpo ya terminado, dice de qué trata la
-      historia y no por qué canal se entera el personaje, y `verificador-resumen` lo
-      aprobó con precisión ≥ 0.95, con la auditoría registrada (§5.3).
+      historia y no por qué canal se entera el personaje, e invita a leerla sin
+      prometer nada que el cuerpo no entregue; `verificador-resumen` le dio
+      `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90, con la auditoría
+      registrada (§5.3).
 - [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
 - [ ] Ningún nombre de personaje se repite con historias ya publicadas (§4).
 - [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
