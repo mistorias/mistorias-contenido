@@ -1,6 +1,6 @@
 ---
 title: "Lo que Carolina aprende del paro en Arequipa mientras la escuela se sostiene a distancia"
-summary: "El paro de transporte mantiene a Carolina en clases remotas en Arequipa, mientras Junín responde con domos; ella lleva a clase la pregunta de qué hace continuo a un colegio."
+summary: "El paro de transporte mantiene a Carolina en clases remotas en Arequipa, mientras Junín responde con domos; ella se pregunta sobre qué hace continua la enseñanza."
 date: "2026-08-21"
 author: "Equipo Mistorias"
 tags: ["continuidad-educativa", "paro-de-transporte", "clases-remotas", "infraestructura-escolar", "aulas-domo"]
