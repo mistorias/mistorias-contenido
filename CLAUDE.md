@@ -47,6 +47,7 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | `date` | Obligatorio, formato **`yyyy-mm-dd`**. Se convierte con `z.coerce.date()`; el orden de la portada es por fecha descendente. |
 | `author` | Obligatorio, texto no vacío. |
 | `tags` | **Mínimo 3, máximo 7.** Ver §3. |
+| `imageAlt`, `imageCredit`, `imageLicense` | **Opcionales en conjunto**: si la historia tiene carpeta de imagen (`stories/<slug>/principal.jpg`, ver §7), los tres son obligatorios; si no tiene imagen, ninguno debe declararse. El build lo exige así (`story-image-requirements.ts` en mistorias-web) y falla si falta uno de los tres, o si sobra alguno sin imagen. |
 
 Convención de escritura. El cargador de hoy tolera más que esto, pero escribir así
 mantiene las historias legibles para cualquier cargador que venga después:
@@ -199,6 +200,13 @@ El nombre del archivo **es** la dirección de la historia:
 - **Fija el nombre antes del primer push.** Renombrar después cuesta dos commits
   (la API de GitHub no mueve archivos) y deja los comentarios de revisión
   apuntando a una ruta que ya no existe.
+- **Imagen de la historia (opcional).** Si una historia tiene imagen, va en
+  `stories/<slug>/principal.jpg` —una carpeta con el mismo nombre exacto del
+  archivo `.md`, y ese único nombre de archivo dentro—. No hay otra ubicación
+  ni otro nombre válidos: el build de mistorias-web los rechaza (ver §2 para
+  las tres claves de frontmatter que acompañan a la imagen, y el
+  [ADR 0005](https://github.com/mistorias/mistorias-web/blob/main/docs/adr/0005-imagenes-en-historias.md)
+  de mistorias-web para el porqué).
 
 ## 8. Flujo de git y PR
 
