@@ -4,6 +4,9 @@ summary: "A Cotahuasi llegan una biblioteca itinerante y una plataforma digital,
 date: "2026-07-31"
 author: "Equipo Mistorias"
 tags: ["lectura", "bibliotecas-escolares", "cotahuasi", "junin", "mensaje-a-la-nacion"]
+imageAlt: "Ilustración de una niña de espaldas escribiendo en su carpeta dentro de un aula, junto a un cartel con un ícono de wifi tachado y el texto 'sin señal'"
+imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia
 
