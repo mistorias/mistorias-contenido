@@ -4,6 +4,9 @@ summary: "Ximena tiene cinco años y estudia en un PRONOEI de Cayma; el presupue
 date: "2026-07-24"
 author: "Equipo Mistorias"
 tags: ["primera-infancia", "pronoei", "presupuesto-educativo", "fenomeno-el-nino", "piura", "educacion-financiera"]
+imageAlt: "Ilustración de una niña de espaldas en un aula rústica de madera y calamina, mirando por la ventana una construcción con grúas en la ciudad"
+imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia
 
