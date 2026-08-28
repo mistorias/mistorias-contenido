@@ -4,6 +4,9 @@ summary: "En Mariano Melgar, Valeria y sus compañeros imaginan su colegio si la
 date: "2026-08-14"
 author: "Equipo Mistorias"
 tags: ["calendario-escolar", "fenomeno-el-nino", "piura", "cade-educacion", "afganistan", "patrimonio-cultural"]
+imageAlt: "Ilustración de dos niñas bajo la lluvia frente a la reja de un edificio antiguo cerrada con un candado azul gigante, una de ellas con paraguas"
+imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia
 
