@@ -1,2 +1,4 @@
 # Cache de los hooks locales (registro de auditorías de resumen).
 .claude/cache/
+
+.DS_Store
