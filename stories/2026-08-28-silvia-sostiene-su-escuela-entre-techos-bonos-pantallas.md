@@ -4,6 +4,9 @@ summary: "Silvia sostiene el colegio en Yanahuara entre techos que gotean, un bo
 date: "2026-08-28"
 author: "Equipo Mistorias"
 themes: ["infraestructura-educativa", "docentes", "clases-remotas", "tiempo-de-pantalla"]
+imageAlt: "Ilustración de una directora de espaldas frente a una ventana, mirando un pabellón escolar con paredes agrietadas, con un cuaderno abierto y monedas sobre el escritorio"
+imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
