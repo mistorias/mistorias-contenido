@@ -1,6 +1,6 @@
 ---
 title: "Lo que Octavio y Julio construyeron juntos explica por qué la educación avanza en equipo"
-summary: "Octavio y Julio descubren que un castillo crece más entre dos manos; Perú lo ensaya en la APAFA, la capacitación docente y las mesas con Defensoría, sin saber si funciona."
+summary: "Octavio y Julio arman juntos un castillo de legos; Perú ensaya lo mismo en la APAFA, la capacitación docente y las mesas con la Defensoría, sin saber si funcionan."
 date: "2026-08-31"
 author: "Equipo Mistorias"
 temas: ["apafa", "docentes", "estudiantes", "participacion-familiar", "capacitacion-docente"]
