@@ -3,7 +3,7 @@ title: "Lo que Octavio y Julio construyeron juntos explica por qué la educació
 summary: "Octavio y Julio arman juntos un castillo de legos; Perú ensaya lo mismo en la APAFA, la capacitación docente y las mesas con la Defensoría, sin saber si funcionan."
 date: "2026-08-31"
 author: "Equipo Mistorias"
-temas: ["apafa", "docentes", "estudiantes", "participacion-familiar", "capacitacion-docente"]
+themes: ["apafa", "docentes", "estudiantes", "participacion-familiar", "capacitacion-docente"]
 imageAlt: "dos niños construyendo un castillo de LEGO"
 imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
