@@ -4,7 +4,7 @@ summary: "Octavio y Julio arman juntos un castillo de legos; Perú ensaya lo mis
 date: "2026-08-31"
 author: "Equipo Mistorias"
 temas: ["apafa", "docentes", "estudiantes", "participacion-familiar", "capacitacion-docente"]
-imageAlt: "Dos niños construyendo un castillo de legos sobre una superficie colorida, uno concentrado en agregar piezas y otro observando con admiración"
+imageAlt: "dos niños construyendo un castillo de LEGO"
 imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
