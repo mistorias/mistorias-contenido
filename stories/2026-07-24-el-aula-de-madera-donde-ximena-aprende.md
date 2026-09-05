@@ -2,10 +2,11 @@
 title: "El aula de madera donde Ximena aprende depende de decisiones tomadas lejos de Cayma"
 summary: "Ximena tiene cinco años y estudia en un PRONOEI de Cayma; el presupuesto, las lluvias del norte y la educación financiera llegan hasta su cuaderno."
 date: "2026-07-24"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["primera-infancia", "pronoei", "presupuesto-educativo", "fenomeno-el-nino", "piura", "educacion-financiera"]
 imageAlt: "Ilustración de una niña de espaldas en un aula rústica de madera y calamina, mirando por la ventana una construcción con grúas en la ciudad"
-imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia

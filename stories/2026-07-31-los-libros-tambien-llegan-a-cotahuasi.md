@@ -2,10 +2,11 @@
 title: "La semana en que Rosa descubrió que los libros también llegan a Cotahuasi"
 summary: "A Cotahuasi llegan una biblioteca itinerante y una plataforma digital, mientras el sismo en Junín recuerda que sin escuelas seguras ninguna promesa se sostiene."
 date: "2026-07-31"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["lectura", "bibliotecas-escolares", "cotahuasi", "junin", "mensaje-a-la-nacion"]
 imageAlt: "Ilustración de una niña de espaldas escribiendo en su carpeta dentro de un aula, junto a un cartel con un ícono de wifi tachado y el texto 'sin señal'"
-imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia

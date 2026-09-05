@@ -2,10 +2,11 @@
 title: "Valeria imagina su colegio de Arequipa si las lluvias movieran el calendario escolar"
 summary: "En Mariano Melgar, Valeria y sus compañeros imaginan su colegio si las lluvias movieran el calendario, como en Piura, mientras otras niñas ni siquiera pueden entrar a un aula."
 date: "2026-08-14"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["calendario-escolar", "fenomeno-el-nino", "piura", "cade-educacion", "afganistan", "patrimonio-cultural"]
 imageAlt: "Ilustración de dos niñas bajo la lluvia frente a la reja de un edificio antiguo cerrada con un candado azul gigante, una de ellas con paraguas"
-imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia

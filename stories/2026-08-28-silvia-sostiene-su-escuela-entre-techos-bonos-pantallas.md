@@ -2,10 +2,11 @@
 title: "La semana en que Silvia sostuvo su escuela entre techos, bonos y pantallas"
 summary: "Silvia sostiene el colegio en Yanahuara entre techos que gotean, un bono que no alcanza y un estudio sobre pantallas que la interpela, y sigue incomodando en reuniones de directores."
 date: "2026-08-28"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 themes: ["infraestructura-educativa", "docentes", "clases-remotas", "tiempo-de-pantalla"]
 imageAlt: "Ilustración de una directora de espaldas frente a una ventana, mirando un pabellón escolar con paredes agrietadas, con un cuaderno abierto y monedas sobre el escritorio"
-imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 

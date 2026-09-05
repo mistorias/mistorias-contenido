@@ -2,10 +2,11 @@
 title: "La semana en que Lucía vio cómo se mueve la educación"
 summary: "Domos en Junín, paro docente argentino, menos estudiantes en la región y reglas para la IA: noticias de educación que aterrizan en la escuela de Lucía, en Arequipa."
 date: "2026-08-07"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["junin", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
 imageAlt: "Ilustración de una niña con mochila caminando hacia la puerta de un edificio, con otro edificio azul de paredes agrietadas al fondo"
-imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 ## La historia
