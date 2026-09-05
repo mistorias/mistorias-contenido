@@ -82,7 +82,7 @@ paréntesis la primera vez que aparecen).
 
 **No hay red de verificación de cifras**: si una fuente está bloqueada por el
 proxy y no pudiste abrirla, dilo explícitamente — no presentes como comprobado un
-dato que solo copiaste (CLAUDE.md §9).
+dato que solo copiaste (CLAUDE.md §10).
 
 ## Paso 4 — Frontmatter, etiquetas y nombre de archivo
 
@@ -93,7 +93,8 @@ Redacta el frontmatter según el contrato exacto de CLAUDE.md §2:
 title: "Título de la historia"
 summary: "Resumen de una sola línea"
 date: "yyyy-mm-dd"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["tag-uno", "tag-dos", "tag-tres"]
 ---
 ```
@@ -106,6 +107,12 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
   vienen los resúmenes falsos: describen una versión de la historia que ya no es la
   que se publica.
 - `date`: la que dio el usuario en el paso 0, formato `yyyy-mm-dd`.
+- `author`: el **slug** de una ficha existente en `authors/`, no el nombre de la
+  persona. Si la ficha todavía no existe, créala primero siguiendo CLAUDE.md §8;
+  un `author` sin ficha rompe el build de mistorias-web.
+- `authorship`: `escrito-por-persona`, `editado-con-ia` o `escrito-con-ia`, según
+  lo que de verdad pasó al escribir **esta** historia (CLAUDE.md §8.2). No se
+  hereda de la historia anterior ni se elige por costumbre.
 - `tags`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
   lee `TAGS.md` completo — tiene una lista de etiquetas **siempre excluidas**
   (`educacion`, `arequipa`, `peru`, `datos`, etc., porque son la identidad del
@@ -231,7 +238,7 @@ no avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seg
 
 ## Paso 7 — Antes de dar la historia por lista
 
-Repasa el checklist de CLAUDE.md §10 contra lo que acabas de producir:
+Repasa el checklist de CLAUDE.md §11 contra lo que acabas de producir:
 
 - [ ] Título 10-15 palabras; resumen ≤30 palabras; fecha `yyyy-mm-dd`.
 - [ ] Resumen generado por `generador-resumen` desde el cuerpo terminado y medido por
@@ -256,11 +263,11 @@ usuario confirme que quiere seguir hasta acá.
   mistorias-web con el submódulo apuntando a este contenido. Sigue CLAUDE.md §5.2
   (`pnpm install --frozen-lockfile`, `pnpm test`, `pnpm build`, y confirmar que
   aparece `/historias/<slug>/index.html` en la salida).
-- **Git y PR**: sigue CLAUDE.md §8 al pie de la letra — Conventional Commits en
+- **Git y PR**: sigue CLAUDE.md §9 al pie de la letra — Conventional Commits en
   castellano describiendo el estado resultante (no lo que hiciste), atómicos,
   máximo cinco por PR. No desactives la firma GPG. Verifica con
   `git log --format='%h %G? %an'` que el commit quedó firmado, y compara el blob
   remoto contra el local (`git show FETCH_HEAD:stories/<archivo>.md | md5sum` vs.
   `md5sum stories/<archivo>.md`) antes de dar el push por bueno.
-- Recuerda la trampa de CLAUDE.md §9: el submódulo de mistorias-web llega vacío en
+- Recuerda la trampa de CLAUDE.md §10: el submódulo de mistorias-web llega vacío en
   una sesión fresca — escribir ahí no commitea nada.
