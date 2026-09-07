@@ -1,15 +1,15 @@
 ---
 title: "Cada uno tiene sus tiempos: el año que perdí por un certificado retenido"
-summary: "Quien escribe esta historia perdió un año de colegio por un certificado retenido, hasta que su tía usó sus contactos; quien no tiene esa tía se queda afuera."
+summary: "Perdí un año por un certificado retenido hasta que mi tía usó sus contactos. Quien no tiene esa tía, se queda afuera."
 date: "2026-09-04"
 author: "paolo-carrasco"
-authorship: "escrito-con-ia"
+authorship: "editado-con-ia"
 themes: ["extraedad", "certificado-de-estudios", "cobros-escolares", "beca-18", "educacion-superior"]
 ---
 
 ## La historia
 
-Esta vez la historia es mía: yo también fui un estudiante fuera de tiempo. Recién hace poco entendí que ese retraso no fue solo mala suerte de mi familia: buena parte estaba escrita en cómo funciona el sistema.
+Yo también fui un estudiante fuera de tiempo. Recién hace poco entendí que ese retraso no fue solo mala suerte de mi familia: buena parte estaba escrita en cómo funciona el sistema.
 
 Entré a primaria a los seis años, uno después que mis amigos, porque en aquel colegio bastaba con cumplir seis hasta julio y mi cumpleaños caía mucho después. Era un buen colegio privado. Después mi papá se quedó sin trabajo y dejó de poder pagar la pensión. A los que teníamos deuda nos hacían pararnos en una zona del patio, sin hacer nada, a aburrirnos delante de todos. Cambiamos dos veces de colegio particular, según el bolsillo alcanzara o no.
 
@@ -37,7 +37,7 @@ Ninguna de las tres noticias es de esta semana, y esa es la señal: la fiscaliza
 
 Mi año perdido pasó por esas tres puertas en ese orden. Lo que en mi relato suena a suerte —una tía con contactos, un padrino, una beca— es exactamente lo que un sistema no debería exigir: la diferencia entre una trayectoria lenta y una interrumpida no la puso mi voluntad, la pusieron los adultos que fueron a conseguir el papel que me correspondía. Quien no tiene esa tía se queda afuera, y a los dos años ya es un caso de "extraedad" que ningún colegio quiere matricular.
 
-**Lo que estas noticias todavía no responden.** Cuántos estudiantes al año quedan sin traslado por un certificado retenido no es un dato que se publique. Tampoco sabemos si el dictamen 9465 se votará este período, ni cuántas de las 637 sanciones quedaron firmes o cambiaron la conducta de esos colegios, ni qué hicieron los 2,862 postulantes que no alcanzaron vacante en Beca 18: si estudiaron igual, si volverán a postular o si dejaron de estudiar.
+**Lo que estas noticias todavía no responden.** Cuántos estudiantes al año quedan sin traslado por un certificado retenido no es un dato que se publique. Tampoco sabemos si el dictamen 9465 se votará este período, ni cuántas de las 637 sanciones quedaron firmes o cambiaron la conducta de esos colegios, ni qué hicieron los 2,862 postulantes que no alcanzaron vacante en Beca 18: si estudiaron igual, si volverán a postular o si dejaron de estudiar. Las cifras de esta edición son las que publican esas fuentes; no las verificamos por nuestra cuenta.
 
 ## Acción final
 
