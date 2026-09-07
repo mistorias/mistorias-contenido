@@ -5,6 +5,9 @@ date: "2026-09-04"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
 themes: ["extraedad", "certificado-de-estudios", "cobros-escolares", "beca-18", "educacion-superior"]
+imageAlt: "Ilustración de un hombre sentado entre estantes de libros y, detrás, un gran reloj de arena a la mitad"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
