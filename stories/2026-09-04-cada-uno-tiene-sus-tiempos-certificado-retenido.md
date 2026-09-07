@@ -1,8 +1,9 @@
 ---
 title: "Cada uno tiene sus tiempos: el año que perdí por un certificado retenido"
-summary: "Quien escribe esta historia perdió un año de colegio por un certificado retenido, hasta que su tía usó sus contactos; esta semana el país discute quién no tiene esa tía."
+summary: "Quien escribe esta historia perdió un año de colegio por un certificado retenido, hasta que su tía usó sus contactos; quien no tiene esa tía se queda afuera."
 date: "2026-09-04"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 themes: ["extraedad", "certificado-de-estudios", "cobros-escolares", "beca-18", "educacion-superior"]
 ---
 
@@ -22,7 +23,7 @@ Al terminar el colegio tenía que seguir estudiando para conservar la pensión d
 
 Entré a una universidad privada con el apoyo de mi padrino. El primer semestre conseguí media beca; después tuve que trabajar y bajar la carga de cursos, semestre tras semestre, hasta egresar casi a los veintisiete. Una consultora de software me contrató porque hablaba inglés —el de las canciones—, y de ahí salieron Estados Unidos, Brasil, Ecuador y Alemania, donde vi cuánto pesaba tener un posgrado. Volví a la universidad seis años después de salir de sus aulas, hice la tesis y me titulé a los treinta y siete. El máster recién llegó pasados los cuarenta, en España, y lo hice con la experiencia de haber liderado equipos: no me habría servido igual a los veinticinco.
 
-Mi trayectoria fue larga y lenta, con hitos que llegaron tarde y llegaron completos. Como decimos acá, cada persona tiene sus tiempos. Escribo esto porque esta semana el país estuvo discutiendo, sin nombrarlo así, exactamente eso.
+Mi trayectoria fue larga y lenta, con hitos que llegaron tarde y llegaron completos. Como decimos acá, cada persona tiene sus tiempos. Escribo esto porque tres decisiones que vienen de años atrás —un dictamen que el Congreso no vota, una fiscalización de Indecopi y el cierre de una convocatoria de Beca 18— siguen discutiendo, sin nombrarlo así, exactamente eso.
 
 ## Noticias principales
 
@@ -32,13 +33,11 @@ Mi trayectoria fue larga y lenta, con hitos que llegaron tarde y llegaron comple
 
 ## Conectando los puntos
 
-Las tres noticias describen tres puertas del mismo pasillo. La de Indecopi es la de salida: cuando una familia deja de pagar, el colegio tiene maneras —algunas legales, otras no— de convertir una deuda en una interrupción escolar, y la retención del certificado es la que deja marca, porque impide matricularse en cualquier otro lado. La del Congreso es la de regreso: si te caíste del calendario, la ley todavía no garantiza que puedas volver con la edad que tengas. Y Beca 18 es la de arriba: existe, funciona y es angosta; por cada seleccionado en ese último momento, más de dos se quedaron sin vacante.
+Ninguna de las tres noticias es de esta semana, y esa es la señal: la fiscalización de Indecopi cubre 2024 y 2025, el dictamen sobre extraedad lleva meses esperando su voto y Beca 18 cerró en agosto. Son procesos largos que siguen decidiendo, hoy, quién estudia y quién no. Vistas juntas, describen tres puertas del mismo pasillo. La de Indecopi es la de salida: cuando una familia deja de pagar, el colegio tiene maneras —algunas legales, otras no— de convertir una deuda en una interrupción escolar, y la retención del certificado es la que deja marca, porque impide matricularse en cualquier otro lado. La del Congreso es la de regreso: si te caíste del calendario, la ley todavía no garantiza que puedas volver con la edad que tengas. Y Beca 18 es la de arriba: existe, funciona y es angosta; por cada seleccionado en ese último momento, más de dos se quedaron sin vacante.
 
 Mi año perdido pasó por esas tres puertas en ese orden. Lo que en mi relato suena a suerte —una tía con contactos, un padrino, una beca— es exactamente lo que un sistema no debería exigir: la diferencia entre una trayectoria lenta y una interrumpida no la puso mi voluntad, la pusieron los adultos que fueron a conseguir el papel que me correspondía. Quien no tiene esa tía se queda afuera, y a los dos años ya es un caso de "extraedad" que ningún colegio quiere matricular.
 
 **Lo que estas noticias todavía no responden.** Cuántos estudiantes al año quedan sin traslado por un certificado retenido no es un dato que se publique. Tampoco sabemos si el dictamen 9465 se votará este período, ni cuántas de las 637 sanciones quedaron firmes o cambiaron la conducta de esos colegios, ni qué hicieron los 2,862 postulantes que no alcanzaron vacante en Beca 18: si estudiaron igual, si volverán a postular o si dejaron de estudiar.
-
-Una advertencia sobre esta edición: los dominios de las tres fuentes estaban bloqueados desde donde se redactó, así que las cifras vienen de los resúmenes públicos de esas notas y no del original. Ábrelas antes de citarlas.
 
 ## Acción final
 
