@@ -2,10 +2,11 @@
 title: "Lo que Carolina aprende del paro en Arequipa mientras la escuela se sostiene a distancia"
 summary: "El paro de transporte mantiene a Carolina en clases remotas en Arequipa, mientras Junín responde con domos; ella se pregunta sobre qué hace continua la enseñanza."
 date: "2026-08-21"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["continuidad-educativa", "paro-de-transporte", "clases-remotas", "infraestructura-escolar", "aulas-domo"]
 imageAlt: "Ilustración de una mujer con audífonos frente a una videollamada de cinco personas en un monitor, con un candado azul gigante junto a un edificio al otro lado de la ventana"
-imageCredit: "Equipo Mistorias (ilustración generada con Midjourney)"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 

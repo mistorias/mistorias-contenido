@@ -35,7 +35,8 @@ cualquiera de ellos acepta:
 title: "Título de la historia"
 summary: "Resumen de una sola línea"
 date: "2026-08-07"
-author: "Equipo Mistorias"
+author: "paolo-carrasco"
+authorship: "escrito-con-ia"
 tags: ["tag-uno", "tag-dos", "tag-tres"]
 ---
 ```
@@ -45,7 +46,8 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | `title` | Obligatorio. **10 a 15 palabras.** Nombra lo que el lector descubre, no un inventario de temas. Sin contar cuántas noticias hay. |
 | `summary` | Obligatorio. **Máximo 30 palabras**, una sola línea. |
 | `date` | Obligatorio, formato **`yyyy-mm-dd`**. Se convierte con `z.coerce.date()`; el orden de la portada es por fecha descendente. |
-| `author` | Obligatorio, texto no vacío. |
+| `author` | Obligatorio. **No es el nombre de la persona: es el slug de una ficha en `authors/`**, sin la extensión (`paolo-carrasco` → `authors/paolo-carrasco.md`). Si la ficha no existe, el build falla. Ver §8. |
+| `authorship` | Obligatorio. Exactamente uno de `escrito-por-persona`, `editado-con-ia`, `escrito-con-ia`. Declara qué hizo la inteligencia artificial **en esa historia**, no en general. Ver §8.2. |
 | `tags` | **Mínimo 3, máximo 7.** Ver §3. |
 | `imageAlt`, `imageCredit`, `imageLicense` | **Opcionales en conjunto**: si la historia tiene carpeta de imagen (`stories/<slug>/principal.jpg`, ver §7), los tres son obligatorios; si no tiene imagen, ninguno debe declararse. El build lo exige así (`story-image-requirements.ts` en mistorias-web) y falla si falta uno de los tres, o si sobra alguno sin imagen. |
 
@@ -208,7 +210,57 @@ El nombre del archivo **es** la dirección de la historia:
   [ADR 0005](https://github.com/mistorias/mistorias-web/blob/main/docs/adr/0005-imagenes-en-historias.md)
   de mistorias-web para el porqué).
 
-## 8. Flujo de git y PR
+## 8. Fichas de autoría
+
+Cada historia la firma una persona, no la publicación: quien lee tiene que poder
+llegar a alguien que responde por lo que acaba de leer. Ese alguien vive en
+`authors/`.
+
+### 8.1 La ficha
+
+`authors/<slug>.md`, y ese slug **es** la dirección pública:
+`authors/paolo-carrasco.md` → `/autores/paolo-carrasco/`.
+
+```yaml
+---
+name: "Paolo Carrasco"
+bio: "Una línea, máximo 30 palabras: se muestra al pie de cada historia que firma."
+link: "https://www.instagram.com/paolocarrasco"
+linkLabel: "Instagram"
+---
+```
+
+| Campo | Regla |
+|-------|-------|
+| `name` | Obligatorio. El nombre con el que firma. |
+| `bio` | Obligatorio. **Máximo 30 palabras**, una sola línea. Es lo que ve quien termina de leer una historia. |
+| `link`, `linkLabel` | **Opcionales en conjunto**: o van los dos o no va ninguno. El build falla si va uno solo. |
+
+El cuerpo del archivo es la biografía larga, en Markdown y con las mismas reglas
+que una historia (nada de HTML crudo). Dice por qué a esa persona le importa el
+tema y algo de ella, y deja claro que Mistorias es un proyecto personal sin
+relación con ningún empleador.
+
+**Qué no se pide, nunca**: correo personal, empleador, cargo, dirección, foto por
+defecto. El repositorio es público y su historial es permanente: una ficha se
+puede quitar del sitio, no del historial de Git. Por eso se pide poco y el enlace
+de verificación apunta a un perfil que la propia persona ya controla y puede
+borrar por su cuenta. Los criterios editoriales completos —qué se le dice a quien
+colabora y por qué— están en `autoria.md` de la esencia de marca.
+
+### 8.2 Las tres etiquetas de `authorship`
+
+| Valor | Cuándo |
+|-------|--------|
+| `escrito-por-persona` | La IA no tocó el texto. |
+| `editado-con-ia` | La persona escribió el cuerpo; la IA corrigió, conectó ideas o sugirió. |
+| `escrito-con-ia` | La IA propuso el tema y redactó; la persona dirigió, ajustó y verificó. |
+
+Va por historia y no en la ficha del autor, porque el reparto cambia entre una
+historia y otra. Quien firma sigue siendo la persona: una IA no responde por un
+dato mal citado.
+
+## 9. Flujo de git y PR
 
 Reglas completas en `agents/desarrollo-commits-prs.md` de la esencia de marca. Lo
 esencial:
@@ -234,7 +286,7 @@ git show FETCH_HEAD:stories/<archivo>.md | md5sum
 md5sum stories/<archivo>.md
 ```
 
-## 9. Trampas del entorno
+## 10. Trampas del entorno
 
 - **El submódulo llega vacío.** En una sesión fresca de mistorias-web,
   `content/mistorias-contenido/` existe pero está sin inicializar. Escribir ahí no
@@ -251,7 +303,7 @@ md5sum stories/<archivo>.md
   semana"—, no a responderle a Mistorias. Revisa esta regla cuando existan esos
   canales.
 
-## 10. Antes de dar por terminada una historia
+## 11. Antes de dar por terminada una historia
 
 Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, etiquetas
 elegidas) está en `CONTRIBUTING.md`.
@@ -263,6 +315,8 @@ elegidas) está en `CONTRIBUTING.md`.
       `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90, con la auditoría
       registrada (§5.3).
 - [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
+- [ ] `author` apunta a una ficha que existe en `authors/`, y `authorship` declara
+      lo que de verdad pasó en esta historia (§8).
 - [ ] Ningún nombre de personaje se repite con historias ya publicadas (§4).
 - [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
       `agents/martha-*.md`, `agents/javier-*.md` y `agents/mario-*.md`.
