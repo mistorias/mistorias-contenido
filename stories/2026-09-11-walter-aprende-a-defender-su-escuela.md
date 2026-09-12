@@ -5,6 +5,9 @@ date: "2026-09-11"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 themes: ["pisa-2025", "seguridad-escolar", "docentes", "vraem", "naciones-unidas"]
+imageAlt: "Ilustración de un profesor de espaldas en su cuarto de noche, escribiendo en un cuaderno frente a un televisor que muestra un gráfico en descenso, junto a una pila de cuadernos corregidos"
+imageCredit: "Mistorias (ilustración generada con ChatGPT)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
