@@ -4,7 +4,7 @@ summary: "Entre el bajo puntaje de Perú en PISA y un colegio de Comas amenazado
 date: "2026-09-11"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
-tags: ["pisa-2025", "seguridad-escolar", "docentes", "vraem", "naciones-unidas"]
+themes: ["pisa-2025", "seguridad-escolar", "docentes", "vraem", "naciones-unidas"]
 ---
 
 ## La historia
