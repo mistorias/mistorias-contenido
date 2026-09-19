@@ -17,7 +17,7 @@ Mientras tanto, de regreso del colegio, Elías abre en el celular "Mi Carrera", 
 
 Rigoberta ha escuchado, entre clienta y clienta, que este año se creó por ley una universidad nacional nueva en Majes, del otro lado de la provincia de Caylloma. Se ilusiona un momento, hasta que hace cuentas: de Chivay a Majes hay casi cuatro horas de carretera. Ni siquiera esa universidad, tan cerca en el papel, le devolvería a Elías las tardes en casa.
 
-Son las seis cuando Rigoberta llega. Encuentra a Elías haciendo la tarea. Él levanta la mirada y le cuenta que ya sabe qué quiere estudiar. También sabe que, para hacerlo, tendrá que salir de Chivay.
+Son las seis de la tarde cuando Rigoberta llega. Encuentra a Elías haciendo la tarea. Él levanta la mirada y le cuenta que ya sabe qué quiere estudiar. También sabe que, para hacerlo, tendrá que salir de Chivay.
 
 Rigoberta lo escucha con los ojos llorosos. Le dice que está orgullosa, que es la decisión correcta y que lo va a apoyar. Después le prepara un rocoto relleno, su plato favorito.
 
