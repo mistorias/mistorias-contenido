@@ -9,7 +9,7 @@ themes: ["educacion-superior", "oferta-academica", "becas", "caylloma", "migraci
 
 ## La historia
 
-Rigoberta acomoda los cinco abrigos y cuatro sombreros que el último turista se probó antes de comprar una chalina, en su puesto del mirador Cruz del Cóndor, en el valle del Colca. Mientras ordena, piensa en la conversación que tuvo con él: los distintos países que va a conocer por este lado del mundo antes de volver al suyo, después de un intercambio de estudios.
+Rigoberta acomoda los cinco abrigos, cuatro sombreros y tres chalinas que el último turista se probó antes de comprar una chalina, en su puesto del mirador Cruz del Cóndor, en el valle del Colca. Mientras ordena, piensa en la conversación que tuvo con él: los distintos países que va a conocer por este lado del mundo antes de volver al suyo, después de un intercambio de estudios.
 
 En esos pensamientos aparece su hijo Elías, que termina el colegio este año y muy probablemente tendrá que irse a vivir a la ciudad de Arequipa. En Chivay, donde viven, no existe la carrera que él quiere estudiar. A Rigoberta le gustaría que se pudiera quedar, que volviera cada tarde a casa y siguiera cerca de la familia.
 
