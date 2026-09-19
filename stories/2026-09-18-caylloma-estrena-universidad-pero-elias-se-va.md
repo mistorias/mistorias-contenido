@@ -1,6 +1,6 @@
 ---
-title: "Caylloma estrena universidad propia, pero Elías no encuentra lo que quiere en Chivay"
-summary: "Caylloma estrena una universidad agraria a cuatro horas de Chivay, y el Tinder de las becas da a Elías cientos de opciones para irse, ninguna para quedarse con su madre."
+title: "Caylloma estrena universidad propia y Elías no encuentra lo que quiere en Chivay"
+summary: "Caylloma estrena una universidad agraria a cuatro horas de Chivay, y el Tinder de las becas da a Elías cientos de opciones para irse."
 date: "2026-09-18"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
