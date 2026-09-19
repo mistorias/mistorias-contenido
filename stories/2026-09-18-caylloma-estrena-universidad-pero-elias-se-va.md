@@ -1,10 +1,13 @@
 ---
 title: "Caylloma estrena universidad propia, pero Elías no encuentra lo que quiere en Chivay"
-summary: "Caylloma estrena universidad agraria, cerca en el mapa pero a casi cuatro horas de Chivay. Ni la universidad ni el Tinder de las becas ayudan a Elías a decidirse a quedarse en Chivay."
+summary: "Caylloma estrena una universidad agraria a cuatro horas de Chivay, y el Tinder de las becas da a Elías cientos de opciones para irse, ninguna para quedarse con su madre."
 date: "2026-09-18"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
 themes: ["educacion-superior", "oferta-academica", "becas", "caylloma", "migracion-estudiantil", "estudiantes"]
+imageAlt: "Ilustración de Rigoberta, de espaldas y con sombrero, en el mirador Cruz del Cóndor del valle del Colca, viendo un bus turístico cruzar un puente sobre el cañón mientras un cóndor vuela por encima"
+imageCredit: "Mistorias (ilustración generada con ChatGPT)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
