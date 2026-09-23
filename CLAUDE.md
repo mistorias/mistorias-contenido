@@ -44,7 +44,7 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | Campo | Regla |
 |-------|-------|
 | `title` | Obligatorio. **10 a 15 palabras.** Nombra lo que el lector descubre, no un inventario de temas. Sin contar cuántas noticias hay. |
-| `summary` | Obligatorio. **Entre 180 y 200 caracteres**, espacios incluidos, una sola línea. Se usa también como gancho en redes sociales: no cuenta el final (ver §5.3). |
+| `summary` | Obligatorio. **Entre 70 y 200 caracteres**, espacios incluidos, una sola línea. Se usa también como gancho en redes sociales: no cuenta el final (ver §5.3). |
 | `date` | Obligatorio, formato **`yyyy-mm-dd`**. Se convierte con `z.coerce.date()`; el orden de la portada es por fecha descendente. |
 | `author` | Obligatorio. **No es el nombre de la persona: es el slug de una ficha en `authors/`**, sin la extensión (`paolo-carrasco` → `authors/paolo-carrasco.md`). Si la ficha no existe, el build falla. Ver §8. |
 | `authorship` | Obligatorio. Exactamente uno de `escrito-por-persona`, `editado-con-ia`, `escrito-con-ia`. Declara qué hizo la inteligencia artificial **en esa historia**, no en general. Ver §8.2. |
@@ -312,7 +312,7 @@ md5sum stories/<archivo>.md
 Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, etiquetas
 elegidas) está en `CONTRIBUTING.md`.
 
-- [ ] Título de 10 a 15 palabras; resumen de 180 a 200 caracteres; fecha `yyyy-mm-dd`.
+- [ ] Título de 10 a 15 palabras; resumen de 70 a 200 caracteres; fecha `yyyy-mm-dd`.
 - [ ] El resumen se generó desde el cuerpo ya terminado, dice de qué trata la
       historia y no por qué canal se entera el personaje, no cuenta el final, e
       invita a leerla sin prometer nada que el cuerpo no entregue; `verificador-resumen` le dio

@@ -1,6 +1,6 @@
 ---
 name: generador-resumen
-description: Redacta el `summary` de una historia a partir del cuerpo ya terminado — una sola línea de 180 a 200 caracteres que diga de qué trata la historia y deje intriga para leerla, sin contar el final y sin clickbait. Devuelve el texto del resumen, no escribe el archivo. Úsalo antes de `verificador-resumen`, y de nuevo en cada vuelta del lazo cuando esa evaluación traiga observaciones que corregir.
+description: Redacta el `summary` de una historia a partir del cuerpo ya terminado — una sola línea de 70 a 200 caracteres que diga de qué trata la historia y deje intriga para leerla, sin contar el final y sin clickbait. Devuelve el texto del resumen, no escribe el archivo. Úsalo antes de `verificador-resumen`, y de nuevo en cada vuelta del lazo cuando esa evaluación traiga observaciones que corregir.
 tools: Read, Grep, Glob
 model: sonnet
 ---
@@ -89,7 +89,7 @@ Qué no:
 ## Restricciones que no se negocian
 
 - **Una sola línea**, sin saltos de línea (CLAUDE.md §2).
-- **Entre 180 y 200 caracteres**, espacios y signos incluidos. Cuéntalos antes de
+- **Entre 70 y 200 caracteres**, espacios y signos incluidos. Cuéntalos antes de
   devolver, no a ojo. Si te pasas, corta contenido, no comas; si te quedas corto, no
   rellenes con adjetivos: suma un dato concreto del cuerpo que sostenga la tensión.
 - **Nada de HTML crudo**, ni siquiera autoenlaces: el sitio rechaza cualquier `<...>`

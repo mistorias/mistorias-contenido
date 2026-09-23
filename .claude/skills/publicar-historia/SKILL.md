@@ -101,7 +101,7 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 
 - `title`: 10 a 15 palabras, nombra lo que el lector descubre (no un inventario de
   temas, no un conteo de noticias).
-- `summary`: entre 180 y 200 caracteres (espacios incluidos), una sola línea, sin
+- `summary`: entre 70 y 200 caracteres (espacios incluidos), una sola línea, sin
   contar el final: también se publica en redes sociales como gancho hacia la
   historia. **No lo redactes tú aquí**: sale del
   lazo del paso 5, a partir del cuerpo ya terminado del paso 3. Deja el campo para
@@ -197,7 +197,7 @@ resumen cierto que nadie lee cumple el esquema y no cumple su función.
 
 Recién cuando los dos puntajes pasan:
 
-1. Verifica que el texto es **una sola línea de 180 a 200 caracteres** y sin HTML
+1. Verifica que el texto es **una sola línea de 70 a 200 caracteres** y sin HTML
    crudo. Cuéntalos con `printf '%s' "<texto>" | LC_ALL=C.UTF-8 wc -m`, no a ojo.
    Los puntajes no miden eso; el hook sí lo bloquea.
 2. Escribe el texto en el `summary` del frontmatter, entre comillas.
@@ -243,7 +243,7 @@ no avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seg
 
 Repasa el checklist de CLAUDE.md §11 contra lo que acabas de producir:
 
-- [ ] Título 10-15 palabras; resumen de 180-200 caracteres y sin el final; fecha
+- [ ] Título 10-15 palabras; resumen de 70-200 caracteres y sin el final; fecha
       `yyyy-mm-dd`.
 - [ ] Resumen generado por `generador-resumen` desde el cuerpo terminado y medido por
       `verificador-resumen` en `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90,

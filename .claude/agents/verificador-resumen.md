@@ -142,7 +142,7 @@ permite a quien te llamó corregir el resumen sin adivinar.
     "El canal ocupa cinco palabras y colapsa cuatro escenas en una: quitarlo, no reformularlo.",
     "Enumera los temas sin abrir ninguna pregunta; el lector de portada ya sabe todo lo que va a encontrar.",
     "El resumen cuenta que Lucía decide quedarse: es el final de la historia; plantear la decisión sin resolverla.",
-    "El resumen tiene 214 caracteres y el rango es de 180 a 200 (CLAUDE.md §2)."
+    "El resumen tiene 214 caracteres y el rango es de 70 a 200 (CLAUDE.md §2)."
   ]
 }
 ```
@@ -153,7 +153,7 @@ Reglas del JSON:
 - `observaciones` es lo accionable: qué cambiar y por qué, en castellano peruano,
   una observación por problema. Es lo que `generador-resumen` va a leer en la
   siguiente vuelta, así que apunta a la causa, no al síntoma.
-- Si el resumen no mide entre 180 y 200 caracteres o trae HTML crudo, dilo en `observaciones`. No
+- Si el resumen no mide entre 70 y 200 caracteres o trae HTML crudo, dilo en `observaciones`. No
   lo puntúes: eso lo revisa el hook, no tú.
 - Ningún campo lleva veredicto, aprobación, recomendación de publicar ni umbral.
   Si te dan ganas de escribir "aprobado", "listo para publicar" o "hay que

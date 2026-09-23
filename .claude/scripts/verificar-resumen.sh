@@ -3,7 +3,7 @@
 #
 # Hace dos cosas distintas:
 #   1. Chequeos mecánicos que un script sí puede juzgar: que el `summary` exista,
-#      esté en una sola línea y mida entre 180 y 200 caracteres (CLAUDE.md §2).
+#      esté en una sola línea y mida entre 70 y 200 caracteres (CLAUDE.md §2).
 #   2. Chequeo de estado: que el lazo de generación y evaluación del resumen haya
 #      corrido sobre el archivo **en su contenido actual**. Qué tan fiel al cuerpo y
 #      qué tan atractivo es el resumen son juicios semánticos que este script no
@@ -57,8 +57,8 @@ for f in $changed; do
   texto="$(printf '%s' "$valor" | sed -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//")"
   caracteres="$(printf '%s' "$texto" | LC_ALL=C.UTF-8 wc -m | tr -d ' ')"
 
-  if [ "$caracteres" -lt 180 ] || [ "$caracteres" -gt 200 ]; then
-    problemas="${problemas}- ${f}: el resumen tiene ${caracteres} caracteres y debe tener entre 180 y 200 (CLAUDE.md §2).\n"
+  if [ "$caracteres" -lt 70 ] || [ "$caracteres" -gt 200 ]; then
+    problemas="${problemas}- ${f}: el resumen tiene ${caracteres} caracteres y debe tener entre 70 y 200 (CLAUDE.md §2).\n"
     continue
   fi
 
