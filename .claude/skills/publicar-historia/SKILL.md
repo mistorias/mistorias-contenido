@@ -101,7 +101,9 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 
 - `title`: 10 a 15 palabras, nombra lo que el lector descubre (no un inventario de
   temas, no un conteo de noticias).
-- `summary`: máximo 30 palabras, una sola línea. **No lo redactes tú aquí**: sale del
+- `summary`: entre 180 y 200 caracteres (espacios incluidos), una sola línea, sin
+  contar el final: también se publica en redes sociales como gancho hacia la
+  historia. **No lo redactes tú aquí**: sale del
   lazo del paso 5, a partir del cuerpo ya terminado del paso 3. Deja el campo para
   el final y llénalo con el texto que salga de ese lazo. Escribirlo antes es de donde
   vienen los resúmenes falsos: describen una versión de la historia que ya no es la
@@ -147,8 +149,8 @@ ya terminado:
 
 > Redacta el resumen de `stories/<archivo>.md` a partir del cuerpo.
 
-Devuelve el texto del resumen en un bloque de código, con su conteo de palabras y el
-sustento. **No escribe el archivo**: eso lo haces tú, y recién cuando el lazo cierre.
+Devuelve el texto del resumen en un bloque de código, con su conteo de caracteres y
+el sustento. **No escribe el archivo**: eso lo haces tú, y recién cuando el lazo cierre.
 
 ### 5.2 — Evaluar
 
@@ -163,7 +165,7 @@ Devuelve un JSON con dos puntajes de 0 a 100 y la evidencia de cada uno:
 | Puntaje | Qué mide | Umbral |
 |---------|----------|--------|
 | `evaluacion_sintesis` | Qué tan fielmente el resumen sintetiza el contenido: cada afirmación ocurre así en el cuerpo, y apunta al eje de la historia. | **≥ 80** |
-| `evaluacion_enganche` | Qué tan bien invita a explorar la historia: curiosidad, concreción, promesa que el cuerpo cumple, voz de marca. | **≥ 90** |
+| `evaluacion_enganche` | Qué tan bien invita a explorar la historia: curiosidad (sin revelar el final), concreción, promesa que el cuerpo cumple, voz de marca. | **≥ 90** |
 
 El verificador **no aprueba ni rechaza** — solo mide. La comparación contra los
 umbrales la haces tú, acá.
@@ -195,8 +197,9 @@ resumen cierto que nadie lee cumple el esquema y no cumple su función.
 
 Recién cuando los dos puntajes pasan:
 
-1. Verifica a mano que el texto es **una sola línea de máximo 30 palabras** y sin
-   HTML crudo. Los puntajes no miden eso; el hook sí lo bloquea.
+1. Verifica que el texto es **una sola línea de 180 a 200 caracteres** y sin HTML
+   crudo. Cuéntalos con `printf '%s' "<texto>" | LC_ALL=C.UTF-8 wc -m`, no a ojo.
+   Los puntajes no miden eso; el hook sí lo bloquea.
 2. Escribe el texto en el `summary` del frontmatter, entre comillas.
 3. Registra la verificación:
 
@@ -240,7 +243,8 @@ no avances — vuelve a Jaime con el feedback acumulado y reescribe antes de seg
 
 Repasa el checklist de CLAUDE.md §11 contra lo que acabas de producir:
 
-- [ ] Título 10-15 palabras; resumen ≤30 palabras; fecha `yyyy-mm-dd`.
+- [ ] Título 10-15 palabras; resumen de 180-200 caracteres y sin el final; fecha
+      `yyyy-mm-dd`.
 - [ ] Resumen generado por `generador-resumen` desde el cuerpo terminado y medido por
       `verificador-resumen` en `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90,
       ya escrito en el frontmatter y registrado (paso 5).

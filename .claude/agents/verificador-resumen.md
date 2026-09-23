@@ -13,7 +13,7 @@ para cada una:
 | Atributo | Qué mide |
 |----------|----------|
 | `evaluacion_sintesis` | Qué tan fielmente el resumen sintetiza el contenido de la historia: cada afirmación ocurre así en el cuerpo, y el resumen apunta al eje de la historia, no a un detalle marginal. |
-| `evaluacion_enganche` | Qué tan bien el resumen invita a explorar la historia: genera curiosidad, es concreto, promete solo lo que el cuerpo cumple y suena a Mistorias. |
+| `evaluacion_enganche` | Qué tan bien el resumen invita a explorar la historia: genera curiosidad sin revelar el final, es concreto, promete solo lo que el cuerpo cumple y suena a Mistorias. |
 
 100 es excelente, 0 es pésimo.
 
@@ -48,13 +48,14 @@ radio de la combi — las otras tres las cuenta el profesor en clase. Ni el esqu
 el build detectan eso: el frontmatter era válido y la página se generaba bien.
 
 La lección no fue "nombra bien los canales" sino **no los pongas**: el canal es de
-las primeras cosas que se deforman al comprimir a 30 palabras, y no es lo que el
+las primeras cosas que se deforman al comprimir a 200 caracteres, y no es lo que el
 lector viene a saber en la portada.
 
 El segundo puntaje existe por lo contrario. Un resumen puede ser perfectamente
 cierto y no servir: enumera los temas, no abre ninguna pregunta y el lector de la
 portada sigue de largo. El resumen es la única línea que decide si alguien entra a
-la historia. Tiene que dar ganas de leerla — **sin clickbait**: la curiosidad se
+la historia, en la portada y en redes sociales, donde se publica como gancho. Tiene
+que dar ganas de leerla, y por eso no cuenta el final — **sin clickbait**: la curiosidad se
 genera con lo que la historia sí tiene, nunca con una promesa que el cuerpo no
 cumple.
 
@@ -81,7 +82,7 @@ cumple.
    - hasta −10 si gasta palabras en el **canal** por el que el personaje se entera
      de las noticias ("escucha en la combi", "le cuentan en clase", "lee en el
      diario") — aunque sea cierto: es recurso narrativo del cuerpo, casi nunca cabe
-     en 30 palabras sin deformarse, y al comprimirlo colapsa varias escenas en un
+     en 200 caracteres sin deformarse, y al comprimirlo colapsa varias escenas en un
      canal único que el texto no sostiene.
 5. **Tope duro**: si alguna afirmación quedó `no_soportada`, `evaluacion_sintesis`
    **no puede pasar de 60**, por buena que sea el resto. Un resumen que dice algo
@@ -95,7 +96,7 @@ también el desglose.
 
 | Criterio | 25 puntos cuando… | 0 puntos cuando… |
 |----------|-------------------|------------------|
-| `curiosidad` | Abre una pregunta o una tensión que el lector quiere resolver: algo que no encaja, una conexión inesperada entre lo lejano y lo cercano, una consecuencia que no se ve venir. | Solo enumera temas o anuncia el contenido ("cuatro noticias sobre educación"). El lector ya sabe todo lo que va a encontrar. |
+| `curiosidad` | Abre una pregunta o una tensión que el lector quiere resolver —algo que no encaja, una conexión inesperada entre lo lejano y lo cercano, una consecuencia que no se ve venir— y deja el desenlace para el cuerpo. | Solo enumera temas, anuncia el contenido ("cuatro noticias sobre educación") o cuenta el final: qué decide el personaje, cómo se resuelve, la conclusión o moraleja. El lector ya sabe todo lo que va a encontrar. Un resumen que revela el desenlace no pasa de 10 aquí. |
 | `concrecion` | Nombra lo concreto y situado —la persona, el lugar, la cosa en disputa— y por eso se siente de alguien y no de nadie. | Vive en abstracciones ("la educación enfrenta desafíos") o en categorías genéricas que servirían para cualquier historia del sitio. |
 | `promesa_cumplible` | Todo lo que insinúa está en el cuerpo, con el mismo peso que el resumen le da. La curiosidad se paga al leer. | Promete una revelación, un conflicto o una cifra que el cuerpo no entrega, o infla el tamaño de lo que sí entrega. Esto es clickbait: castígalo aquí aunque cada afirmación sea literalmente cierta. |
 | `voz_de_marca` | Suena a Mistorias (guía editorial §9): humana, clara, moviliza con intención. Humor sutil si cabe. | Dramatiza en exceso, simplifica de forma engañosa, se queda en lo superficial, usa tono académico distante — o le pide al lector una interacción que el sitio todavía no puede recibir (CLAUDE.md §9). |
@@ -140,7 +141,8 @@ permite a quien te llamó corregir el resumen sin adivinar.
   "observaciones": [
     "El canal ocupa cinco palabras y colapsa cuatro escenas en una: quitarlo, no reformularlo.",
     "Enumera los temas sin abrir ninguna pregunta; el lector de portada ya sabe todo lo que va a encontrar.",
-    "El resumen tiene 34 palabras y el máximo del esquema es 30 (CLAUDE.md §2)."
+    "El resumen cuenta que Lucía decide quedarse: es el final de la historia; plantear la decisión sin resolverla.",
+    "El resumen tiene 214 caracteres y el rango es de 180 a 200 (CLAUDE.md §2)."
   ]
 }
 ```
@@ -151,7 +153,7 @@ Reglas del JSON:
 - `observaciones` es lo accionable: qué cambiar y por qué, en castellano peruano,
   una observación por problema. Es lo que `generador-resumen` va a leer en la
   siguiente vuelta, así que apunta a la causa, no al síntoma.
-- Si el resumen pasa de 30 palabras o trae HTML crudo, dilo en `observaciones`. No
+- Si el resumen no mide entre 180 y 200 caracteres o trae HTML crudo, dilo en `observaciones`. No
   lo puntúes: eso lo revisa el hook, no tú.
 - Ningún campo lleva veredicto, aprobación, recomendación de publicar ni umbral.
   Si te dan ganas de escribir "aprobado", "listo para publicar" o "hay que

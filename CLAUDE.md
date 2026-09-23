@@ -44,7 +44,7 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | Campo | Regla |
 |-------|-------|
 | `title` | Obligatorio. **10 a 15 palabras.** Nombra lo que el lector descubre, no un inventario de temas. Sin contar cuántas noticias hay. |
-| `summary` | Obligatorio. **Máximo 30 palabras**, una sola línea. |
+| `summary` | Obligatorio. **Entre 180 y 200 caracteres**, espacios incluidos, una sola línea. Se usa también como gancho en redes sociales: no cuenta el final (ver §5.3). |
 | `date` | Obligatorio, formato **`yyyy-mm-dd`**. Se convierte con `z.coerce.date()`; el orden de la portada es por fecha descendente. |
 | `author` | Obligatorio. **No es el nombre de la persona: es el slug de una ficha en `authors/`**, sin la extensión (`paolo-carrasco` → `authors/paolo-carrasco.md`). Si la ficha no existe, el build falla. Ver §8. |
 | `authorship` | Obligatorio. Exactamente uno de `escrito-por-persona`, `editado-con-ia`, `escrito-con-ia`. Declara qué hizo la inteligencia artificial **en esa historia**, no en general. Ver §8.2. |
@@ -144,11 +144,14 @@ del cuerpo pasa las dos validaciones anteriores y se publica igual.
 El resumen dice **de qué trata la historia**, no cómo está contada. En particular,
 deja fuera el canal por el que el personaje se entera de las noticias (la radio de
 la combi, el profesor en el aula): es recurso narrativo del cuerpo, rara vez es el
-tema, y al comprimirlo a 30 palabras colapsa varias escenas en un canal único que el
+tema, y al comprimirlo a 200 caracteres colapsa varias escenas en un canal único que el
 texto no sostiene — que es exactamente cómo se rompió la historia de Lucía.
 
 Y tiene que dar ganas de leer la historia. Es la única línea que ve quien llega a la
-portada: un resumen que solo enumera los temas es cierto y no cumple su función. La
+portada, y es también el texto que se publica en redes sociales para llevar a la
+historia: un resumen que solo enumera los temas es cierto y no cumple su función.
+Por eso **no cuenta el final**: plantea la situación y la tensión, y deja el
+desenlace —qué decide el personaje, cómo se resuelve— para quien entra a leer. La
 curiosidad se genera con lo que la historia sí tiene —**nada de clickbait**: lo que
 el resumen insinúa, el cuerpo lo entrega.
 
@@ -160,7 +163,8 @@ Por eso el resumen tiene su propio circuito, con dos subagentes:
   contra el cuerpo y devuelve un JSON con dos puntajes de 0 a 100:
   `evaluacion_sintesis` (qué tan fielmente sintetiza el contenido; una afirmación no
   soportada lo topa en 60) y `evaluacion_enganche` (curiosidad, concreción, promesa
-  que el cuerpo cumple, voz de marca). **No aprueba ni rechaza: solo mide.**
+  que el cuerpo cumple sin revelar el final, voz de marca). **No aprueba ni rechaza:
+  solo mide.**
 
 Los umbrales —`evaluacion_sintesis` ≥ **80** y `evaluacion_enganche` ≥ **90**— y el
 lazo entre ambos agentes viven en el skill `publicar-historia`: si un puntaje queda
@@ -168,8 +172,8 @@ corto, el resumen se vuelve a generar con las observaciones de la evaluación, h
 cinco vueltas. Si a la quinta no pasa, el problema suele estar en el cuerpo y la
 decisión es del equipo.
 
-El hook `Stop` `.claude/scripts/verificar-resumen.sh` cierra el lazo: revisa las
-palabras y el formato del resumen, y exige que exista una auditoría vigente para el
+El hook `Stop` `.claude/scripts/verificar-resumen.sh` cierra el lazo: revisa los
+caracteres y el formato del resumen, y exige que exista una auditoría vigente para el
 contenido actual del archivo. La auditoría se registra con el hash del archivo, así
 que **tocar el resumen o el cuerpo la vence** y hay que repetirla.
 
@@ -308,10 +312,10 @@ md5sum stories/<archivo>.md
 Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, etiquetas
 elegidas) está en `CONTRIBUTING.md`.
 
-- [ ] Título de 10 a 15 palabras; resumen de máximo 30; fecha `yyyy-mm-dd`.
+- [ ] Título de 10 a 15 palabras; resumen de 180 a 200 caracteres; fecha `yyyy-mm-dd`.
 - [ ] El resumen se generó desde el cuerpo ya terminado, dice de qué trata la
-      historia y no por qué canal se entera el personaje, e invita a leerla sin
-      prometer nada que el cuerpo no entregue; `verificador-resumen` le dio
+      historia y no por qué canal se entera el personaje, no cuenta el final, e
+      invita a leerla sin prometer nada que el cuerpo no entregue; `verificador-resumen` le dio
       `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90, con la auditoría
       registrada (§5.3).
 - [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
