@@ -1,0 +1,15 @@
+{
+  "name": "mistorias-contenido",
+  "private": true,
+  "description": "Herramientas del repositorio de contenido editorial de Mistorias.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "imagen": "node scripts/preparar-imagen.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.35.4"
+  }
+}
