@@ -14,7 +14,7 @@ un JPEG **de verdad**: el build de mistorias-web revisa el contenido del archivo
 la extensión, y falla si le llega un PNG renombrado a `.jpg`.
 
 Las ilustraciones suelen salir en PNG, así que este repositorio trae un script que
-las convierte. Solo necesita Node 20 o más; no hace falta clonar mistorias-web.
+las convierte. Solo necesita Node 24; no hace falta clonar mistorias-web.
 
 ```bash
 npm install                                   # una sola vez
