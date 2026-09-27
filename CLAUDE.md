@@ -217,6 +217,18 @@ El nombre del archivo **es** la dirección de la historia:
   las tres claves de frontmatter que acompañan a la imagen, y el
   [ADR 0005](https://github.com/mistorias/mistorias-web/blob/main/docs/adr/0005-imagenes-en-historias.md)
   de mistorias-web para el porqué).
+- **La imagen tiene que ser un JPEG real**, no un PNG con la extensión cambiada: el
+  build lo detecta por el contenido y falla. Las ilustraciones suelen llegar en PNG;
+  conviértelas con el script del repositorio, que no necesita mistorias-web:
+
+  ```bash
+  npm install   # si node_modules/ no existe
+  npm run imagen -- <imagen-de-origen> [<slug>]
+  ```
+
+  Deja `stories/<slug>/principal.jpg` dentro de los límites del sitio (5 MB, 4000 px
+  por lado). Detalles en el README. Antes de hacer commit de una imagen, confirma el
+  formato con `file stories/<slug>/principal.jpg`: tiene que decir `JPEG image data`.
 
 ## 8. Fichas de autoría
 
