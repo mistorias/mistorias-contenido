@@ -83,7 +83,11 @@ cumple.
      de las noticias ("escucha en la combi", "le cuentan en clase", "lee en el
      diario") — aunque sea cierto: es recurso narrativo del cuerpo, casi nunca cabe
      en 200 caracteres sin deformarse, y al comprimirlo colapsa varias escenas en un
-     canal único que el texto no sostiene.
+     canal único que el texto no sostiene;
+   - hasta −10 si nombra las noticias, los casos reales o las cifras de
+     `## Noticias principales`: el resumen trata de `## La historia`. Comprimir en
+     una línea la ficción junto a hechos reales de otra gravedad tiende a igualarlos,
+     y eso minimiza unos o exagera otros. No descuentes por **no** mencionarlas.
 5. **Tope duro**: si alguna afirmación quedó `no_soportada`, `evaluacion_sintesis`
    **no puede pasar de 60**, por buena que sea el resto. Un resumen que dice algo
    falso sobre la historia no es un resumen casi bueno.
