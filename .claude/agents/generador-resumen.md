@@ -45,6 +45,13 @@ escribir uno atractivo que miente. Ninguno de los dos pasa.
   del cuerpo, casi nunca cabe en 200 caracteres sin deformarse, y al comprimirlo colapsa
   varias escenas en un canal único que el texto no sostiene — que es exactamente cómo
   se rompió el resumen de la historia de Lucía (`2026-08-07`).
+- **Deja fuera las noticias.** El resumen habla de `## La historia` —el personaje,
+  su situación, su tensión—, no de los casos reales ni de las cifras de
+  `## Noticias principales`. Nombrarlas obliga a comparar en una línea la ficción con
+  hechos de otra gravedad, y esa comparación comprimida termina minimizando unos o
+  exagerando otros (pasó en `2026-09-27`, cuando el resumen ponía al mismo nivel las
+  burlas a Dani y una presunta agresión sexual). La conexión con las noticias la hace
+  el cuerpo; el resumen invita a entrar.
 
 ### 2. Que invite a explorar la historia
 

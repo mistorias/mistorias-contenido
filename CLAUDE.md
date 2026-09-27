@@ -146,6 +146,10 @@ deja fuera el canal por el que el personaje se entera de las noticias (la radio 
 la combi, el profesor en el aula): es recurso narrativo del cuerpo, rara vez es el
 tema, y al comprimirlo a 200 caracteres colapsa varias escenas en un canal único que el
 texto no sostiene — que es exactamente cómo se rompió la historia de Lucía.
+Por la misma razón deja fuera las noticias: habla de la historia del personaje, no de
+los casos reales ni de las cifras de `## Noticias principales`. Ponerlos en la misma
+línea que la ficción tiende a igualar gravedades distintas; conectarlos es trabajo
+del cuerpo.
 
 Y tiene que dar ganas de leer la historia. Es la única línea que ve quien llega a la
 portada, y es también el texto que se publica en redes sociales para llevar a la
