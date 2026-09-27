@@ -1,10 +1,10 @@
 ---
 title: "En el nuevo colegio de Dani, el acoso sobrevive gracias a quienes miran y callan"
-summary: "PENDIENTE"
+summary: "Las zapatillas gastadas y el barrio bastan para que el grupo popular del colegio se burle de Dani mientras los que observan no hacen nada."
 date: "2026-09-27"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
-themes: ["acoso-escolar", "clasismo", "testigos-del-acoso", "liceo-naval", "violencia-escolar", "siseve"]
+themes: ["acoso-escolar", "bullying", "clasismo", "violencia-escolar"]
 ---
 
 ## La historia
@@ -21,13 +21,13 @@ El profesor le agradece a la directora e invita a Dani al frente para que se pre
 
 Cuando se pone adelante ya siente calor, pero conforme responde las preguntas se hace insoportable y comienza a sudar como si hubiera corrido una maratón. En peor situación no podría estar. Su camisa está empapada y su pantalón por dentro es un mar; al menos es por dentro, y espera que no se note tanto. Luego de esta suerte de juicio, pasa a sentarse en la zona posterior del salón, así que tiene que cruzarlo otra vez, sintiendo todas las miradas recorrerle de arriba abajo, como para confirmar sus sospechas.
 
-Ha pasado ya un mes desde su llegada al nuevo colegio. Sus padres lo eligieron con todas las buenas intenciones de mejorar sus oportunidades en la vida, y por sus excelentes contactos. Pero Dani siente que cada día es peor. No duerme bien, pensando que al día siguiente se verá con el grupo de Alejandro, que se burla diciendo que no se baña desde que, el primer día, Alejandro se sentó a su costado y vio el asiento lleno de sudor. No hay día en que pare con sus chistes clasistas, que buscan humillar a Dani. Todos se ríen, aunque muchos fingen reírse para estar bien con el grupo de Alejandro, popular porque siempre lleva ropa nueva que marca tendencia, porque vive en buenos barrios o porque es el grupo "cool", como le dicen al grupo bacán. Con esas pocas horas de sueño, Dani no puede prestar mucha atención en clase. A veces se duerme.
+Ha pasado ya un mes desde su llegada al nuevo colegio. Sus padres lo eligieron con todas las buenas intenciones de mejorar sus oportunidades en la vida, y por sus excelentes contactos. Pero Dani siente que cada día es peor. No duerme bien, pensando que al día siguiente se verá con el grupo de Alejandro, que se burla diciendo que no se baña desde que, el primer día, Alejandro se sentó a su costado y vio el asiento lleno de sudor. No hay día en que pare con sus chistes clasistas, que buscan humillar a Dani. Todos se ríen, aunque muchos fingen reírse para estar bien con el grupo de Alejandro, popular porque siempre lleva ropa nueva que marca tendencia, porque vive en buenos barrios o porque es el grupo "cool", como le dicen al grupo bacán. Con pocas horas de sueño, Dani no puede prestar mucha atención en clase. A veces se duerme.
 
 Hoy ha sido un día caluroso y donde se sienta no llega bien el aire acondicionado. La clase de Matemática está muy pesada, pero felizmente ya va a acabar. Ya suficiente tiene con el problema de su vida en el colegio: no ve variables que pueda cambiar para resolverlo.
 
 A la hora del recreo salen, y en el patio el grupo de Alejandro espera a Dani cerca de la salida. No hay forma de evitarlos si va al baño, así que intenta pasar rápido, pero apenas está entre ellos, se juntan y le hacen un "apanado" (una golpiza en grupo) con patadas y escupitajos. Los que están por ahí se ríen, excepto Damián, que corre hacia el grupo y saca a Dani de ahí, recibiendo también los golpes y los escupitajos. Encara a Alejandro y le dice que es un abusivo y que ya es suficiente. Dani le agradece, va hacia el baño y se cae.
 
-Se despierta. Fue un sueño. Sabe que afuera estará el grupo y que seguirán con lo suyo. ¿Habrá un Damián que salga en su defensa? ¿Cuántos estudiantes más estarán sufriendo lo mismo?
+Se despierta. Fue un sueño. Sabe que afuera estará el grupo y que seguirán con lo suyo. ¿Podrá contar con que Damián salga en su defensa? ¿Cuántos estudiantes más estarán sufriendo lo mismo? ¿Qué harías tú si fueras Damián u otro testigo de este acoso?
 
 ## Noticias principales
 
@@ -38,11 +38,11 @@ Se despierta. Fue un sueño. Sabe que afuera estará el grupo y que seguirán co
 
 ## Conectando los puntos
 
-La pesadilla de Dani no es el apanado: es el patio lleno de gente que se ríe. El grupo de Alejandro necesita público, y el público está hecho de chicos y chicas que, como dice la historia, fingen reírse "para estar bien con el grupo". En el bus del Liceo Naval, según los testimonios, iban 12 escolares y tres adultos, y nadie detuvo nada. En San Jerónimo, la madre avisó y el colegio no hizo lo suficiente. Tres escenarios distintos con el mismo patrón: el acoso no lo sostiene solo quien agrede, sino también quienes miran y callan.
+La pesadilla de Dani no solo es el apanado: es también el patio lleno de gente que se ríe. El grupo de Alejandro necesita público, y el público está hecho de chicos y chicas que, como dice la historia, fingen reírse "para estar bien con el grupo". En el bus del Liceo Naval, según los testimonios, iban 12 escolares y tres adultos, y nadie detuvo nada. En San Jerónimo, la madre avisó y el colegio no hizo lo suficiente. Tres escenarios distintos con el mismo patrón: el acoso no lo sostiene solo quien agrede, sino también quienes miran y callan.
 
 La primera burla contra Dani no es por lo que hace, sino por sus zapatillas gastadas y por el lugar donde vive. Es lo mismo que denuncia la madre del Liceo Naval: "por tu color, por tu apellido, por los galones". Un colegio elegido "por sus excelentes contactos" también es un lugar donde el origen de cada quien está a la vista, y el clasismo encuentra ahí en qué apoyarse. Cambiar a un hijo de colegio para darle mejores oportunidades, como hicieron los padres de Dani, o para sacarlo del acoso, como hizo la familia de Arequipa, no garantiza nada si el nuevo colegio no sabe qué hacer cuando empiezan las burlas.
 
-Por eso importa tanto Damián, aunque solo exista en un sueño. La pregunta final de Dani —"¿Habrá un Damián?"— no es ingenua: el grupo pierde fuerza cuando alguien de afuera deja de reírse. Y un adulto que se entera de lo que pasa, sea docente, chofer o coordinadora, también puede ser un Damián.
+Por eso importa tanto Damián, aunque por ahora solo aparezca en un sueño. Que Dani se pregunte si podrá contar con él no es ingenuo: el grupo pierde fuerza cuando alguien de afuera deja de reírse y se pone al lado de quien recibe los golpes. La última pregunta de la historia ya no es de Dani, sino de quien lee: en ese patio, en ese bus o en ese colegio, cualquier testigo puede ser un Damián. También un adulto que se entera de lo que pasa, sea docente, chofer o coordinadora.
 
 **Lo que estas noticias todavía no responden.** El caso del Liceo Naval está en investigación: no sabemos todavía qué pasó exactamente en el bus, ni qué responsabilidad tendrán los adultos, y los testimonios publicados no han pasado por un juicio. Las denuncias de bullying previo en ese colegio son declaraciones de madres y de una profesora, sin la versión de la institución. SíseVe no dice cuántos de sus 11,805 reportes se confirmaron ni cuántos terminaron con una medida concreta para la víctima; tampoco permite saber cuánto acoso pasa sin que nadie lo reporte, que es justamente el que vive Dani. No pudimos verificar de forma independiente ninguna de estas cifras; son las que publican esas fuentes.
 
