@@ -41,6 +41,7 @@ summary: "Resumen de una sola línea"
 date: "2026-08-07"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
+readingTimeMinutes: 4
 tags: ["tag-uno", "tag-dos", "tag-tres"]
 ---
 ```
@@ -52,6 +53,7 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | `date` | Obligatorio, formato **`yyyy-mm-dd`**. Se convierte con `z.coerce.date()`; el orden de la portada es por fecha descendente. |
 | `author` | Obligatorio. **No es el nombre de la persona: es el slug de una ficha en `authors/`**, sin la extensión (`paolo-carrasco` → `authors/paolo-carrasco.md`). Si la ficha no existe, el build falla. Ver §8. |
 | `authorship` | Obligatorio. Exactamente uno de `escrito-por-persona`, `editado-con-ia`, `escrito-con-ia`. Declara qué hizo la inteligencia artificial **en esa historia**, no en general. Ver §8.2. |
+| `readingTimeMinutes` | Obligatorio. Entero positivo, **en minutos**. No se escribe a mano: lo calcula `npm run reading-time` y la CI verifica que coincida. Ver [docs/convenciones-del-frontmatter.md](docs/convenciones-del-frontmatter.md). |
 | `tags` | **Mínimo 3, máximo 7.** Ver §3. |
 | `imageAlt`, `imageCredit`, `imageLicense` | **Opcionales en conjunto**: si la historia tiene carpeta de imagen (`stories/<slug>/principal.jpg`, ver §7), los tres son obligatorios; si no tiene imagen, ninguno debe declararse. El build lo exige así (`story-image-requirements.ts` en mistorias-web) y falla si falta uno de los tres, o si sobra alguno sin imagen. |
 
@@ -344,6 +346,9 @@ elegidas) está en `CONTRIBUTING.md`.
 - [ ] Ningún nombre de personaje se repite con historias ya publicadas (§4).
 - [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
       `agents/martha-*.md`, `agents/javier-*.md` y `agents/mario-*.md`.
+- [ ] `readingTimeMinutes` calculado con `npm run reading-time` sobre el cuerpo final
+      y antes de registrar el resumen; el pipeline pasa (ver
+      [docs/pipeline-de-contenido.md](docs/pipeline-de-contenido.md)).
 - [ ] `pnpm test` y `pnpm build` pasan; la ruta de la historia aparece en el build.
 - [ ] Fuentes enlazadas, identificadas por lo que son, con sus límites y posibles
       sesgos explicitados.
