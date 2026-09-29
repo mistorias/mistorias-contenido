@@ -95,6 +95,7 @@ summary: "Resumen de una sola línea"
 date: "yyyy-mm-dd"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
+readingTimeMinutes: 4
 tags: ["tag-uno", "tag-dos", "tag-tres"]
 ---
 ```
@@ -115,6 +116,16 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 - `authorship`: `escrito-por-persona`, `editado-con-ia` o `escrito-con-ia`, según
   lo que de verdad pasó al escribir **esta** historia (CLAUDE.md §8.2). No se
   hereda de la historia anterior ni se elige por costumbre.
+- `readingTimeMinutes`: **no lo escribas tú**: lo calcula el script. Córrelo cuando el
+  cuerpo esté terminado y **antes** de registrar el resumen (paso 5.4):
+
+  ```bash
+  npm run reading-time -- stories/<archivo>.md
+  ```
+
+  El registro del resumen firma el archivo entero, frontmatter incluido; si este
+  campo cambia después, la verificación vence y hay que repetir el paso 5. Si el
+  cuerpo cambia después de correr el script, córrelo de nuevo (CLAUDE.md §2).
 - `tags`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
   lee `TAGS.md` completo — tiene una lista de etiquetas **siempre excluidas**
   (`educacion`, `arequipa`, `peru`, `datos`, etc., porque son la identidad del
@@ -207,9 +218,9 @@ Recién cuando los dos puntajes pasan:
    .claude/scripts/registrar-resumen-verificado.sh stories/<archivo>.md
    ```
 
-El registro guarda el hash del archivo **después** de escribir el resumen: si más
-tarde tocas el resumen o el cuerpo, la verificación vence y hay que repetir el paso
-completo. No lo esquives editando "solo una palabra" — y no registres antes de
+El registro guarda el hash del archivo **después** de escribir el resumen y de calcular
+`readingTimeMinutes` (paso 4): si más tarde tocas el resumen, el cuerpo o ese campo,
+la verificación vence y hay que repetir el paso completo. No lo esquives editando "solo una palabra" — y no registres antes de
 escribir, porque el hash quedaría firmando un archivo que ya cambió.
 
 El hook `Stop` (`.claude/scripts/verificar-resumen.sh`) revisa lo mismo al cerrar la
@@ -249,6 +260,8 @@ Repasa el checklist de CLAUDE.md §11 contra lo que acabas de producir:
       `verificador-resumen` en `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90,
       ya escrito en el frontmatter y registrado (paso 5).
 - [ ] Nombre de archivo coherente con el título, ya fijado.
+- [ ] `readingTimeMinutes` calculado con `npm run reading-time` sobre el cuerpo final y
+      antes del registro del resumen; `npm run reading-time -- --check` pasa.
 - [ ] Ningún nombre de personaje inventado se repite con las 10 historias más
       recientes (paso 2).
 - [ ] Pipeline Jaime → Martha → Javier → Mario completo, en orden, con umbrales.
