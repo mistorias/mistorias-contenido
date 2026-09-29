@@ -33,3 +33,7 @@ npm run check:structure -- stories/<archivo>.md   # solo esa
 
 La CI no corrige ni hace commits por su cuenta: los commits de este repositorio
 van firmados (ver CLAUDE.md §9).
+
+Las convenciones para escribir o cambiar estos scripts (idioma del código, de los
+comentarios y de los mensajes) están en
+[convenciones-de-scripts.md](convenciones-de-scripts.md).
