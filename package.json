@@ -9,7 +9,8 @@
   "scripts": {
     "imagen": "node scripts/preparar-imagen.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\"",
-    "verificar:estructura": "node scripts/verificar-estructura.mjs"
+    "verificar:estructura": "node scripts/verificar-estructura.mjs",
+    "tiempo-lectura": "node scripts/tiempo-lectura.mjs"
   },
   "dependencies": {
     "sharp": "0.35.4"
