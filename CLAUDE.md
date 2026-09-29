@@ -227,7 +227,7 @@ El nombre del archivo **es** la dirección de la historia:
 
   ```bash
   npm install   # si node_modules/ no existe
-  npm run imagen -- <imagen-de-origen> [<slug>]
+  npm run prepare-image -- <imagen-de-origen> [<slug>]
   ```
 
   Deja `stories/<slug>/principal.jpg` dentro de los límites del sitio (5 MB, 4000 px

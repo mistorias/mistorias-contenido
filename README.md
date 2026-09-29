@@ -18,7 +18,7 @@ las convierte. Solo necesita Node 24; no hace falta clonar mistorias-web.
 
 ```bash
 npm install                                   # una sola vez
-npm run imagen -- ~/Descargas/ilustracion.png 2026-10-04-mi-historia
+npm run prepare-image -- ~/Descargas/ilustracion.png 2026-10-04-mi-historia
 ```
 
 - El primer argumento es la imagen de origen; el segundo, el nombre de la historia

@@ -5,7 +5,7 @@
 // sitio.
 //
 // Uso:
-//   npm run imagen -- <imagen> [<slug>]
+//   npm run prepare-image -- <imagen> [<slug>]
 //
 //   <imagen>  la imagen de origen: un PNG descargado, o un principal.jpg que
 //             en realidad es PNG.
@@ -50,14 +50,14 @@ function resolveSlug(sourcePath, slugArgument) {
   }
   fail(
     "no pude deducir la historia. Pasa el slug como segundo argumento:\n" +
-      "  npm run imagen -- <imagen> <slug>"
+      "  npm run prepare-image -- <imagen> <slug>"
   );
 }
 
 async function main() {
   const [sourceArgument, slugArgument] = process.argv.slice(2);
   if (!sourceArgument) {
-    fail("falta la imagen de origen.\n  npm run imagen -- <imagen> [<slug>]");
+    fail("falta la imagen de origen.\n  npm run prepare-image -- <imagen> [<slug>]");
   }
 
   const sourcePath = path.resolve(sourceArgument);
