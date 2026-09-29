@@ -8,6 +8,8 @@
   },
   "scripts": {
     "prepare-image": "node scripts/prepare-image.mjs"
+    "test": "node --test \"scripts/**/*.test.mjs\"",
+    "check:structure": "node scripts/check-structure.mjs"
   },
   "dependencies": {
     "sharp": "0.35.4"

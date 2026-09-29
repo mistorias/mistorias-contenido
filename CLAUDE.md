@@ -8,6 +8,10 @@ viven en [mistorias-esencia-de-marca](https://github.com/mistorias/mistorias-ese
 Todo el trabajo —historias, mensajes de commit, descripciones de PR y comentarios de
 revisión— se redacta en **castellano peruano**.
 
+El código de `scripts/` es la excepción: identificadores, archivos y flags en inglés;
+comentarios y mensajes al usuario en castellano. Regla completa en
+[docs/convenciones-de-scripts.md](docs/convenciones-de-scripts.md).
+
 ## 1. Antes de escribir
 
 Clona y lee la esencia de marca. No es opcional ni posterior: es la fuente canónica
