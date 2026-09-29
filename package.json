@@ -9,7 +9,6 @@
   "scripts": {
     "imagen": "node scripts/preparar-imagen.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\"",
-    "test": "node --test \"scripts/**/*.test.mjs\"",
     "check:structure": "node scripts/check-structure.mjs",
     "reading-time": "node scripts/reading-time.mjs"
   },
