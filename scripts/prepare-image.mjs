@@ -20,6 +20,7 @@ import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { runCli, UserError } from "./lib/run-cli.mjs";
 
 // Los mismos límites que story-image-requirements.ts en mistorias-web. Si
 // allá cambian, hay que cambiarlos aquí.
@@ -35,11 +36,6 @@ const IMAGE_FILENAME = "principal.jpg";
 const repoDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const storiesDir = path.join(repoDir, "stories");
 
-function fail(message) {
-  console.error(`ERROR: ${message}`);
-  process.exit(1);
-}
-
 function resolveSlug(sourcePath, slugArgument) {
   if (slugArgument) {
     return slugArgument.replace(/\.md$/, "");
@@ -48,7 +44,7 @@ function resolveSlug(sourcePath, slugArgument) {
   if (path.dirname(parentDir) === storiesDir) {
     return path.basename(parentDir);
   }
-  fail(
+  throw new UserError(
     "no pude deducir la historia. Pasa el slug como segundo argumento:\n" +
       "  npm run prepare-image -- <imagen> <slug>"
   );
@@ -57,18 +53,18 @@ function resolveSlug(sourcePath, slugArgument) {
 async function main() {
   const [sourceArgument, slugArgument] = process.argv.slice(2);
   if (!sourceArgument) {
-    fail("falta la imagen de origen.\n  npm run prepare-image -- <imagen> [<slug>]");
+    throw new UserError("falta la imagen de origen.\n  npm run prepare-image -- <imagen> [<slug>]");
   }
 
   const sourcePath = path.resolve(sourceArgument);
   if (!existsSync(sourcePath)) {
-    fail(`no existe ${sourcePath}`);
+    throw new UserError(`no existe ${sourcePath}`);
   }
 
   const slug = resolveSlug(sourcePath, slugArgument);
   const storyPath = path.join(storiesDir, `${slug}.md`);
   if (!existsSync(storyPath)) {
-    fail(
+    throw new UserError(
       `no existe la historia stories/${slug}.md. La carpeta de la imagen tiene ` +
         "que llamarse igual que su historia, o el build la rechaza."
     );
@@ -78,7 +74,11 @@ async function main() {
   // Se lee a memoria antes de escribir: origen y destino pueden ser el mismo
   // archivo (un principal.jpg que en realidad es PNG).
   const sourceBuffer = readFileSync(sourcePath);
-  const sourceMetadata = await sharp(sourceBuffer).metadata();
+  const sourceMetadata = await sharp(sourceBuffer)
+    .metadata()
+    .catch((error) => {
+      throw new UserError(`no pude leer ${sourcePath} como imagen: ${error.message}`);
+    });
 
   const output = await sharp(sourceBuffer)
     .rotate()
@@ -93,7 +93,7 @@ async function main() {
     .toBuffer({ resolveWithObject: true });
 
   if (output.info.size > MAX_IMAGE_BYTES) {
-    fail(
+    throw new UserError(
       `el JPEG resultante pesa ${output.info.size} bytes, más del máximo ` +
         `(${MAX_IMAGE_BYTES}). Reduce la imagen de origen y vuelve a intentarlo.`
     );
@@ -104,7 +104,7 @@ async function main() {
 
   const written = await sharp(targetPath).metadata();
   if (written.format !== "jpeg") {
-    fail(`${targetPath} no quedó como JPEG (se detectó "${written.format}").`);
+    throw new UserError(`${targetPath} no quedó como JPEG (se detectó "${written.format}").`);
   }
 
   // La carpeta de una historia solo admite principal.jpg: el original se va
@@ -123,4 +123,4 @@ async function main() {
   );
 }
 
-main().catch((error) => fail(error.message));
+runCli(main);
