@@ -26,3 +26,6 @@ jobs:
 
       - name: Estructura de historias
         run: npm run check:structure
+
+      - name: Tiempo de lectura
+        run: npm run reading-time -- --check
