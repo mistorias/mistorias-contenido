@@ -7,7 +7,9 @@
     "node": "~24"
   },
   "scripts": {
-    "imagen": "node scripts/preparar-imagen.mjs"
+    "imagen": "node scripts/preparar-imagen.mjs",
+    "test": "node --test \"scripts/**/*.test.mjs\"",
+    "verificar:estructura": "node scripts/verificar-estructura.mjs"
   },
   "dependencies": {
     "sharp": "0.35.4"
