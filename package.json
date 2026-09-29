@@ -7,7 +7,7 @@
     "node": "~24"
   },
   "scripts": {
-    "imagen": "node scripts/preparar-imagen.mjs",
+    "prepare-image": "node scripts/prepare-image.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\"",
     "check:structure": "node scripts/check-structure.mjs",
     "reading-time": "node scripts/reading-time.mjs"
