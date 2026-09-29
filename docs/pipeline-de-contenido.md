@@ -12,6 +12,7 @@ push a `main`, con los pasos en este orden:
 |------|---------|------------|
 | Pruebas de los scripts | `npm test` | Que los propios scripts del pipeline funcionan. |
 | Estructura de historias | `npm run check:structure` | Que cada historia tiene la sección `## La historia` y no está vacía. |
+| Tiempo de lectura | `npm run reading-time -- --check` | Que `readingTimeMinutes` de cada historia coincide con el que se calcula del texto. |
 
 El orden importa: cada paso da por cierto lo que verifica el anterior.
 
@@ -21,6 +22,7 @@ El orden importa: cada paso da por cierto lo que verifica el anterior.
 npm test
 npm run check:structure                       # todas las historias
 npm run check:structure -- stories/<archivo>.md   # solo esa
+npm run reading-time -- --check                   # verifica, no escribe
 ```
 
 ## Cómo corregir un fallo
@@ -30,6 +32,12 @@ npm run check:structure -- stories/<archivo>.md   # solo esa
   el texto de la historia.
 - **`la sección "## La historia" está vacía`**: la sección existe pero no tiene
   texto antes del siguiente `## `.
+
+- **`readingTimeMinutes es ... y debería ser N`**: el texto de `## La historia`
+  cambió y el tiempo declarado quedó viejo, o falta el campo. Corrígelo con
+  `npm run reading-time -- stories/<archivo>.md`, o con
+  `npm run reading-time -- --changed` para todas las historias que git ve
+  modificadas. Se calcula a 200 palabras por minuto, redondeado hacia arriba.
 
 La CI no corrige ni hace commits por su cuenta: los commits de este repositorio
 van firmados (ver CLAUDE.md §9).
