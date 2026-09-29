@@ -8,8 +8,8 @@
 //   npm run reading-time -- --check [...]         # no escribe: falla si algo no coincide
 
 import { execFileSync } from "node:child_process";
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync, writeFileSync } from "node:fs";
+import { allStories, STORIES_DIRECTORY } from "./lib/all-stories.mjs";
 import { changedStories } from "./lib/changed-stories.mjs";
 import {
   READING_TIME_KEY,
@@ -17,16 +17,9 @@ import {
   storyReadingMinutes,
   writeMinutes
 } from "./lib/reading-time.mjs";
+import { runCli, UserError } from "./lib/run-cli.mjs";
 
-const STORIES_DIRECTORY = "stories";
 const KNOWN_FLAGS = ["--check", "--changed"];
-
-function allStories() {
-  return readdirSync(STORIES_DIRECTORY)
-    .filter((name) => name.endsWith(".md"))
-    .sort()
-    .map((name) => join(STORIES_DIRECTORY, name));
-}
 
 function storiesChangedInGit() {
   const output = execFileSync("git", ["status", "--porcelain", "--", `${STORIES_DIRECTORY}/*.md`], {
@@ -35,69 +28,71 @@ function storiesChangedInGit() {
   return changedStories(output);
 }
 
-function exitWithError(message) {
-  console.error(message);
-  process.exit(1);
-}
-
-const args = process.argv.slice(2);
-const check = args.includes("--check");
-const onlyChanged = args.includes("--changed");
-const requestedFiles = args.filter((arg) => !arg.startsWith("--"));
-const unknownFlags = args.filter((arg) => arg.startsWith("--") && !KNOWN_FLAGS.includes(arg));
-
-if (unknownFlags.length > 0) {
-  exitWithError(`Opción desconocida: ${unknownFlags.join(", ")}. Opciones: --changed, --check.`);
-}
-
-if (onlyChanged && requestedFiles.length > 0) {
-  exitWithError("Usa --changed o una lista de archivos, no las dos a la vez.");
-}
-
-const files = onlyChanged
-  ? storiesChangedInGit()
-  : requestedFiles.length > 0
-    ? requestedFiles
-    : allStories();
-
-if (files.length === 0) {
-  console.log("No hay historias modificadas.");
-  process.exit(0);
-}
-
-const errors = [];
-let updated = 0;
-
-for (const file of files) {
-  try {
-    const markdown = readFileSync(file, "utf8");
-    const expected = storyReadingMinutes(markdown, file);
-    const declared = readDeclaredMinutes(markdown);
-
-    if (declared === expected) continue;
-
-    if (check) {
-      errors.push(
-        `${file}: ${READING_TIME_KEY} es ${declared ?? "inexistente"} y debería ser ${expected}. ` +
-          `Corrígelo con: npm run reading-time -- ${file}`
-      );
-      continue;
-    }
-
-    writeFileSync(file, writeMinutes(markdown, expected, file));
-    updated += 1;
-    console.log(`${file}: ${READING_TIME_KEY} ${declared ?? "(nuevo)"} → ${expected}`);
-  } catch (error) {
-    errors.push(error.message);
+function parseArgs(args) {
+  const unknownFlags = args.filter((arg) => arg.startsWith("--") && !KNOWN_FLAGS.includes(arg));
+  if (unknownFlags.length > 0) {
+    throw new UserError(`Opción desconocida: ${unknownFlags.join(", ")}. Opciones: --changed, --check.`);
   }
+
+  const files = args.filter((arg) => !arg.startsWith("--"));
+  const onlyChanged = args.includes("--changed");
+  if (onlyChanged && files.length > 0) {
+    throw new UserError("Usa --changed o una lista de archivos, no las dos a la vez.");
+  }
+
+  return { check: args.includes("--check"), onlyChanged, files };
 }
 
-if (errors.length > 0) {
-  exitWithError(errors.join("\n"));
+async function main() {
+  const { check, onlyChanged, files: requestedFiles } = parseArgs(process.argv.slice(2));
+
+  const files = onlyChanged
+    ? storiesChangedInGit()
+    : requestedFiles.length > 0
+      ? requestedFiles
+      : allStories();
+
+  if (files.length === 0) {
+    console.log("No hay historias modificadas.");
+    return;
+  }
+
+  const errors = [];
+  let updated = 0;
+
+  for (const file of files) {
+    try {
+      const markdown = readFileSync(file, "utf8");
+      const expected = storyReadingMinutes(markdown, file);
+      const declared = readDeclaredMinutes(markdown);
+
+      if (declared === expected) continue;
+
+      if (check) {
+        errors.push(
+          `${file}: ${READING_TIME_KEY} es ${declared ?? "inexistente"} y debería ser ${expected}. ` +
+            `Corrígelo con: npm run reading-time -- ${file}`
+        );
+        continue;
+      }
+
+      writeFileSync(file, writeMinutes(markdown, expected, file));
+      updated += 1;
+      console.log(`${file}: ${READING_TIME_KEY} ${declared ?? "(nuevo)"} → ${expected}`);
+    } catch (error) {
+      errors.push(error.message);
+    }
+  }
+
+  if (errors.length > 0) {
+    throw new UserError(errors.join("\n"));
+  }
+
+  console.log(
+    check
+      ? `Tiempo de lectura correcto en ${files.length} historia(s).`
+      : `${updated} de ${files.length} historia(s) actualizada(s).`
+  );
 }
 
-console.log(
-  check
-    ? `Tiempo de lectura correcto en ${files.length} historia(s).`
-    : `${updated} de ${files.length} historia(s) actualizada(s).`
-);
+runCli(main);

@@ -5,34 +5,29 @@
 //   npm run check:structure                       # todas las historias
 //   npm run check:structure -- stories/a.md ...   # solo esos archivos
 
-import { readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync } from "node:fs";
+import { allStories } from "./lib/all-stories.mjs";
+import { runCli, UserError } from "./lib/run-cli.mjs";
 import { extractStorySection } from "./lib/story-structure.mjs";
 
-const STORIES_DIRECTORY = "stories";
+async function main() {
+  const args = process.argv.slice(2);
+  const files = args.length > 0 ? args : allStories();
 
-function allStories() {
-  return readdirSync(STORIES_DIRECTORY)
-    .filter((name) => name.endsWith(".md"))
-    .sort()
-    .map((name) => join(STORIES_DIRECTORY, name));
-}
-
-const args = process.argv.slice(2);
-const files = args.length > 0 ? args : allStories();
-
-const errors = [];
-for (const file of files) {
-  try {
-    extractStorySection(readFileSync(file, "utf8"), file);
-  } catch (error) {
-    errors.push(error.message);
+  const errors = [];
+  for (const file of files) {
+    try {
+      extractStorySection(readFileSync(file, "utf8"), file);
+    } catch (error) {
+      errors.push(error.message);
+    }
   }
+
+  if (errors.length > 0) {
+    throw new UserError(errors.join("\n"));
+  }
+
+  console.log(`Estructura correcta en ${files.length} historia(s).`);
 }
 
-if (errors.length > 0) {
-  console.error(errors.join("\n"));
-  process.exit(1);
-}
-
-console.log(`Estructura correcta en ${files.length} historia(s).`);
+runCli(main);
