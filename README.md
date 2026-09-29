@@ -5,7 +5,11 @@ Repositorio publico de contenido editorial para [mistorias-web](https://github.c
 ## Estructura
 
 - `stories/` — historias en Markdown con frontmatter validado por el sitio.
-- `scripts/` — herramientas del repositorio, como la que prepara la imagen de una historia.
+- `scripts/` — herramientas del repositorio: preparar la imagen de una historia, verificar su
+  estructura y calcular su tiempo de lectura.
+- `docs/` — cómo se validan las historias ([pipeline](docs/pipeline-de-contenido.md)) y las
+  convenciones del [frontmatter](docs/convenciones-del-frontmatter.md) y de los
+  [scripts](docs/convenciones-de-scripts.md).
 
 ## Imagen de una historia
 
@@ -32,6 +36,18 @@ npm run prepare-image -- ~/Descargas/ilustracion.png 2026-10-04-mi-historia
 
 Después, declara `imageAlt`, `imageCredit` e `imageLicense` en el frontmatter.
 
+## Tiempo de lectura
+
+Cada historia declara `readingTimeMinutes` en su frontmatter. No se escribe a mano: lo
+calcula un script (palabras de `## La historia` entre 200 por minuto, redondeado hacia
+arriba), y la CI verifica en cada PR que el valor declarado coincida.
+
+```bash
+npm run reading-time -- --changed            # las historias que git ve nuevas o modificadas
+npm run reading-time -- stories/<archivo>.md # solo esa
+npm run reading-time -- --check              # verifica todas, sin escribir
+```
+
 ## Formato básico de una historia
 
 Para adicionar la imagen requiere de otros atributos adicionales.
@@ -44,6 +60,7 @@ summary: "Resumen breve"
 date: "2026-04-26"
 author: "Autor"
 authorship: "escrito-por-persona"
+readingTimeMinutes: 4
 themes: ["tag4", "tag2"]
 ---
 Cuerpo en markdown sin HTML crudo.
