@@ -42,6 +42,17 @@ npm run reading-time -- --check                   # verifica, no escribe
 La CI no corrige ni hace commits por su cuenta: los commits de este repositorio
 van firmados (ver CLAUDE.md §9).
 
+## Actions fijados por commit
+
+Los actions del workflow se referencian por su SHA completo de commit y no por
+una etiqueta como `@v4`: una etiqueta se puede mover a otro código, un SHA no.
+Al lado va un comentario con la versión que corresponde, para que se lea.
+
+Para actualizar uno, busca el SHA de la versión nueva (por ejemplo
+`git ls-remote --tags https://github.com/actions/checkout 'v4*'`; si la etiqueta
+es anotada, usa la línea `^{}`, que es la del commit) y cambia SHA y comentario
+juntos.
+
 Las convenciones para escribir o cambiar estos scripts (idioma del código, de los
 comentarios y de los mensajes) están en
 [convenciones-de-scripts.md](convenciones-de-scripts.md).
