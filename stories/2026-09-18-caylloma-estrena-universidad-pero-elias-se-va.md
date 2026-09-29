@@ -4,6 +4,7 @@ summary: "Caylloma estrena una universidad agraria a cuatro horas de Chivay, y e
 date: "2026-09-18"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
+readingTimeMinutes: 2
 themes: ["educacion-superior", "oferta-academica", "becas", "caylloma", "migracion-estudiantil", "estudiantes"]
 imageAlt: "Ilustración de Rigoberta, de espaldas y con sombrero, en el mirador Cruz del Cóndor del valle del Colca, viendo un bus turístico cruzar un puente sobre el cañón mientras un cóndor vuela por encima"
 imageCredit: "Mistorias (ilustración generada con ChatGPT)"

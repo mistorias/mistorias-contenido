@@ -4,6 +4,7 @@ summary: "Las zapatillas gastadas y el barrio bastan para que el grupo popular d
 date: "2026-09-27"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
+readingTimeMinutes: 4
 themes: ["acoso-escolar", "bullying", "clasismo", "violencia-escolar"]
 imageAlt: "Grupo de estudiantes que incomodan a un estudiante vistiendo pantalones con huecos y zapatillas usadas."
 imageCredit: "Mistorias (ilustración generada con Midjourney)"

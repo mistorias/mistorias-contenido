@@ -4,6 +4,7 @@ summary: "Perdí un año por un certificado retenido hasta que mi tía usó sus 
 date: "2026-09-04"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
+readingTimeMinutes: 4
 themes: ["extraedad", "certificado-de-estudios", "cobros-escolares", "beca-18", "educacion-superior"]
 imageAlt: "Ilustración de un hombre sentado entre estantes de libros y, detrás, un gran reloj de arena a la mitad"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
