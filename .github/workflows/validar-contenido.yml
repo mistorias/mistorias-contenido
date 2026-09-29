@@ -25,4 +25,4 @@ jobs:
         run: npm test
 
       - name: Estructura de historias
-        run: npm run verificar:estructura
+        run: npm run check:structure

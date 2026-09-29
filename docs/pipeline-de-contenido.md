@@ -11,7 +11,7 @@ push a `main`, con los pasos en este orden:
 | Paso | Comando | Qué valida |
 |------|---------|------------|
 | Pruebas de los scripts | `npm test` | Que los propios scripts del pipeline funcionan. |
-| Estructura de historias | `npm run verificar:estructura` | Que cada historia tiene la sección `## La historia` y no está vacía. |
+| Estructura de historias | `npm run check:structure` | Que cada historia tiene la sección `## La historia` y no está vacía. |
 
 El orden importa: cada paso da por cierto lo que verifica el anterior.
 
@@ -19,8 +19,8 @@ El orden importa: cada paso da por cierto lo que verifica el anterior.
 
 ```bash
 npm test
-npm run verificar:estructura                       # todas las historias
-npm run verificar:estructura -- stories/<archivo>.md   # solo esa
+npm run check:structure                       # todas las historias
+npm run check:structure -- stories/<archivo>.md   # solo esa
 ```
 
 ## Cómo corregir un fallo
@@ -33,3 +33,7 @@ npm run verificar:estructura -- stories/<archivo>.md   # solo esa
 
 La CI no corrige ni hace commits por su cuenta: los commits de este repositorio
 van firmados (ver CLAUDE.md §9).
+
+Las convenciones para escribir o cambiar estos scripts (idioma del código, de los
+comentarios y de los mensajes) están en
+[convenciones-de-scripts.md](convenciones-de-scripts.md).
