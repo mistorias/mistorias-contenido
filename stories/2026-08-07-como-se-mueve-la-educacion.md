@@ -4,6 +4,7 @@ summary: "Domos en Junín, paro docente argentino, menos estudiantes en la regi�
 date: "2026-08-07"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
+readingTimeMinutes: 3
 tags: ["junin", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
 imageAlt: "Ilustración de una niña con mochila caminando hacia la puerta de un edificio, con otro edificio azul de paredes agrietadas al fondo"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"

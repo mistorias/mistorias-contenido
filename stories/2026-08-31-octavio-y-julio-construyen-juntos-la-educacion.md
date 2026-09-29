@@ -4,6 +4,7 @@ summary: "Octavio y Julio arman juntos un castillo de legos; Perú ensaya lo mis
 date: "2026-08-31"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
+readingTimeMinutes: 2
 themes: ["apafa", "docentes", "estudiantes", "participacion-familiar", "capacitacion-docente"]
 imageAlt: "dos niños construyendo un castillo de LEGO"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"

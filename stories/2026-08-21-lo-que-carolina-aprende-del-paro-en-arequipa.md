@@ -4,6 +4,7 @@ summary: "El paro de transporte mantiene a Carolina en clases remotas en Arequip
 date: "2026-08-21"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
+readingTimeMinutes: 3
 tags: ["continuidad-educativa", "paro-de-transporte", "clases-remotas", "infraestructura-escolar", "aulas-domo"]
 imageAlt: "Ilustración de una mujer con audífonos frente a una videollamada de cinco personas en un monitor, con un candado azul gigante junto a un edificio al otro lado de la ventana"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
