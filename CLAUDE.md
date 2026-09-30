@@ -42,7 +42,7 @@ date: "2026-08-07"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 4
-tags: ["tag-uno", "tag-dos", "tag-tres"]
+themes: ["tema-uno", "tema-dos", "tema-tres"]
 ---
 ```
 
@@ -54,7 +54,7 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
 | `author` | Obligatorio. **No es el nombre de la persona: es el slug de una ficha en `authors/`**, sin la extensión (`paolo-carrasco` → `authors/paolo-carrasco.md`). Si la ficha no existe, el build falla. Ver §8. |
 | `authorship` | Obligatorio. Exactamente uno de `escrito-por-persona`, `editado-con-ia`, `escrito-con-ia`. Declara qué hizo la inteligencia artificial **en esa historia**, no en general. Ver §8.2. |
 | `readingTimeMinutes` | Obligatorio. Entero positivo, **en minutos**. No se escribe a mano: lo calcula `npm run reading-time` y la CI verifica que coincida. Ver [docs/convenciones-del-frontmatter.md](docs/convenciones-del-frontmatter.md). |
-| `tags` | **Mínimo 3, máximo 7.** Ver §3. |
+| `themes` | **Mínimo 3, máximo 7.** Ver §3. |
 | `imageAlt`, `imageCredit`, `imageLicense` | **Opcionales en conjunto**: si la historia tiene carpeta de imagen (`stories/<slug>/principal.jpg`, ver §7), los tres son obligatorios; si no tiene imagen, ninguno debe declararse. El build lo exige así (`story-image-requirements.ts` en mistorias-web) y falla si falta uno de los tres, o si sobra alguno sin imagen. |
 
 Convención de escritura. El cargador de hoy tolera más que esto, pero escribir así
@@ -72,18 +72,18 @@ Estas dos sí rompen el build, hoy y con cualquier cargador:
   cualquier `<...>` y falla el build. Los enlaces markdown `[texto](url)` están bien;
   los autoenlaces `<https://…>` **no**.
 
-## 3. Etiquetas
+## 3. Temas
 
 Entre 3 y 7, en minúsculas, sin tildes, separadas por guiones
 (`inteligencia-artificial`, no `Inteligencia Artificial`).
 
 Deben apuntar a **los puntos más importantes de esa historia en particular**: lo que
-distingue a esta pieza de las demás. Una etiqueta que sirve para cualquier historia
+distingue a esta pieza de las demás. Un tema que sirve para cualquier historia
 del sitio no aporta nada al lector que navega.
 
-Por eso hay etiquetas que no se usan nunca, porque ya son parte de la identidad del
+Por eso hay temas que no se usan nunca, porque ya son parte de la identidad del
 sitio, y otras que solo se permiten como excepción cuando son el eje central de la
-historia: ver `TAGS.md`.
+historia: ver `TEMAS.md`.
 
 La estructura editorial de una historia (secciones, pilares, cómo tratar las
 fuentes) vive en `CONTRIBUTING.md`, no aquí.
@@ -331,8 +331,8 @@ md5sum stories/<archivo>.md
 
 ## 11. Antes de dar por terminada una historia
 
-Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, etiquetas
-elegidas) está en `CONTRIBUTING.md`.
+Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, temas
+elegidos) está en `CONTRIBUTING.md`.
 
 - [ ] Título de 10 a 15 palabras; resumen de 70 a 200 caracteres; fecha `yyyy-mm-dd`.
 - [ ] El resumen se generó desde el cuerpo ya terminado, dice de qué trata la

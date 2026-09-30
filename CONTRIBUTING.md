@@ -67,11 +67,11 @@ y la historia lo va a decir en su pie. No es una trampa ni resta mérito: se eli
 de tres etiquetas (`escrito-por-persona`, `editado-con-ia`, `escrito-con-ia`) y listo.
 Quien firma sigues siendo tú.
 
-## Etiquetas
+## Temas
 
 Entre 3 y 7, apuntando a los puntos más importantes de esa historia en particular.
-Reglas de formato y la lista de etiquetas excluidas o de uso excepcional están en
-`TAGS.md`.
+Reglas de formato y la lista de temas excluidos o de uso excepcional están en
+`TEMAS.md`.
 
 ## Checklist editorial
 
@@ -81,8 +81,8 @@ Reglas de formato y la lista de etiquetas excluidas o de uso excepcional están 
       escribir esta historia.
 - [ ] La historia combina al menos 2 de los 3 pilares (narrativa humana, datos
       explicados, contexto y reflexión).
-- [ ] Elegí entre 3 y 7 etiquetas propias de esta historia, sin usar las excluidas
-      (ver `TAGS.md`).
+- [ ] Elegí entre 3 y 7 temas propios de esta historia, sin usar los excluidos
+      (ver `TEMAS.md`).
 - [ ] Cada fuente está enlazada, identificada por lo que es, y con sus límites y
       posibles sesgos explicitados.
 - [ ] La acción final ofrece pasos concretos, no una invitación genérica a

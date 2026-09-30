@@ -1,11 +1,11 @@
 ---
 name: publicar-historia
-description: Guía el flujo completo para publicar una nueva historia editorial en este repositorio (mistorias-contenido) — desde recibir el contenido y la fecha del usuario hasta redactar el frontmatter, elegir etiquetas, verificar nombres de personajes, simular el pipeline de agentes de marca (Jaime → Martha → Javier → Mario) y dejar la historia lista para commit y PR. Úsalo siempre que el usuario pida publicar, redactar, subir o crear una historia nueva en este repo, aunque solo diga "publica esta historia" o pegue una noticia y un borrador sin pedir el proceso explícitamente.
+description: Guía el flujo completo para publicar una nueva historia editorial en este repositorio (mistorias-contenido) — desde recibir el contenido y la fecha del usuario hasta redactar el frontmatter, elegir temas, verificar nombres de personajes, simular el pipeline de agentes de marca (Jaime → Martha → Javier → Mario) y dejar la historia lista para commit y PR. Úsalo siempre que el usuario pida publicar, redactar, subir o crear una historia nueva en este repo, aunque solo diga "publica esta historia" o pegue una noticia y un borrador sin pedir el proceso explícitamente.
 ---
 
 # Publicar una historia en Mistorias
 
-Este skill no reemplaza las reglas del repo: **CLAUDE.md, CONTRIBUTING.md y TAGS.md
+Este skill no reemplaza las reglas del repo: **CLAUDE.md, CONTRIBUTING.md y TEMAS.md
 son la fuente de verdad.** Este documento es el orden de pasos para aplicarlas sin
 saltarse ninguna. Si algo aquí contradice a esos archivos, gana el archivo — vuelve
 a leerlo, puede haber cambiado.
@@ -43,7 +43,7 @@ produce texto que hay que rehacer. Para el pipeline del paso 6, lee también
 
 ## Paso 2 — Revisar lo ya publicado
 
-Antes de fijar nombres de personajes o etiquetas, mira qué ya existe en `stories/`.
+Antes de fijar nombres de personajes o temas, mira qué ya existe en `stories/`.
 Limita la búsqueda a las **10 historias más recientes** (ordenadas por fecha
 descendente, que es lo mismo que ordenar por nombre de archivo porque todos
 empiezan con `yyyy-mm-dd`): más atrás que eso, el fondo de nombres peruanos
@@ -84,7 +84,7 @@ paréntesis la primera vez que aparecen).
 proxy y no pudiste abrirla, dilo explícitamente — no presentes como comprobado un
 dato que solo copiaste (CLAUDE.md §10).
 
-## Paso 4 — Frontmatter, etiquetas y nombre de archivo
+## Paso 4 — Frontmatter, temas y nombre de archivo
 
 Redacta el frontmatter según el contrato exacto de CLAUDE.md §2:
 
@@ -96,7 +96,7 @@ date: "yyyy-mm-dd"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 4
-tags: ["tag-uno", "tag-dos", "tag-tres"]
+themes: ["tema-uno", "tema-dos", "tema-tres"]
 ---
 ```
 
@@ -126,8 +126,8 @@ tags: ["tag-uno", "tag-dos", "tag-tres"]
   El registro del resumen firma el archivo entero, frontmatter incluido; si este
   campo cambia después, la verificación vence y hay que repetir el paso 5. Si el
   cuerpo cambia después de correr el script, córrelo de nuevo (CLAUDE.md §2).
-- `tags`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
-  lee `TAGS.md` completo — tiene una lista de etiquetas **siempre excluidas**
+- `themes`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
+  lee `TEMAS.md` completo — tiene una lista de temas **siempre excluidos**
   (`educacion`, `arequipa`, `peru`, `datos`, etc., porque son la identidad del
   sitio entera) y otra de **excepciones** que solo valen cuando son el eje central
   de esa historia puntual, no una mención de paso.
@@ -266,7 +266,7 @@ Repasa el checklist de CLAUDE.md §11 contra lo que acabas de producir:
       recientes (paso 2).
 - [ ] Pipeline Jaime → Martha → Javier → Mario completo, en orden, con umbrales.
 - [ ] Fuentes enlazadas, identificadas por lo que son, con límites y sesgos.
-- [ ] Etiquetas (3-7) revisadas contra `TAGS.md`.
+- [ ] Temas (3-7) revisados contra `TEMAS.md`.
 
 Todavía no valides contra el build de mistorias-web ni prepares el commit — eso es
 el paso 8, y solo si el usuario lo pide.
