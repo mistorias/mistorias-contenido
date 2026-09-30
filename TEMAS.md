@@ -1,17 +1,17 @@
-# Política de etiquetas
+# Política de temas
 
-Una etiqueta sirve para que el lector encuentre historias **relacionadas entre sí**.
-Si una etiqueta aplica a todo el sitio, no separa nada: ocupa uno de los siete
+Un tema sirve para que el lector encuentre historias **relacionadas entre sí**.
+Si un tema aplica a todo el sitio, no separa nada: ocupa uno de los siete
 espacios disponibles sin darle al lector ninguna ruta nueva.
 
-Regla general (ver `CLAUDE.md`, §3): entre 3 y 7 etiquetas por historia, apuntando a
+Regla general (ver `CLAUDE.md`, §3): entre 3 y 7 temas por historia, apuntando a
 los puntos más importantes de esa historia en particular.
 
 ## Excluidas siempre — son la identidad del sitio
 
-Todo Mistorias es esto. Etiquetarlo es repetir el nombre del proyecto.
+Todo Mistorias es esto. Ponerlo como tema es repetir el nombre del proyecto.
 
-| Etiqueta | Por qué |
+| Tema | Por qué |
 |----------|---------|
 | `educacion`, `educativo` | Es el tema del sitio entero. |
 | `arequipa` | Es el lugar desde el que mira la marca, presente en toda historia. |
@@ -27,27 +27,27 @@ puntual, ya está cubierto por ser parte de Mistorias.
 
 ## Excepciones — permitidas solo cuando son el eje central
 
-Estas etiquetas sí distinguen unas historias de otras, pero aparecen con tanta
-frecuencia que, usadas sin criterio, dejan de servir. Se permiten **únicamente**
-cuando la etiqueta nombra el eje central de esa historia — no una mención
+Estos temas sí distinguen unas historias de otras, pero aparecen con tanta
+frecuencia que, usados sin criterio, dejan de servir. Se permiten **únicamente**
+cuando el tema nombra el eje central de esa historia — no una mención
 incidental ni un personaje de paso.
 
-| Etiqueta | Se usa cuando... | No se usa cuando... |
+| Tema | Se usa cuando... | No se usa cuando... |
 |----------|-------------------|----------------------|
 | `docentes` | La historia trata sobre la condición, las demandas o el rol de los docentes (p. ej. un paro, una reforma salarial, una política de formación docente). | Un profesor aparece como personaje narrativo sin que su condición laboral sea el tema. |
 | `estudiantes` | La historia trata sobre la condición de los estudiantes como grupo (p. ej. deserción, acceso, bienestar estudiantil). | Un estudiante es la voz narrativa de la historia, como en la mayoría de las ediciones. |
 | `escuela`, `colegio` | La historia distingue lo escolar de otros niveles (universitario, inicial, comunitario) o de otro tipo de infraestructura. | Toda historia ocurre por defecto en un contexto escolar. |
 | `america-latina` | La historia conecta explícitamente eventos de varios países de la región, y ese alcance regional es parte del argumento. | Se menciona un solo país fuera de Perú como referencia puntual. |
 
-Antes de usar una de estas cuatro, pregúntate: *si le quito esta etiqueta a la
-historia, ¿pierde algo el lector para encontrarla?* Si la respuesta es no, no la
+Antes de usar uno de estos cuatro, pregúntate: *si le quito este tema a la
+historia, ¿pierde algo el lector para encontrarla?* Si la respuesta es no, no lo
 uses.
 
 ## Ejemplo aplicado
 
 La historia `2026-08-07-como-se-mueve-la-educacion.md` trata sobre docentes (el paro
 argentino), estudiantes (Lucía y sus compañeros) y varios países de la región a la
-vez — las tres excepciones aplican legítimamente ahí. Etiquetas propuestas:
+vez — las tres excepciones aplican legítimamente ahí. Temas propuestos:
 
 ```
 ["junin", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
