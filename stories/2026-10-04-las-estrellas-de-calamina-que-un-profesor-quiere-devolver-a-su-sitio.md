@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 6
 themes: ["docentes", "paro-docente", "infraestructura-escolar", "presupuesto-educativo", "francia", "chile"]
+imageAlt: "Ilustración de un aula con techo de calamina donde un profesor de espaldas mira una lámina de planetas, mientras un niño se agacha a tocar los puntos de luz que entran por el techo y caen sobre el piso"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 *A Gonzalo, mi mejor amigo, que me mostró la magia de Bryce Echenique a través de* Amigdalitis de Tarzán, *y a quien quiero hacer honor con este texto.*
