@@ -1,11 +1,11 @@
 ---
-title: "Estrellas de calamina: por qué un profesor de Arequipa irá al paro del 29"
-summary: "PENDIENTE"
+title: "Las estrellas de calamina que un profesor de Arequipa quiere devolver a su sitio"
+summary: "Ramiro le cuenta a su primo cómo sus anécdotas sobre la situación de su colegio en Arequipa lo llevan a sumarse al paro de profesores."
 date: "2026-10-04"
 author: "paolo-carrasco"
-authorship: "editado-con-ia"
+authorship: "escrito-con-ia"
 readingTimeMinutes: 6
-themes: ["docentes", "paro-docente", "infraestructura-escolar", "presupuesto-educativo", "elecciones-regionales", "francia", "chile"]
+themes: ["docentes", "paro-docente", "infraestructura-escolar", "presupuesto-educativo", "francia", "chile"]
 ---
 
 *A Gonzalo, mi mejor amigo, que me mostró la magia de Bryce Echenique a través de* Amigdalitis de Tarzán, *y a quien quiero hacer honor con este texto.*
