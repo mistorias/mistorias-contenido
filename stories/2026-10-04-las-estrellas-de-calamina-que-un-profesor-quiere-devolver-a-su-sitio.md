@@ -4,7 +4,7 @@ summary: "Ramiro le cuenta a su primo cómo sus anécdotas sobre la situación d
 date: "2026-10-04"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
-readingTimeMinutes: 6
+readingTimeMinutes: 5
 themes: ["docentes", "paro-docente", "infraestructura-escolar", "presupuesto-educativo", "francia", "chile"]
 imageAlt: "Ilustración de un aula con techo de calamina donde un profesor de espaldas mira una lámina de planetas, mientras un niño se agacha a tocar los puntos de luz que entran por el techo y caen sobre el piso"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
@@ -15,9 +15,9 @@ imageLicense: "CC BY-NC 4.0"
 
 ## La historia
 
-Me llamo Gonzalo y vivo en España hace tantos años que mi primo Ramiro jura que ya hablo con la zeta. Crecimos juntos en Arequipa, compartimos más de una gripe en casa de la tía Charo y, desde que me vine, nos escribimos casi todas las semanas. Él es profesor en un colegio público; yo, el primo que lee sus mensajes con el primer café de la mañana.
+Me llamo Gonzalo y vivo en Zaragoza desde hace casi 20 años, la mitad de mi vida, la otra mitad en Arequipa, cerca de la casa de mi primo Ramiro, a quien le guardo un afecto profundo. Por ello nos escribimos cada cierto tiempo. Él es profesor en un colegio público; yo, el primo que lee sus mensajes con el primer café de la mañana.
 
-Este domingo, cuando aquí ya era de día y allá todavía era madrugada, me llegó un mensaje suyo por WhatsApp. No era un audio, cosa rara en él. Lo leí dos veces y le pedí permiso para compartirlo tal como me llegó:
+Este domingo he recibido un mensaje suyo por WhatsApp. Lo leí dos veces y le pedí permiso para compartirlo tal como me llegó:
 
 > Gonzalo, primo querido, compañero de infancia y de aquellas gripes compartidas en casa de la tía Charo:
 >
