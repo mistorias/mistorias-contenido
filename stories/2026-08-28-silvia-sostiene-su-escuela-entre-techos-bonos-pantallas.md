@@ -5,7 +5,7 @@ date: "2026-08-28"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 3
-themes: ["infraestructura-educativa", "docentes", "clases-remotas", "tiempo-de-pantalla"]
+themes: ["infraestructura-educativa", "infraestructura-escolar", "docentes", "clases-remotas", "tiempo-de-pantalla"]
 imageAlt: "Ilustración de una directora de espaldas frente a una ventana, mirando un pabellón escolar con paredes agrietadas, con un cuaderno abierto y monedas sobre el escritorio"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
