@@ -59,9 +59,7 @@ La risa es lo que une las dos anécdotas, y Ramiro la explica sin rodeos: se rí
 
 Francia y Chile le dan a Ramiro su esperanza chiquita, y con razón: en dos países muy distintos, quienes protestan son también los estudiantes, no solo los docentes, y reclaman lo mismo que él vive en su aula —aulas llenas, edificios deteriorados, falta de reemplazos, presupuesto—. Ninguna de esas protestas garantiza un resultado, pero muestran que el aula no es un problema privado de cada profesor con su techo.
 
-La PD cierra el círculo: hoy, en Arequipa y en todo el país, se vota en colegios. Las mismas aulas que se usan para elegir a los nuevos gobernadores y alcaldes son las que esas autoridades tendrán que arreglar o dejar como están. Por eso el voto de hoy y el paro del 29 hablan de lo mismo.
-
-**Lo que estas noticias todavía no responden.** No sabemos si el colegio de Ramiro está entre los locales que el IPE considera en riesgo: el informe da porcentajes regionales, no una lista que podamos revisar aquí. Las demandas del SUTEP vienen del propio gremio y no sabemos cuánto del 6% iría a infraestructura ni qué respondió el Gobierno. Las cifras de Francia y de Chile tienen versiones encontradas (gremios frente a ministerio, organizadores frente a policía). Y ninguna nota permite saber cuántos techos se arreglan después de un paro o de una elección. No pudimos abrir las notas originales desde nuestro entorno, que bloquea esos sitios: los datos son los que esas fuentes publican, según sus titulares y resúmenes, y no los verificamos de forma independiente.
+La postdata cierra el círculo: hoy, en Arequipa y en todo el país, se vota en colegios. Las mismas aulas que se usan para elegir a los nuevos gobernadores y alcaldes son las que esas autoridades tendrán que arreglar o dejar como están. Por eso el voto de hoy y el paro del 29 hablan de lo mismo.
 
 ## Acción final
 
