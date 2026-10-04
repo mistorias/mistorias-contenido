@@ -1,6 +1,6 @@
 ---
 title: "Las estrellas de calamina que un profesor de Arequipa quiere devolver a su sitio"
-summary: "Ramiro le cuenta a su primo cómo sus anécdotas sobre la situación de su colegio en Arequipa lo llevan a sumarse al paro de profesores."
+summary: "Ramiro le cuenta a su primo cómo sus anécdotas sobre la situación de su colegio en Arequipa están conectadas con el paro de profesores."
 date: "2026-10-04"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
