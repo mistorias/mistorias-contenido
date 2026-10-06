@@ -13,6 +13,6 @@
     "reading-time": "node scripts/reading-time.mjs"
   },
   "dependencies": {
-    "sharp": "0.35.4"
+    "sharp": "0.35.5"
   }
 }
