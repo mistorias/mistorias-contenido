@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "editado-con-ia"
 readingTimeMinutes: 3
 themes: ["beca-18", "pronabec", "presupuesto-educativo", "educacion-superior", "reglamento-de-becas", "trabajo-y-estudio"]
+imageAlt: "Recepción de una ferretería con un joven entregando tornillos a un cliente mientras deja a un lado un fólder con la postulación a Beca 18."
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
