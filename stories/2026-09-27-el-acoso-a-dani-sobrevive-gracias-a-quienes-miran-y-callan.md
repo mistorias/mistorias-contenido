@@ -5,7 +5,7 @@ date: "2026-09-27"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
 readingTimeMinutes: 4
-themes: ["acoso-escolar", "bullying", "clasismo", "violencia-escolar"]
+themes: ["acoso-escolar", "bullying", "clasismo", "violencia-escolar", "arequipa"]
 imageAlt: "Grupo de estudiantes que incomodan a un estudiante vistiendo pantalones con huecos y zapatillas usadas."
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"

@@ -5,7 +5,7 @@ date: "2026-08-14"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 3
-themes: ["calendario-escolar", "fenomeno-el-nino", "piura", "cade-educacion", "afganistan", "patrimonio-cultural"]
+themes: ["calendario-escolar", "fenomeno-el-nino", "piura", "cade-educacion", "afganistan", "patrimonio-cultural", "arequipa"]
 imageAlt: "Ilustración de dos niñas bajo la lluvia frente a la reja de un edificio antiguo cerrada con un candado azul gigante, una de ellas con paraguas"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
