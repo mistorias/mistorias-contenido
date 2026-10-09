@@ -128,7 +128,7 @@ themes: ["tema-uno", "tema-dos", "tema-tres"]
   cuerpo cambia después de correr el script, córrelo de nuevo (CLAUDE.md §2).
 - `themes`: 3 a 7, minúsculas, sin tildes, separadas por guiones. Antes de elegirlas,
   lee `TEMAS.md` completo — tiene una lista de temas **siempre excluidos**
-  (`educacion`, `arequipa`, `peru`, `datos`, etc., porque son la identidad del
+  (`educacion`, `peru`, `datos`, etc., porque son la identidad del
   sitio entera) y otra de **excepciones** que solo valen cuando son el eje central
   de esa historia puntual, no una mención de paso.
 - Cualquier valor con `:` va entre comillas, o el build falla al parsear.
