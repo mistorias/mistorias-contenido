@@ -5,7 +5,7 @@ date: "2026-10-04"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 5
-themes: ["docentes", "paro-docente", "infraestructura-escolar", "presupuesto-educativo", "francia", "chile"]
+themes: ["docentes", "paro-docente", "infraestructura-escolar", "presupuesto-educativo", "francia", "chile", "arequipa"]
 imageAlt: "Ilustración de un aula con techo de calamina donde un profesor de espaldas mira una lámina de planetas, mientras un niño se agacha a tocar los puntos de luz que entran por el techo y caen sobre el piso"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"

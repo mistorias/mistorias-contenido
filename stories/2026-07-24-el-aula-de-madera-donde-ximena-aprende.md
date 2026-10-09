@@ -5,7 +5,7 @@ date: "2026-07-24"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 3
-themes: ["primera-infancia", "pronoei", "presupuesto-educativo", "fenomeno-el-nino", "piura", "educacion-financiera"]
+themes: ["primera-infancia", "pronoei", "presupuesto-educativo", "fenomeno-el-nino", "piura", "educacion-financiera", "arequipa"]
 imageAlt: "Ilustración de una niña de espaldas en un aula rústica de madera y calamina, mirando por la ventana una construcción con grúas en la ciudad"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
