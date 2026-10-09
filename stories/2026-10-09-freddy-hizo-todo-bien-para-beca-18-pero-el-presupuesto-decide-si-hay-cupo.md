@@ -1,6 +1,6 @@
 ---
 title: "Freddy hizo todo bien para Beca 18, pero el presupuesto decide si hay cupo"
-summary: "Con lo que gana en una ferretería de Huancayo, en casa de Freddy se come mejor. Postuló a la beca sin la que no podría estudiar, pero nadie sabe si habrá cupo cuando le toque."
+summary: "Lo que Freddy gana entre tornillos en Huancayo puso algo sabroso en la mesa. Sin embargo, su postulación a Beca 18, que podría ayudarle a traer más sabor, está más difícil que otros años."
 date: "2026-10-09"
 author: "paolo-carrasco"
 authorship: "editado-con-ia"
