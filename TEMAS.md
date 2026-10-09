@@ -14,8 +14,7 @@ Todo Mistorias es esto. Ponerlo como tema es repetir el nombre del proyecto.
 | Tema | Por qué |
 |----------|---------|
 | `educacion`, `educativo` | Es el tema del sitio entero. |
-| `arequipa` | Es el lugar desde el que mira la marca, presente en toda historia. |
-| `peru` | Igual que el anterior, un grado más amplio. |
+| `peru` | Es el alcance de Mistorias: todas las historias son del Perú. |
 | `mistorias` | El nombre del proyecto. |
 | `historia`, `historias` | El formato de todo lo que se publica. |
 | `noticias`, `actualidad`, `semanal` | Describen el formato editorial, no el tema. |
@@ -24,6 +23,14 @@ Todo Mistorias es esto. Ponerlo como tema es repetir el nombre del proyecto.
 
 Estas no tienen excepción: no importa cuán central sea el tema en una historia
 puntual, ya está cubierto por ser parte de Mistorias.
+
+## Lugares — un tema cuando la historia los menciona
+
+Mistorias mira todo el Perú, así que un lugar sí distingue unas historias de
+otras. Desde que el alcance dejó de ser solo Arequipa, `arequipa` es un tema
+como `piura` o `junin`: se usa en toda historia que la mencione, sea porque
+ocurre allí o porque la nombra como referencia, y no en las que no la nombran.
+Lo mismo vale para cualquier otra región, provincia o ciudad.
 
 ## Excepciones — permitidas solo cuando son el eje central
 
@@ -50,9 +57,9 @@ argentino), estudiantes (Lucía y sus compañeros) y varios países de la regió
 vez — las tres excepciones aplican legítimamente ahí. Temas propuestos:
 
 ```
-["junin", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
+["junin", "arequipa", "docentes", "estudiantes", "inteligencia-artificial", "america-latina"]
 ```
 
-Quedan fuera `educacion` y `arequipa` (excluidas siempre) y entra `estudiantes`
+Queda fuera `educacion` (excluida siempre) y entra `estudiantes`
 porque el eje de la historia no es solo Lucía como narradora sino la condición
 estudiantil frente a las cuatro noticias.
