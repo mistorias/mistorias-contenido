@@ -11,7 +11,7 @@ imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
 ---
 
-En Mórrope, el calendario de la profesora Hilda se encogió en una tarde. La UGEL confirmó que, por el riesgo de El Niño, las clases terminarán a fines de noviembre. Hilda contó con los dedos: seis semanas. Le quedaban once clases con sus salones, incluyendo su favorito 4º B.
+En Mórrope, el calendario de la profesora Hilda se encogió en una tarde. La UGEL confirmó que, por el riesgo de El Niño, las clases terminarán a fines de noviembre. Hilda contó con los dedos: seis semanas. Le quedaban diez clases con sus salones, incluyendo su favorito 4º B.
 
 Esa noche, mientras decidía qué recortar de lo planificado, le llegó un audio de su hermana Maribel, también profesora:
 
@@ -21,11 +21,11 @@ Claro que se acordaba. Rocío les había dejado un cuaderno con sesiones de tít
 
 El problema tenía nombre: Dayana, dieciséis años, la mejor en matemáticas pero también la que más tardanzas acumulaba. Hilda sabía por qué. Antes de clase, Dayana llevaba a su hermano al inicial y ayudaba a su madre a sacar agua del pozo. En marzo tenía claro que quería estudiar enfermería. En septiembre ya ni lo mencionaba.
 
-Al día siguiente, el director repartió fotocopias del proyecto de reglamento de disciplina que el Minedu había puesto en consulta. Hilda subrayó una línea: más de tres tardanzas injustificadas en un bimestre serían falta grave. Dayana llevaba once. Pensó, con una ironía que no dijo en voz alta, que ninguna casilla preguntaba cuántos baldes cargaba una alumna antes de las siete.
+Al día siguiente, el director repartió fotocopias del proyecto de reglamento de disciplina que el Minedu había puesto en consulta. Hilda subrayó una línea: más de tres tardanzas injustificadas en un bimestre serían falta grave. Dayana llevaba ocho. Pensó, con una ironía que no dijo en voz alta, que ninguna casilla preguntaba cuántos baldes cargaba una alumna antes de las siete.
 
 En la sala de profesores alguien dijo: “Por fin, orden”. Otro respondió: “Orden sí, pero ¿quién va a preguntar por qué llegan tarde?”. Nadie contestó. Sonó el timbre.
 
-Hilda decidió no preparar las once clases esta semana. Haría cuatro, las que más importaban. Y una quinta, fuera del horario: una visita.
+Hilda decidió no preparar las diez clases esta semana. Haría cuatro, las que más importaban. Y una quinta, fuera del horario: una visita.
 
 El sábado caminó hasta la casa de Dayana. Su madre la recibió con desconfianza y luego con una silla. Hablaron del pozo, del pasaje a Chiclayo, de lo que cuesta un instituto. Dayana escuchaba desde la puerta, mientras cuidaba a su hermanito.
 
