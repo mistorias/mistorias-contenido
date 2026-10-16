@@ -1,11 +1,11 @@
 ---
-title: "El talento y la disciplina a veces pueden entrar en conflicto con los sueños"
+title: "Dayana es la mejor en matemáticas, pero la conducta solo cuenta sus tardanzas"
 summary: "Dayana es la mejor en matemáticas pero la que más llega tarde. En marzo quería ser enfermera; en septiembre ya ni lo mencionaba. Su profesora sabe por qué pero le quedan solo seis semanas de clases."
 date: "2026-10-16"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
-themes: ["docentes", "talento", "conducta", "secundaria", "niñas", "fenomeno-el-nino"]
+themes: ["calendario-escolar", "conducta", "secundaria", "ninas", "fenomeno-el-nino", "lambayeque"]
 imageAlt: "Un salón de clases, la maestra al frente de los alumnos y alumnas, detrás la pizarra y un reloj azul; la puerta del salón abierta y una niña acongojada"
 imageCredit: "Mistorias (ilustración generada con Midjourney)"
 imageLicense: "CC BY-NC 4.0"
@@ -43,12 +43,12 @@ Antes de irse, Hilda arrancó una hoja del cuaderno de Rocío y se la entregó a
 
 ## Conectando los puntos
 
-Esta semana el Estado recortó el calendario y propuso medir la conducta con una nota. La experiencia premiada apunta a otra cosa: lo que sostiene a una adolescente en el aula es el acompañamiento constante, la tutoría y un plan de vida. Hay incertidumbre. Las fechas de cierre van del 27 de noviembre al 11 de diciembre según la región, y el reglamento aún es un proyecto. La pregunta para el Perú es si, con menos tiempo, se priorizará sancionar o acompañar. Un buen indicador será la asistencia y la nivelación en marzo de 2027.
+Esta semana el Estado recortó el calendario para algunas regiones y propuso medir la conducta con una nota. La experiencia premiada apunta a otra cosa: lo que sostiene a una adolescente en el aula es el acompañamiento constante, la tutoría y un plan de vida. Hay incertidumbre. Las fechas de cierre van del 27 de noviembre al 11 de diciembre según la región, y el reglamento aún es un proyecto. La pregunta para el Perú es si, con menos tiempo, se priorizará sancionar o acompañar. Un buen indicador será la asistencia y la nivelación en marzo de 2027.
 
 ## Acción final
 
 Una sanción puede registrar una tardanza, pero solo una conversación puede explicarla.
 
-El reglamento de disciplina todavía está abierto a propuestas, y esa ventana se cierra en once días.
+El reglamento de disciplina todavía está abierto a propuestas, y esa ventana se cierra antes del 27 de octubre.
 
-Antes del 27 de octubre, puedes envíar al Minedu una propuesta concreta para el reglamento de disciplina. Por ejemplo: que, antes de sancionar una tardanza reiterada, el colegio converse con la familia para entender la causa. El canal está en la Resolución Ministerial N.° 613-2026-MINEDU, en [gob.pe/minedu](https://www.gob.pe/minedu).
+Antes del 27 de octubre, puedes enviar al Minedu una propuesta concreta para el reglamento de disciplina. Por ejemplo: que, antes de sancionar una tardanza reiterada, el colegio converse con la familia para entender la causa. El canal está en la Resolución Ministerial N.° 613-2026-MINEDU, en [gob.pe/minedu](https://www.gob.pe/institucion/minedu/normas-legales/8709801-613-2026-minedu).
