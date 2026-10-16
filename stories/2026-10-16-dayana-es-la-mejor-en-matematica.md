@@ -17,7 +17,7 @@ En Mórrope, el calendario de la profesora Hilda se encogió en una tarde. La UG
 
 Esa noche, mientras decidía qué recortar de lo planificado, le llegó un audio de su hermana Maribel, también profesora:
 
-—¿Te acuerdas de Rocío, la facilitadora de "_Niñas con Oportunidades_" que nos capacitó en Chiclayo? ¡A su programa le dieron el premio de la UNESCO!
+—¿Te acuerdas de Rocío, la facilitadora de “Niñas con Oportunidades” que nos capacitó en Chiclayo? ¡A su programa le dieron el premio de la UNESCO!
 
 Claro que se acordaba. Rocío les había dejado un cuaderno con sesiones de títulos sencillos: “Mi presupuesto”, “A quién le pido ayuda”, “Mi plan a cinco años”. Hilda lo sacó del cajón. Lo había usado tanto que tenía las esquinas blandas. El premio estaba en París. El cuaderno, en su mesa. El problema, en su aula.
 
@@ -39,7 +39,7 @@ Antes de irse, Hilda arrancó una hoja del cuaderno de Rocío y se la entregó a
 
 - **El Niño adelanta el cierre del año escolar**: al menos nueve regiones modificaron sus calendarios, y especialistas advierten vacíos de aprendizaje si no se reorganiza lo esencial. [El Comercio](https://elcomercio.pe/peru/el-nino-cambia-el-calendario-escolar-el-2026-se-acorta-y-el-minedu-ya-distribuye-el-material-educativo-del-2027-noticia/)
 - **Minedu consulta nuevas reglas de disciplina escolar**: propone nota de conducta y expulsión tras tres suspensiones; recibe aportes ciudadanos hasta el 27 de octubre. [Infobae](https://www.infobae.com/peru/2026/10/13/minedu-todo-lo-que-sabe-de-las-nuevas-reglas-propuestas-para-recuperar-la-disciplina-escolar-en-colegios/)
-- **UNESCO premia a CARE Perú por "Niñas con Oportunidades"**: el programa, ya integrado en colegios públicos, ayuda a adolescentes indígenas y rurales a terminar la secundaria. [Infobae / EFE](https://www.infobae.com/america/agencias/2026/10/09/unesco-premia-a-care-peru-por-apoyo-a-la-educacion-de-ninas-indigenas-y-de-medios-rurales/)
+- **UNESCO premia a CARE Perú por “Niñas con Oportunidades”**: el programa, ya integrado en colegios públicos, ayuda a adolescentes indígenas y rurales a terminar la secundaria. [Infobae / EFE](https://www.infobae.com/america/agencias/2026/10/09/unesco-premia-a-care-peru-por-apoyo-a-la-educacion-de-ninas-indigenas-y-de-medios-rurales/)
 
 ## Conectando los puntos
 
