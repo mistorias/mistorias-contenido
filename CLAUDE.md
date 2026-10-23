@@ -223,11 +223,11 @@ El nombre del archivo **es** la dirección de la historia:
   las tres claves de frontmatter que acompañan a la imagen, y el
   [ADR 0005](https://github.com/mistorias/mistorias-web/blob/main/docs/adr/0005-imagenes-en-historias.md)
   de mistorias-web para el porqué).
-- **Registro de publicaciones.** En la misma carpeta vivirá
-  `stories/<slug>/publicaciones.json`, el registro de lo publicado en redes. Lo
+- **Registro de difusión.** En la misma carpeta vivirá
+  `stories/<slug>/difusion.json`, el registro de lo difundido en redes. Lo
   escribe solo el bot de mistorias-redes-sociales, por PR; al redactar una
   historia no se crea ni se edita. Detalle y esquema en
-  [docs/registro-de-publicaciones.md](docs/registro-de-publicaciones.md).
+  [docs/registro-de-difusion.md](docs/registro-de-difusion.md).
 - **La imagen tiene que ser un JPEG real**, no un PNG con la extensión cambiada: el
   build lo detecta por el contenido y falla. Las ilustraciones suelen llegar en PNG;
   conviértelas con el script del repositorio, que no necesita mistorias-web:
