@@ -1,6 +1,6 @@
 ---
 title: "Yesenia quiere estudiar Literatura, pero la beca que necesita prefiere el puerto"
-summary: "En Paita, Yesenia quiere estudiar Literatura y su papá, pescador, siempre le dijo “lo que sea, menos el mar”. Pero las becas que necesita para ir a Lima van a priorizar sectores como la pesca."
+summary: "Yesenia, de Paita, quiere estudiar Literatura en Lima. Su papá pescador le repite “lo que sea, menos el mar”, pero la beca que necesita empuja justo hacia el puerto."
 date: "2026-10-23"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
@@ -13,11 +13,11 @@ imageLicense: "CC BY-NC 4.0"
 
 ## La historia
 
-En Paita, Yesenia subraya novelas como otros subrayan el horario de la combi. Tiene dieciséis años, está en quinto de secundaria y quiere estudiar Literatura en Lima. Su papá, Teodoro, pescador artesanal desde los catorce, la apoya con un solo argumento: "Lo que sea, hija, menos el mar".
+En Paita, Yesenia subraya novelas como otros subrayan el horario de la combi. Tiene dieciséis años, está en quinto de secundaria y quiere estudiar Literatura en Lima. Su papá, Teodoro, pescador artesanal desde los catorce, la apoya con un solo argumento: “Lo que sea, hija, menos el mar”.
 
-El martes, la profesora Gladys, tutora del salón, pegó en el periódico mural una hoja con los sectores que el programa de becas va a priorizar el próximo año: pesca, agricultura, minería, alta tecnología, puertos y aeropuertos. Debajo escribió con plumón: "Nueve de cada diez becas".
+El martes, la profesora Gladys, tutora del salón, pegó en el periódico mural una hoja con los sectores que el programa de becas va a priorizar el próximo año: pesca, agricultura, minería, alta tecnología, puertos y aeropuertos. Debajo escribió con plumón: “Nueve de cada diez becas”.
 
-Yesenia buscó "Literatura" en la hoja como quien busca su nombre en una lista de ingresantes. No estaba.
+Yesenia buscó “Literatura” en la hoja como quien busca su nombre en una lista de ingresantes. No estaba.
 
 —Queda una de cada diez —le dijo Gladys—. Es más difícil, no imposible.
 
@@ -42,7 +42,7 @@ Yesenia sacó un lápiz. Todavía no sabía qué carrera iba a elegir. Pero ya s
 ## Noticias principales
 
 - **Pronabec ofrecerá 20 mil becas en 2027, 90% para carreras ligadas al mercado laboral**: es un anuncio del ministro de Educación recogido por [Infobae](https://www.infobae.com/peru/2026/10/21/pronabec-ofrecera-20-mil-becas-en-2027-el-90-estara-dirigido-a-carreras-vinculadas-al-mercado-laboral-peruano/), sin presupuesto publicado.
-- **El Minedu adelantará el fin de clases por las lluvias de El Niño, pero los "domos" siguen sin instalarse**, informó [Infobae](https://www.infobae.com/peru/2026/10/22/minedu-adelanta-el-fin-del-ano-escolar-en-regiones-afectadas-por-lluvias-del-fenomeno-el-nino-cuando-acabaran-las-clases/); solo Tumbes tiene fecha: 4 de diciembre.
+- **El Minedu adelantará el fin de clases por las lluvias de El Niño, pero los “domos” siguen sin instalarse**, informó [Infobae](https://www.infobae.com/peru/2026/10/22/minedu-adelanta-el-fin-del-ano-escolar-en-regiones-afectadas-por-lluvias-del-fenomeno-el-nino-cuando-acabaran-las-clases/); solo Tumbes tiene fecha: 4 de diciembre.
 - **Un colegio de Carabayllo, en Lima, logró 50 ingresantes a San Marcos en el examen 2027-I**, entre unos 19 mil postulantes, según [Infobae](https://www.infobae.com/peru/2026/10/20/colegio-de-carabayllo-logra-50-vacantes-en-san-marcos-durante-el-examen-de-admision-2027-i/), que recoge la versión del colegio.
 
 ## Conectando los puntos
