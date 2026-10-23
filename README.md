@@ -47,20 +47,7 @@ npm run reading-time -- stories/<archivo>.md # solo esa
 npm run reading-time -- --check              # verifica todas, sin escribir
 ```
 
-## Formato básico de una historia
+## Formato de una historia
 
-Para adicionar la imagen requiere de otros atributos adicionales.
-Ver el esquema completo en el repo de mistorias-web.
-
-```yaml
----
-title: "Titulo"
-summary: "Resumen breve"
-date: "2026-04-26"
-author: "Autor"
-authorship: "escrito-por-persona"
-readingTimeMinutes: 4
-themes: ["tag4", "tag2"]
----
-Cuerpo en markdown sin HTML crudo.
-```
+La estructura completa —nombre del archivo, plantilla del frontmatter y las cuatro
+secciones del cuerpo— está en [CONTRIBUTING.md](CONTRIBUTING.md#estructura-de-una-historia).
