@@ -4,6 +4,7 @@ summary: "En Paita, Yesenia quiere estudiar Literatura y su papá, pescador, sie
 date: "2026-10-23"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
+readingTimeMinutes: 2
 themes: ["beca-18", "pronabec", "eleccion-de-carrera", "mercado-laboral", "piura", "tumbes", "lima"]
 ---
 
