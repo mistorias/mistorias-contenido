@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
 themes: ["beca-18", "pronabec", "eleccion-de-carrera", "mercado-laboral", "piura", "tumbes", "lima"]
+imageAlt: "Patio de una casa en Paita: una adolescente, de espaldas, con una novela cerrada sobre las rodillas, mira a su padre remendar una red de pesca; al fondo, por la puerta, el puerto y los botes"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
