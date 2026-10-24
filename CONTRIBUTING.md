@@ -29,33 +29,12 @@ nombre de la historia (sin el `.md` final) y con el nombre `principal.jpg`.
 
 ### Plantilla
 
-Copia esto, cambia el texto que está entre comillas y borra las tres últimas líneas
-de la cabecera si tu historia no lleva imagen. Las palabras antes de los dos puntos
-(`title`, `summary`…) son etiquetas que el sitio necesita escritas tal cual, en
-inglés: no las traduzcas ni las cambies.
-
-```markdown
----
-title: "Lo que el lector descubre, en 10 a 15 palabras"
-summary: "Una sola línea de 70 a 200 caracteres que plantea la situación sin contar el final."
-date: "2026-10-23"
-author: "tu-nombre"
-authorship: "escrito-por-persona"
-readingTimeMinutes: 1
-themes: ["tema-propio", "otro-tema", "un-tercero"]
-imageAlt: "Qué se ve en la imagen, para quien no puede verla"
-imageCredit: "Quién hizo la imagen"
-imageLicense: "CC BY-NC 4.0"
----
-
-## La historia
-
-## Noticias principales
-
-## Conectando los puntos
-
-## Acción final
-```
+Copia la [plantilla de historia](plantillas/historia.md), guárdala con el nombre
+que explicamos arriba y reemplaza el texto de ejemplo. Borra las tres últimas
+líneas de la cabecera (`imageAlt`, `imageCredit` e `imageLicense`) si tu historia
+no lleva imagen. Las palabras antes de los dos puntos (`title`, `summary`…) son
+etiquetas que el sitio necesita escritas tal cual, en inglés: no las traduzcas ni
+las cambies.
 
 ### La cabecera
 
