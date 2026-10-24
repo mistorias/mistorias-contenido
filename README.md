@@ -5,6 +5,7 @@ Repositorio publico de contenido editorial para [mistorias-web](https://github.c
 ## Estructura
 
 - `stories/` — historias en Markdown con frontmatter validado por el sitio.
+- `plantillas/` — plantillas para copiar, como la de la ficha de autor.
 - `scripts/` — herramientas automatizadas del repositorio.
 - `docs/` — cómo se validan las historias ([pipeline](docs/pipeline-de-contenido.md)) y las
   convenciones del [frontmatter](docs/convenciones-del-frontmatter.md) y de los

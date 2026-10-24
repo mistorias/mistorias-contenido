@@ -117,8 +117,18 @@ empieza con su título precedido de `## `, escrito exactamente así:
   lector (ACTÚA). Invitan a hacer algo en la propia vida; no piden comentar ni
   escribirnos, porque el sitio aún no tiene ese canal.
 
-Toda historia combina al menos 2 de los 3 pilares (historias humanas, datos
-explicados, contexto y reflexión); idealmente los 3.
+Ojo: cuatro secciones no son cuatro pilares. La guía editorial define **tres
+pilares de contenido** —historias humanas, datos explicados, y contexto y
+reflexión— y pide que toda historia combine al menos dos. Las tres primeras
+secciones cubren uno cada una; la cuarta no es un pilar, sino el cierre que
+convierte lo entendido en algo que hacer:
+
+| Sección | Pilar | Paso de la secuencia |
+|---------|-------|----------------------|
+| La historia | Historias humanas | SIENTE |
+| Noticias principales | Datos explicados | ENTIENDE |
+| Conectando los puntos | Contexto y reflexión | ENTIENDE |
+| Acción final | — | ACTÚA |
 
 Dos cuidados más al escribir el cuerpo:
 
@@ -153,7 +163,23 @@ historia se pueda creer.
 Por eso, antes de publicar tu primera historia, escribes tu propia ficha —tú, no el
 equipo—: tu nombre, una línea que se muestra al pie de tus historias, y una
 biografía corta que diga **por qué te importa el tema** y algo de ti como persona.
-El equipo te ayuda a darle el formato.
+
+Para eso está la [plantilla de ficha de autor](plantillas/autor.md): cópiala y
+cambia los textos. Las cuatro etiquetas de arriba son:
+
+| Etiqueta | Qué poner |
+|----------|-----------|
+| `name` | Tu nombre, tal como quieres firmar. |
+| `bio` | Una sola línea de máximo 30 palabras. Es lo que ve quien termina de leer tu historia. |
+| `link` | Opcional: la dirección de un perfil público tuyo. |
+| `linkLabel` | Opcional: el nombre de ese sitio (`Instagram`, `Mi web`). |
+
+`link` y `linkLabel` van juntos: o pones los dos, o borras los dos. El archivo se
+guarda en la carpeta `authors/` con tu nombre en minúsculas, sin tildes y con
+guiones (`paolo-carrasco.md`), y ese mismo nombre, sin el `.md`, es el que pones en
+`author` en cada historia. Como ejemplo real, mira la
+[ficha de Paolo Carrasco](authors/paolo-carrasco.md). El equipo te ayuda con el
+formato si lo necesitas.
 
 Lo que **no** te vamos a pedir: tu correo, tu empleador, tu cargo, tu dirección ni
 una foto. No los necesitamos y no los queremos. Si quieres que quien lee pueda
@@ -182,18 +208,16 @@ excepción, está en `TEMAS.md`.
 
 ## Checklist editorial
 
-- [ ] Leí la guía editorial antes de escribir.
-- [ ] Mi ficha de autor existe y la historia la nombra en `author`.
-- [ ] Elegí la etiqueta de `authorship` que describe lo que de verdad pasó al
+- [ ] Lee la guía editorial antes de escribir.
+- [ ] Ten tu ficha de autor y pon su nombre en `author`.
+- [ ] Usa en `authorship` la etiqueta que describe lo que de verdad pasó al
       escribir esta historia.
-- [ ] La historia combina al menos 2 de los 3 pilares (narrativa humana, datos
-      explicados, contexto y reflexión).
-- [ ] Elegí entre 3 y 7 temas propios de esta historia, sin usar los excluidos
+- [ ] Escribe las cuatro secciones, para que la historia combine al menos 2 de los
+      3 pilares (historias humanas, datos explicados, contexto y reflexión).
+- [ ] Escoge entre 3 y 7 temas propios de esta historia, sin usar los excluidos
       (ver `TEMAS.md`).
-- [ ] Cada fuente está enlazada, identificada por lo que es, y con sus límites y
-      posibles sesgos explicitados.
-- [ ] La acción final ofrece pasos concretos, no una invitación genérica a
-      reflexionar.
+- [ ] Enlaza cada fuente, di qué es y explica sus límites y posibles sesgos.
+- [ ] Cierra con pasos concretos, no con una invitación genérica a reflexionar.
 
 Las comprobaciones técnicas que hacemos antes de publicar están descritas en
 `CLAUDE.md`, para quien quiera el detalle; no necesitas leerlas para contribuir.
