@@ -1,6 +1,6 @@
 ---
 name: "Tu nombre, tal como quieres firmar"
-bio: "Una sola línea de máximo 30 palabras: se muestra al pie de cada historia que firmes."
+bio: "Una sola línea de máximo 30 palabras: es lo que ve quien termina de leer tu historia."
 link: "https://www.instagram.com/tu-perfil"
 linkLabel: "Instagram"
 ---
@@ -15,3 +15,8 @@ cargo ni un título para tener una razón.
 
 Cambia este párrafo por algo de ti como persona: qué te gusta, dónde vives o desde
 dónde escribes. Lo que tú quieras contar, nada más.
+
+No pongas tu correo, tu empleador, tu cargo, tu dirección ni una foto. Si quieres
+que quien lee pueda verificar que existes, el enlace de arriba (`link`) puede ser un
+perfil público que tú controles, con el nombre del sitio en `linkLabel`. Si no
+quieres enlace, borra las dos líneas: o van las dos o ninguna.

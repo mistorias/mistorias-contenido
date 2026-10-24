@@ -30,77 +30,47 @@ nombre de la historia (sin el `.md` final) y con el nombre `principal.jpg`.
 ### Plantilla
 
 Copia la [plantilla de historia](plantillas/historia.md), guárdala con el nombre
-que explicamos arriba y reemplaza el texto de ejemplo. Borra las tres últimas
-líneas de la cabecera (`imageAlt`, `imageCredit` e `imageLicense`) si tu historia
-no lleva imagen. Las palabras antes de los dos puntos (`title`, `summary`…) son
-etiquetas que el sitio necesita escritas tal cual, en inglés: no las traduzcas ni
-las cambies.
+que explicamos arriba y reemplaza el texto de ejemplo. Dentro encontrarás, en cada
+campo y en cada sección, las instrucciones detalladas: tenla abierta mientras
+escribes y borra esas instrucciones al terminar.
 
 ### La cabecera
 
-Es todo lo que va entre las dos líneas `---`, un dato por línea:
+Es lo que va entre las dos líneas `---`, un dato por línea. Las palabras antes de
+los dos puntos (`title`, `summary`…) son etiquetas que el sitio necesita escritas
+tal cual, en inglés: no las traduzcas ni las cambies. Lo que debes saber:
 
-| Etiqueta | Qué poner |
-|----------|-----------|
-| `title` | El título: 10 a 15 palabras. Nombra lo que el lector descubre, no la lista de temas. |
-| `summary` | El resumen: 70 a 200 caracteres, en una sola línea. Ver [El resumen](#el-resumen). |
-| `date` | La fecha, en el orden año-mes-día (`2026-10-23`), la misma del nombre del archivo. |
-| `author` | Tu nombre en minúsculas, sin tildes y con guiones, igual que en tu ficha de autor: `paolo-carrasco` (ver [Tu firma](#tu-firma)). |
-| `authorship` | Qué hizo la inteligencia artificial en esta historia: `escrito-por-persona`, `editado-con-ia` o `escrito-con-ia` (ver [Tu firma](#tu-firma)). |
-| `readingTimeMinutes` | Los minutos de lectura. Déjalo en `1`: nosotros lo calculamos. |
-| `themes` | Los temas, entre 3 y 7 (ver [Temas](#temas)). |
-| `imageAlt` | Si hay imagen: qué se ve en ella, para quien no puede verla. |
-| `imageCredit` | Si hay imagen: quién la hizo. |
-| `imageLicense` | Si hay imagen: con qué licencia se puede usar. |
+- **Título y resumen.** El resumen es lo único que se ve de la historia en la
+  portada y en redes, así que se escribe al final, con el cuerpo terminado. Antes de
+  publicar lo revisamos con agentes de inteligencia artificial que miden si es fiel
+  a la historia y si invita a leerla; si no llega a nuestro estándar, podemos
+  proponerte otro. Y si no sabes qué poner, déjalo vacío (`summary: ""`): nosotros
+  lo completamos.
+- **Fecha y autor.** La fecha va en el orden año-mes-día y es la del nombre del
+  archivo. El autor es el nombre de tu ficha (ver [Tu firma](#tu-firma)).
+- **Qué hizo la inteligencia artificial.** `authorship` lleva una de tres
+  etiquetas, que explicamos en [Tu firma](#tu-firma).
+- **Tiempo de lectura.** Déjalo en `1`: nosotros lo calculamos.
+- **Temas.** Entre 3 y 7 (ver [Temas](#temas)).
+- **Imagen.** Los tres datos de imagen van juntos: o los tres o ninguno.
 
-Dos cuidados de escritura, porque si no se cumplen la historia no se puede
-publicar:
-
-- Cada dato va **entre comillas**, sobre todo si lleva dos puntos (`:`).
-- Nada de código de páginas web —texto entre `<` y `>`—, ni en la cabecera ni en el
-  cuerpo. Para enlazar una fuente escribe `[texto que se ve](https://dirección)`.
-
-### El resumen
-
-Es lo único que se ve de la historia en la portada, y es también el texto que se
-publica en redes para invitar a leerla. Por eso:
-
-- Dice de qué trata **la historia del personaje**, no las noticias ni sus cifras.
-- Despierta curiosidad y **no cuenta el final**.
-- Lo que insinúa, el cuerpo lo tiene que entregar.
-- Se escribe al final, con el cuerpo ya terminado.
-
-Antes de publicar, revisamos cada resumen con agentes de inteligencia artificial
-que miden si es fiel a la historia y si invita a leerla. Si el tuyo no llega a
-nuestro estándar, podemos proponerte otro que sí llegue. Y si no sabes qué poner,
-déjalo vacío (`summary: ""`): nosotros lo completamos.
+Dos cuidados, porque si no se cumplen la historia no se puede publicar: cada dato
+va **entre comillas** (sobre todo si lleva dos puntos), y no puede haber código de
+páginas web —texto entre `<` y `>`— ni en la cabecera ni en el cuerpo. Para enlazar
+una fuente se escribe `[texto que se ve](https://dirección)`.
 
 ### El cuerpo
 
 La secuencia de marca es **SIENTE → ENTIENDE → ACTÚA**, y la regla de oro de la guía
 editorial dice que el contenido falla si informa sin conectar, conecta sin explicar,
-o explica sin movilizar. El cuerpo tiene cuatro secciones, en este orden. Cada una
-empieza con su título precedido de `## `, escrito exactamente así:
+o explica sin movilizar. El cuerpo tiene cuatro secciones, en este orden, con estos
+títulos exactos (empiezan con `## `). Lo que va en cada una está explicado dentro de
+la [plantilla](plantillas/historia.md).
 
-- `## La historia` — narrativa humana, anclada en una persona concreta (SIENTE).
-  Ficción verosímil en el Perú de hoy, donde las noticias de la semana le pasan a
-  alguien. Las publicadas tienen entre 400 y 1000 palabras. Con esta sección se
-  calcula el tiempo de lectura, así que su título no puede cambiar.
-- `## Noticias principales` — una lista; cada punto empieza con `- ` y dice qué
-  pasó, **qué significa el dato** y de dónde sale, con la fuente enlazada e
-  identificada por lo que es (ENTIENDE). Ver [Sobre las fuentes](#sobre-las-fuentes).
-- `## Conectando los puntos` — un par de párrafos de contexto y reflexión que unen
-  la historia con las noticias, más algo explícito sobre **los límites de los
-  datos**: qué no responden todavía.
-- `## Acción final` — acciones concretas, en imperativo, diferenciadas por tipo de
-  lector (ACTÚA). Invitan a hacer algo en la propia vida; no piden comentar ni
-  escribirnos, porque el sitio aún no tiene ese canal.
-
-Ojo: cuatro secciones no son cuatro pilares. La guía editorial define **tres
-pilares de contenido** —historias humanas, datos explicados, y contexto y
-reflexión— y pide que toda historia combine al menos dos. Las tres primeras
-secciones cubren uno cada una; la cuarta no es un pilar, sino el cierre que
-convierte lo entendido en algo que hacer:
+Cuatro secciones no son cuatro pilares. La guía editorial define **tres pilares de
+contenido** —historias humanas, datos explicados, y contexto y reflexión— y pide que
+toda historia combine al menos dos. La cuarta sección no es un pilar, sino el cierre
+que convierte lo entendido en algo que hacer:
 
 | Sección | Pilar | Paso de la secuencia |
 |---------|-------|----------------------|
@@ -109,29 +79,9 @@ convierte lo entendido en algo que hacer:
 | Conectando los puntos | Contexto y reflexión | ENTIENDE |
 | Acción final | — | ACTÚA |
 
-Dos cuidados más al escribir el cuerpo:
-
-- **Nombres nuevos.** Cada personaje inventado estrena su nombre: no repitas uno de
-  las historias recientes, o el lector que las lee seguidas creerá que es la misma
-  persona. No aplica a personas reales (autoridades, dirigentes).
-- **Castellano peruano.** Las noticias de otros países traen palabras que aquí no se
-  usan: *carpeta*, no *pupitre*; *sismo*, no *terremoto*; *propón*, no *proponé*.
-  Un término técnico se explica entre paréntesis la primera vez.
-
 Para ver todo junto, la
 [historia de Dayana](stories/2026-10-16-dayana-es-la-mejor-en-matematica.md) tiene
 las cuatro secciones, imagen y todos los datos de la cabecera.
-
-### Sobre las fuentes
-
-Enlázalas y **di qué son**. Un comunicado gremial es parte del conflicto que
-reporta; una nota de divulgación no es el informe original. Esa honestidad es el
-principio de transparencia aplicado, no un adorno.
-
-Además de qué tipo de fuente es, indica sus **límites y posibles sesgos**: quién la
-firma, qué interés directo tiene en el asunto que reporta, y qué preguntas deja sin
-responder. Un dato correcto presentado sin ese contexto puede seguir siendo
-engañoso.
 
 ## Tu firma
 
@@ -143,19 +93,10 @@ Por eso, antes de publicar tu primera historia, escribes tu propia ficha —tú,
 equipo—: tu nombre, una línea que se muestra al pie de tus historias, y una
 biografía corta que diga **por qué te importa el tema** y algo de ti como persona.
 
-Para eso está la [plantilla de ficha de autor](plantillas/autor.md): cópiala y
-cambia los textos. Las cuatro etiquetas de arriba son:
-
-| Etiqueta | Qué poner |
-|----------|-----------|
-| `name` | Tu nombre, tal como quieres firmar. |
-| `bio` | Una sola línea de máximo 30 palabras. Es lo que ve quien termina de leer tu historia. |
-| `link` | Opcional: la dirección de un perfil público tuyo. |
-| `linkLabel` | Opcional: el nombre de ese sitio (`Instagram`, `Mi web`). |
-
-`link` y `linkLabel` van juntos: o pones los dos, o borras los dos. El archivo se
-guarda en la carpeta `authors/` con tu nombre en minúsculas, sin tildes y con
-guiones (`paolo-carrasco.md`), y ese mismo nombre, sin el `.md`, es el que pones en
+Para eso está la [plantilla de ficha de autor](plantillas/autor.md): cópiala,
+cambia los textos y sigue las instrucciones que trae dentro. El archivo se guarda en
+la carpeta `authors/` con tu nombre en minúsculas, sin tildes y con guiones
+(`paolo-carrasco.md`), y ese mismo nombre, sin el `.md`, es el que pones en
 `author` en cada historia. Como ejemplo real, mira la
 [ficha de Paolo Carrasco](authors/paolo-carrasco.md). El equipo te ayuda con el
 formato si lo necesitas.
