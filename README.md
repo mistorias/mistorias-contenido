@@ -5,6 +5,7 @@ Repositorio publico de contenido editorial para [mistorias-web](https://github.c
 ## Estructura
 
 - `stories/` — historias en Markdown con frontmatter validado por el sitio.
+- `plantillas/` — plantillas para copiar: una [historia](plantillas/historia.md) y una [ficha de autor](plantillas/autor.md).
 - `scripts/` — herramientas automatizadas del repositorio.
 - `docs/` — cómo se validan las historias ([pipeline](docs/pipeline-de-contenido.md)) y las
   convenciones del [frontmatter](docs/convenciones-del-frontmatter.md) y de los
@@ -47,20 +48,7 @@ npm run reading-time -- stories/<archivo>.md # solo esa
 npm run reading-time -- --check              # verifica todas, sin escribir
 ```
 
-## Formato básico de una historia
+## Formato de una historia
 
-Para adicionar la imagen requiere de otros atributos adicionales.
-Ver el esquema completo en el repo de mistorias-web.
-
-```yaml
----
-title: "Titulo"
-summary: "Resumen breve"
-date: "2026-04-26"
-author: "Autor"
-authorship: "escrito-por-persona"
-readingTimeMinutes: 4
-themes: ["tag4", "tag2"]
----
-Cuerpo en markdown sin HTML crudo.
-```
+La estructura completa —nombre del archivo, plantilla del frontmatter y las cuatro
+secciones del cuerpo— está en [CONTRIBUTING.md](CONTRIBUTING.md#estructura-de-una-historia).
