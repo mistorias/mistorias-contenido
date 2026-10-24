@@ -15,9 +15,3 @@ cargo ni un título para tener una razón.
 
 Cambia este párrafo por algo de ti como persona: qué te gusta, dónde vives o desde
 dónde escribes. Lo que tú quieras contar, nada más.
-
-## Este es un proyecto personal
-
-Mistorias no representa a ninguna empresa, institución ni empleador. Escribo por mi
-cuenta, en mis horas libres y sin fines de lucro. Nada de lo que publico aquí
-compromete a nadie más que a mí.
