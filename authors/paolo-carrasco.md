@@ -22,10 +22,9 @@ explican lo que le pasa, y algo que se pueda hacer al respecto.
 
 ## Sobre mí
 
-Juego tenis y fútbol. He vivido en varios países y ahora estoy en Barcelona, así
-que escribo sobre Arequipa a la distancia: me apoyo en fuentes públicas que
-cualquiera puede abrir y revisar. Cuando no logro verificar un dato, la historia
-lo dice.
+Juego tenis y fútbol. He vivido en varios países y ahora estoy en Barcelona.
+También disfruto leer novelas, cuentos y ensayos, y escribir ficción; ahora dedico
+parte de ese tiempo a escribir ficción sobre educación.
 
 ## Este es un proyecto personal
 
