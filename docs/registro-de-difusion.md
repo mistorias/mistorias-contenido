@@ -55,9 +55,11 @@ valores de `status` van en castellano porque son del dominio (ver
 las razones del
 [ADR 0034 de mistorias-web](https://github.com/mistorias/mistorias-web/blob/main/docs/adr/0034-formato-json-del-registro-de-difusion.md).
 
-Solo se registra lo que salió o falló. Los borradores en Buffer y la aprobación
-de la difusión no dejan rastro aquí: la aprobación queda en el historial de
-deployments de mistorias-redes-sociales.
+Solo se registra lo que salió o falló. Los borradores en Buffer y la
+autoaprobación de la difusión no dejan rastro aquí: quién hizo disponible la
+propuesta y quién canceló, si alguien lo hizo, queda en el historial de
+ejecuciones (Actions) de mistorias-redes-sociales. Una difusión cancelada no
+genera registro.
 
 | Campo                     | Regla                                                                 | Para qué sirve                                   |
 |---------------------------|-----------------------------------------------------------------------|--------------------------------------------------|
