@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
 themes: ["paro-docente", "docentes", "pensiones", "presupuesto-educativo", "cusco", "lima", "ancash"]
+imageAlt: "Habitación en penumbra: una mujer, de espaldas, mira una blusa blanca y una casaca azul con insignia colgadas juntas; debajo, una silla, un celular boca abajo sobre la mesa y, en la pared, un calendario con días tachados"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
