@@ -1,6 +1,6 @@
 ---
 title: "A Rosalía le faltan dos años para jubilarse y un día para decidir"
-summary: "Rosalía tacha viernes hasta jubilarse. Si marcha, le descuentan el día; si no, siente que deja solos a quienes reclaman. Y la mamá de Nayeli, su alumna, ya pidió permiso en el mercado."
+summary: "Rosalía tacha viernes hasta jubilarse. Si marcha, le descuentan el día; si no, siente que deja solos a quienes reclaman."
 date: "2026-10-29"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
