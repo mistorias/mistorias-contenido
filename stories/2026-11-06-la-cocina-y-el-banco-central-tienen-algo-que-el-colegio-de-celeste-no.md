@@ -1,6 +1,6 @@
 ---
 title: "La cocina y el Banco Central tienen algo que el colegio de Celeste no"
-summary: ""
+summary: "En Pachacútec, Celeste tiene que escribir sobre algo que el Perú hace bien. La cocina de su papá y el Banco Central van en una columna; su colegio, con techo de calamina, en la otra."
 date: "2026-11-06"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
