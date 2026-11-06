@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
 themes: ["gastronomia", "banco-central-de-reserva", "meritocracia", "institutos", "extorsion", "callao", "lima"]
+imageAlt: "Adolescente escribiendo sobre un cuaderno junto a una cebolla en una cocina humilde"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
