@@ -116,9 +116,12 @@ Tres validaciones distintas, las tres obligatorias.
 
 ### 5.1 Contra los agentes de marca
 
-Simula el pipeline de `agents/orquestador-lineamientos-marca.md`, en el orden fijo
+Ejecuta el pipeline de `agents/orquestador-lineamientos-marca.md`, en el orden fijo
 que define ese archivo: Jaime → Martha → Javier → Mario. No saltes fases ni las
-inviertas.
+inviertas. Jaime es el skill `publicar-historia`; Martha, Javier y Mario corren como
+subagentes de `.claude/agents/` (`martha-ortografia`, `javier-alineacion`,
+`mario-brand-gap`), cada uno con su modelo. El criterio y el umbral de cada rol siguen
+viviendo en la esencia de marca: los subagentes los leen de ahí, no los copian.
 
 Los umbrales de cada fase (cuántos errores tolera Martha, qué puntaje mínimo piden
 Javier y Mario) están en `agents/martha-ortografia-castellano-peru.md`,
@@ -126,7 +129,10 @@ Javier y Mario) están en `agents/martha-ortografia-castellano-peru.md`,
 léelos ahí, no los copies aquí: son criterio editorial del equipo y pueden cambiar
 sin que este archivo se entere.
 
-Si una fase no pasa su umbral, no sigas: vuelve a Jaime con el feedback acumulado.
+Si una fase no pasa su umbral, no sigas: vuelve a Jaime con el feedback acumulado,
+hasta **3 reescrituras**; si a la tercera no pasa, la decisión es del equipo. El
+pipeline corre **antes** del resumen (§5.3): cambiar el cuerpo después vence la
+auditoría del resumen.
 
 ### 5.2 Contra el esquema y el build
 
@@ -339,21 +345,22 @@ md5sum stories/<archivo>.md
 Checklist técnico. El checklist editorial (guía leída, pilares, fuentes, temas
 elegidos) está en `CONTRIBUTING.md`.
 
+- [ ] Ningún nombre de personaje se repite con historias ya publicadas (§4).
+- [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
+      `agents/martha-*.md`, `agents/javier-*.md` y `agents/mario-*.md`, antes de
+      generar el resumen (§5.1).
 - [ ] Título de 10 a 15 palabras; resumen de 70 a 200 caracteres; fecha `yyyy-mm-dd`.
+- [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
+- [ ] `author` apunta a una ficha que existe en `authors/`, y `authorship` declara
+      lo que de verdad pasó en esta historia (§8).
+- [ ] `readingTimeMinutes` calculado con `npm run reading-time` sobre el cuerpo final
+      y antes de registrar el resumen; el pipeline pasa (ver
+      [docs/pipeline-de-contenido.md](docs/pipeline-de-contenido.md)).
 - [ ] El resumen se generó desde el cuerpo ya terminado, dice de qué trata la
       historia y no por qué canal se entera el personaje, no cuenta el final, e
       invita a leerla sin prometer nada que el cuerpo no entregue; `verificador-resumen` le dio
       `evaluacion_sintesis` ≥ 80 y `evaluacion_enganche` ≥ 90, con la auditoría
       registrada (§5.3).
-- [ ] Nombre de archivo coherente con el título, fijado antes del primer push.
-- [ ] `author` apunta a una ficha que existe en `authors/`, y `authorship` declara
-      lo que de verdad pasó en esta historia (§8).
-- [ ] Ningún nombre de personaje se repite con historias ya publicadas (§4).
-- [ ] Pipeline Jaime → Martha → Javier → Mario, en orden, con los umbrales de
-      `agents/martha-*.md`, `agents/javier-*.md` y `agents/mario-*.md`.
-- [ ] `readingTimeMinutes` calculado con `npm run reading-time` sobre el cuerpo final
-      y antes de registrar el resumen; el pipeline pasa (ver
-      [docs/pipeline-de-contenido.md](docs/pipeline-de-contenido.md)).
 - [ ] `pnpm test` y `pnpm build` pasan; la ruta de la historia aparece en el build.
 - [ ] Fuentes enlazadas, identificadas por lo que son, con sus límites y posibles
       sesgos explicitados.
