@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
 themes: ["disciplina-escolar", "calificaciones", "participacion-familiar", "expulsiones", "ayacucho", "lima"]
+imageAlt: "Felícita, de perfil, lee un papel doblado en su puesto de mercado; a la izquierda, sobre la mesa, la hoja con su tabla de notas; a la derecha, su hijo, de uniforme, come un pan junto a una pila de quesos redondos"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
