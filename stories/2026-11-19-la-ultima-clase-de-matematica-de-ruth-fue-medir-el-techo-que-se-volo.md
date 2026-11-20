@@ -5,7 +5,7 @@ date: "2026-11-19"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
-themes: ["fenomeno-el-nino", "infraestructura-educativa", "calendario-escolar", "secundaria", "piura", "tumbes", "arequipa"]
+themes: ["fenomeno-el-nino", "infraestructura-educativa", "calendario-escolar", "secundaria", "piura"]
 ---
 
 ## La historia
