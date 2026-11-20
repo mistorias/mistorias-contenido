@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
 themes: ["fenomeno-el-nino", "infraestructura-educativa", "calendario-escolar", "secundaria", "piura", "tumbes", "arequipa"]
+imageAlt: "Ilustración de una alumna parada sobre una carpeta que sostiene una wincha hacia el hueco del techo de calamina, mientras la directora, sentada, la tensa y anota en un cuaderno"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
