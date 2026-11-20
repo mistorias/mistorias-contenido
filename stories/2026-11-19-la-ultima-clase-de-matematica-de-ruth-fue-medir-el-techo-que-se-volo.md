@@ -1,6 +1,6 @@
 ---
 title: "La última clase de matemática de Ruth fue medir el techo que se voló"
-summary: "Al aula de Ruth, en Piura, el viento le voló una plancha, y su clase de matemática fue medir el techo con wincha y Pitágoras. La plata llega en diciembre, si todo sale bien. ¿Y cuándo llueve?"
+summary: "Al aula de Ruth, en Piura, el viento le voló una plancha, y su clase de matemática fue medir el techo con wincha y Pitágoras. La plata llega en diciembre, si todo sale bien."
 date: "2026-11-19"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
