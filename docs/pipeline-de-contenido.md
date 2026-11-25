@@ -16,12 +16,15 @@ push a `main`, con los pasos en este orden:
 
 El orden importa: cada paso da por cierto lo que verifica el anterior.
 
-Además de ese job, el workflow tiene otros dos que corren en paralelo:
+Además de ese job, el workflow tiene otro que corre en paralelo:
 
 | Job | Qué hace |
 |-----|----------|
 | `workflows` | Audita `.github/workflows/` con zizmor y actionlint. Los workflows son código que corre con permisos sobre el repositorio. |
-| `revisar-dependencias` | En los PR, bloquea una dependencia nueva con una vulnerabilidad moderada o peor, o con licencia GPL/AGPL. |
+
+La revisión de dependencias nuevas (`dependency-review-action`) se agrega cuando el
+grafo de dependencias esté activo en este repositorio: sin él, la API de GitHub
+responde 403 y el job falla.
 
 Las excepciones a zizmor, si hicieran falta, irían en `.github/zizmor.yml` con su
 motivo. Los checks de frontmatter, auditoría y subida SemVer de este repositorio
