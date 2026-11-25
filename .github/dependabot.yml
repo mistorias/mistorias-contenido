@@ -9,3 +9,10 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+
+  # Los actions van fijados por SHA (docs/pipeline-de-contenido.md): sin esta
+  # entrada, esos SHA nunca se actualizarían.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
