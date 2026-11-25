@@ -16,6 +16,18 @@ push a `main`, con los pasos en este orden:
 
 El orden importa: cada paso da por cierto lo que verifica el anterior.
 
+Además de ese job, el workflow tiene otros dos que corren en paralelo:
+
+| Job | Qué hace |
+|-----|----------|
+| `workflows` | Audita `.github/workflows/` con zizmor y actionlint. Los workflows son código que corre con permisos sobre el repositorio. |
+| `revisar-dependencias` | En los PR, bloquea una dependencia nueva con una vulnerabilidad moderada o peor, o con licencia GPL/AGPL. |
+
+Las excepciones a zizmor, si hicieran falta, irían en `.github/zizmor.yml` con su
+motivo. Los checks de frontmatter, auditoría y subida SemVer de este repositorio
+se agregan en los siguientes conjuntos de cambios; el diagrama del flujo completo
+está en [fabrica.svg](https://github.com/mistorias/mistorias-web/blob/main/docs/fabrica.svg).
+
 ## Correr los pasos en local
 
 ```bash
@@ -44,7 +56,8 @@ van firmados (ver CLAUDE.md §9).
 
 ## Actions fijados por commit
 
-Los actions del workflow se referencian por su SHA completo de commit y no por
+Dependabot (`github-actions` en `.github/dependabot.yml`) propone cada semana la
+versión nueva de cada uno. Los actions del workflow se referencian por su SHA completo de commit y no por
 una etiqueta como `@v4`: una etiqueta se puede mover a otro código, un SHA no.
 Al lado va un comentario con la versión que corresponde, para que se lea.
 
