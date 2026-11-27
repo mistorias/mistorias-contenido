@@ -6,6 +6,9 @@ author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
 themes: ["colegios-de-alto-rendimiento", "admision-escolar", "educacion-rural", "secundaria", "huancavelica"]
+imageAlt: "Noche en un corral de piedra en Lircay: una adolescente, de espaldas, repasa fracciones en un cuaderno sobre las rodillas, junto a unas ovejas; al fondo, en la puerta de la casa de adobe, su abuela la mira con un sobre en la mano"
+imageCredit: "Mistorias (ilustración generada con Midjourney)"
+imageLicense: "CC BY-NC 4.0"
 ---
 
 ## La historia
