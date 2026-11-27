@@ -5,7 +5,7 @@ date: "2026-11-26"
 author: "paolo-carrasco"
 authorship: "escrito-con-ia"
 readingTimeMinutes: 2
-themes: ["colegios-de-alto-rendimiento", "admision-escolar", "educacion-rural", "secundaria", "huancavelica", "lircay", "argentina"]
+themes: ["colegios-de-alto-rendimiento", "admision-escolar", "educacion-rural", "secundaria", "huancavelica"]
 ---
 
 ## La historia
