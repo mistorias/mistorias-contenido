@@ -24,13 +24,20 @@ Todo Mistorias es esto. Ponerlo como tema es repetir el nombre del proyecto.
 Estas no tienen excepción: no importa cuán central sea el tema en una historia
 puntual, ya está cubierto por ser parte de Mistorias.
 
-## Lugares — un tema cuando la historia los menciona
+## Lugares — un tema solo cuando pesan en la historia
 
-Mistorias mira todo el Perú, así que un lugar sí distingue unas historias de
-otras. Desde que el alcance dejó de ser solo Arequipa, `arequipa` es un tema
-como `piura` o `junin`: se usa en toda historia que la mencione, sea porque
-ocurre allí o porque la nombra como referencia, y no en las que no la nombran.
-Lo mismo vale para cualquier otra región, provincia o ciudad.
+Mistorias mira todo el Perú, así que un lugar puede distinguir unas historias de
+otras, pero solo si es relevante **para la historia**. Mencionarlo no basta.
+
+Se usa cuando el lugar es parte de lo que la historia cuenta: es donde vive el
+personaje y lo que ese sitio implica (la distancia, la señal, el clima) mueve la
+historia. No se usa para un lugar que solo aparece en `## Noticias principales`
+o como referencia de paso. Por ejemplo, el país de una noticia internacional no
+entra.
+
+El lugar se nombra al nivel que el lector reconoce (`huancavelica`, `piura`).
+No sumes además la provincia o la ciudad si no agregan nada: el distrito donde
+transcurre la escena no es otra ruta para el lector.
 
 ## Excepciones — permitidas solo cuando son el eje central
 
